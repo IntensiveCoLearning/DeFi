@@ -1,4 +1,3 @@
-
 # DeFi 残酷共学 by LXDAO
 
 ## 什么是残酷共学（Intensive Co-learning）？
@@ -16,14 +15,16 @@
 
 关于更多「残酷共学」的介绍请参见：https://forum.lxdao.io/t/topic/1654，关于更多正在发生的残酷共学请参见：https://intensivecolearn.ing/。
 
-如果你有任何有关残酷共学的疑问或者想法，请到 [残酷共学 Telegram 群](https://t.me/LXDAO/6215) 联系我们。
+如果你有任何有关残酷共学的疑问或者想法，请到 [残酷共学 Telegram 群](https://t.me/LXDAO/11209) 联系我们。
 
 ## DeFi 残酷共学介绍
+
 ### **背景与目标**
 
 > **DeFi 残酷共学**由 LXDAO Forge 小组发起，旨在通过“赛博社会主义”视角探索新世界的理财方法。
 
 **📘 共学目标：**
+
 - 深入理解 DeFi 的基本原理和应用。
 - 探索区块链技术在金融领域的创新。
 - 掌握 DeFi 工具和平台的使用方法。
@@ -32,40 +33,37 @@
 ### **面向人群及共学特色**
 
 > 无论你是开发者，还是对 DeFi 充满好奇的普通人，我们都欢迎的加入。
-> 
 
 **🌐 共学特色：**
 
-- **全面开放：** 我们的大门向所有人敞开，无需特定的技术背景或经验。
-- **知识共享：** 我们鼓励知识交流，相信每个人都能为这个社区带来独特的视角。
-- **实践融合：** 通过每日学习后提交在链上的交易Hash，我们将理论与实践相结合，确保每个概念都能落地生根。
+- **全面开放：**  我们的大门向所有人敞开，无需特定的技术背景或经验。
+- **知识共享：**  我们鼓励知识交流，相信每个人都能为这个社区带来独特的视角。
+- **实践融合：**  通过每日学习后提交在链上的交易 Hash，我们将理论与实践相结合，确保每个概念都能落地生根。
 - **开源开放：** 以 GitHub 为学习平台，提供了一个开放、协作的学习环境。
 
 **我们相信，DeFi 的大门对所有人敞开。在这里，你将找到志同道合的伙伴，一起学习、成长……**
 
 **🗓️ 共学活动：**
 
-- **定期会议：** 每周的线上会议，解答疑惑，分析事件，分享行业动态。
-
+- **定期会议：**  每周的线上会议，解答疑惑，分析事件，分享行业动态。
 
 ## 共学内容
 
 ![defi](img/defi.png)
 
-由于使用这些defi 产品都是需要消耗真实的货币，且价格昂贵，所以我们找了一条L2 来做测试，到时候大家进TG群发地址每人发一些ETH 进行测试。
+由于使用这些 DeFi 产品都是需要消耗真实的货币，且价格昂贵，所以我们找了一条 L2 来做测试，到时候大家进 TG 群发地址每人发一些 ETH 进行测试。
 详细测试添加看[这里](https://www.notion.so/lxdao/a600e53cd02d455595a399f399dfbf72?pvs=25)。
 
-
 > 「DeFi 残酷共学」预计将可持续的从第 1 期有序的推进到 N 期，21 天为一个学习周期，实现自主、开源开放，不断共同构建和完善 DeFi 共学资料及实践案例。
-> 
+
 1. **稳定币机制**：了解不同类型的稳定币及其在 DeFi 中的作用。
 2. **借贷协议**：探索 Aave、Compound 等借贷协议的工作原理。
 3. **去中心化交易所（DEX）**：学习 Uniswap、SushiSwap 等 DEX 的交易机制。
 4. **收益农场与流动性挖矿**：实践 Yield Farming 和 Liquidity Mining 策略。
 5. **跨链技术**：研究 Stargate、Anyswap 等跨链桥和协议。
-6. **预言机**：学习 Chainlink 等预言机在DeFi中的应用。
+6. **预言机**：学习 Chainlink 等预言机在 DeFi 中的应用。
 7. **去中心化衍生品**：分析 GMX、SNX 等衍生品平台。
-8. **DeFi 安全**：讨论循环贷、闪电贷、治理攻击、Vetoken等安全议题。
+8. **DeFi 安全**：讨论循环贷、闪电贷、治理攻击、Vetoken 等安全议题。
 
 ……
 
@@ -83,16 +81,15 @@ https://web3caff.com/zh/archives/80903
 
 https://www.binance.com/zh-CN/square/post/43195
 
-USDT官网：https://tether.to/
+USDT 官网：https://tether.to/
 
-USDC官网：https://www.circle.com/en/usdc
+USDC 官网：https://www.circle.com/en/usdc
 
 https://foresightnews.pro/article/detail/26988
 
 相关使用网址：
 
 https://staking.synthetix.io/staking/mint
-
 
 ![](img/stablecoin.png)
 
@@ -111,7 +108,6 @@ https://docs.compound.finance/
 https://app.aave.com/?marketName=proto_optimism_v3
 
 https://app.compound.finance/?market=usdc-op
-
 
 #### 去中心化交易所（DEX）：如 Uniswap、SushiSwap 以及 DEX 聚合器
 
@@ -133,13 +129,11 @@ https://velodrome.finance/
 
 https://app.uniswap.org/swap
 
-
 ### **残酷共学特别激励**
 
 **🏅NFT 徽章：** 完成 DeFi 共学的小伙伴结业将收到一枚 Badge 徽章认证。
 
 **🎁 特别奖励：** 我们相信，真正的学习是教会你如何获取所需，随着你的技能提升，一系列特别奖励将随之而来。
-
 
 ## 共学时间
 
@@ -154,7 +148,7 @@ https://app.uniswap.org/swap
 
 ## 如何报名和打卡？
 
-因为残酷共学的报名和打卡是基于 GitHub 进行开展的，如果你是非开发者或者对 git 操作不熟悉，请先阅读此文档：[残酷共学 GitHub 新手教程](https://www.notion.so/lxdao/GitHub-53fca5ba49bb40c69e4e40e69f58f416) - 这个文档还需要进行优化
+因为残酷共学的报名和打卡是基于 GitHub 进行开展的，如果你是非开发者或者对 git 操作不熟悉，请先阅读此文档：[残酷共学 GitHub 新手教程](https://www.notion.so/lxdao/GitHub-53fca5ba49bb40c69e4e40e69f58f416)
 
 - 报名:
 
