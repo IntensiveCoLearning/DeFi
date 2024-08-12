@@ -194,7 +194,9 @@ https://app.uniswap.org/swap
 | Oscar | | | | | | | | | | | | | |   |
 | xiaodongQ | | | | | | | | | | | | | |   |
 | Iyi | | | | | | | | | | | | | |   |
+| Derick | | | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
