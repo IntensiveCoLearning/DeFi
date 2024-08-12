@@ -195,3 +195,5 @@ https://app.uniswap.org/swap
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 
 <!-- END_COMMIT_TABLE -->
+<!-- STATISTICALDATA_START -->
+<!-- STATISTICALDATA_END -->
