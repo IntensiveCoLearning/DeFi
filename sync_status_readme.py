@@ -198,8 +198,10 @@ def check_weekly_status(user_status, date, user_tz):
 
 
 def get_all_user_files():
+    exclude_prefixes = ('template', 'readme')
     return [f[:-len(FILE_SUFFIX)] for f in os.listdir('.')
-            if f.endswith(FILE_SUFFIX) and not f.startswith('Template')]
+            if f.lower().endswith(FILE_SUFFIX.lower()) 
+            and not f.lower().startswith(exclude_prefixes)]
 
 
 def update_readme(content):
