@@ -226,15 +226,16 @@ def update_readme(content):
 
         for row in table_rows:
             match = re.match(r'\|\s*([^|]+)\s*\|', row)
-        if match:
-            display_name = match.group(1).strip()
-            if display_name:  # 检查 display_name 是否为非空
-                existing_users.add(display_name)
-                new_table.append(generate_user_row(display_name))
+            if match:
+                display_name = match.group(1).strip()
+                if display_name:  # 检查 display_name 是否为非空
+                    existing_users.add(display_name)
+                    new_table.append(generate_user_row(display_name))
+                else:
+                    logging.warning(
+                        f"Skipping empty display name in row: {row}")
             else:
-                logging.warning(f"Skipping empty display name in row: {row}")
-        else:
-            logging.warning(f"Skipping invalid row: {row}")
+                logging.warning(f"Skipping invalid row: {row}")
 
         new_users = set(get_all_user_files()) - existing_users
         for user in new_users:
@@ -345,8 +346,23 @@ def calculate_statistics(content):
     rows = table_content.split('\n')[2:]  # Skip header and separator rows
 
     total_participants = len(rows)
-    eliminated_participants = sum(1 for row in rows if '❌' in row)
-    completed_participants = total_participants - eliminated_participants
+    eliminated_participants = 0
+    completed_participants = 0
+    perfect_attendance_users = []
+
+    for row in rows:
+        user_name = row.split('|')[1].strip()
+        # Exclude first and last empty elements
+        statuses = [status.strip() for status in row.split('|')[2:-1]]
+
+        if '❌' in statuses:
+            eliminated_participants += 1
+        elif all(status == '✅' for status in statuses):
+            completed_participants += 1
+            perfect_attendance_users.append(user_name)
+        elif all(status in ['✅', '⭕️', ' '] for status in statuses):
+            completed_participants += 1
+
     elimination_rate = (eliminated_participants /
                         total_participants) * 100 if total_participants > 0 else 0
     fork_count = get_fork_count()
@@ -356,7 +372,8 @@ def calculate_statistics(content):
         'completed_participants': completed_participants,
         'eliminated_participants': eliminated_participants,
         'elimination_rate': elimination_rate,
-        'fork_count': fork_count
+        'fork_count': fork_count,
+        'perfect_attendance_users': perfect_attendance_users
     }
 
 
@@ -384,34 +401,37 @@ def main():
                 stats_content = f"\n\n## 统计数据\n\n"
                 stats_content += f"- 总参与人数: {stats['total_participants']}\n"
                 stats_content += f"- 完成人数: {stats['completed_participants']}\n"
+                stats_content += f"- 全勤用户: {', '.join(stats['perfect_attendance_users'])}\n"
                 stats_content += f"- 淘汰人数: {stats['eliminated_participants']}\n"
                 stats_content += f"- 淘汰率: {stats['elimination_rate']:.2f}%\n"
                 stats_content += f"- Fork人数: {stats['fork_count']}\n"
             # 将统计数据添加到文件末尾
             # 在<!-- END_COMMIT_TABLE -->标记后插入统计数据
-                # 检查是否已存在统计数据
-                stats_start = new_content.find("\n## 统计数据\n")
-                if stats_start != -1:
-                    # 如果存在，替换现有的统计数据
-                    stats_end = new_content.find("\n##", stats_start + 1)
-                    if stats_end == -1:
-                        stats_end = len(new_content)
-                    new_content = new_content[:stats_start] + \
-                        stats_content + new_content[stats_end:]
+                stats_start = new_content.find(
+                    "<!-- STATISTICALDATA_START -->")
+                stats_end = new_content.find("<!-- STATISTICALDATA_END -->")
+
+                if stats_start != -1 and stats_end != -1:
+                    # Replace existing statistical data
+                    new_content = new_content[:stats_start] + "<!-- STATISTICALDATA_START -->\n" + stats_content + \
+                        "<!-- STATISTICALDATA_END -->" + \
+                        new_content[stats_end +
+                                    len("<!-- STATISTICALDATA_END -->"):]
                 else:
-                    # 如果不存在，在<!-- END_COMMIT_TABLE -->标记后插入统计数据
+                    # Add new statistical data after <!-- END_COMMIT_TABLE -->
                     end_table_marker = "<!-- END_COMMIT_TABLE -->"
                     end_table_index = new_content.find(end_table_marker)
                     if end_table_index != -1:
                         insert_position = end_table_index + \
                             len(end_table_marker)
-                        new_content = new_content[:insert_position] + \
-                            "\n" + stats_content + \
+                        new_content = new_content[:insert_position] + "\n\n<!-- STATISTICALDATA_START -->\n" + \
+                            stats_content + "<!-- STATISTICALDATA_END -->" + \
                             new_content[insert_position:]
                     else:
                         logging.warning(
                             "<!-- END_COMMIT_TABLE --> marker not found. Appending stats to the end.")
-                        new_content += "\n" + stats_content
+                        new_content += "\n\n<!-- STATISTICALDATA_START -->\n" + \
+                            stats_content + "<!-- STATISTICALDATA_END -->"
         with open(README_FILE, 'w', encoding='utf-8') as file:
             file.write(new_content)
         logging.info("README.md has been successfully updated.")
