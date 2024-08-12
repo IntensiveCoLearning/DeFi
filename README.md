@@ -87,6 +87,8 @@ USDC 官网：https://www.circle.com/en/usdc
 
 https://foresightnews.pro/article/detail/26988
 
+https://mp.weixin.qq.com/s/gzr9q9kM3j-R0ec7sCb3NQ
+
 相关使用网址：
 
 https://staking.synthetix.io/staking/mint
