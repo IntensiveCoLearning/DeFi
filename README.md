@@ -207,7 +207,11 @@ https://app.uniswap.org/swap
 | mark | | | | | | | | | | | | | |   |
 | Sifotd | | | | | | | | | | | | | |   |
 | Kristin | | | | | | | | | | | | | |   |
+| Lu | | | | | | | | | | | | | |   |
+| Affe | | | | | | | | | | | | | |   |
+| Zemmer | | | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
