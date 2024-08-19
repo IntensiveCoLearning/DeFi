@@ -190,7 +190,7 @@ https://app.uniswap.org/swap
 | zedz |   | | | | | | | | | | | | |   |
 | 唐三水 |   | | | | | | | | | | | | |   |
 | Helios |   | | | | | | | | | | | | |   |
-| Ric-Li-C |   | | | | | | | | | | | | |   |
+| Ric-Li-C | ✅ | | | | | | | | | | | | |   |
 | qiaopengjun |   | | | | | | | | | | | | |   |
 | Oscar |   | | | | | | | | | | | | |   |
 | xiaodongQ |   | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char |   | | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
