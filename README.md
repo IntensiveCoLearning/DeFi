@@ -186,7 +186,7 @@ https://app.uniswap.org/swap
 | hython |   | | | | | | | | | | | | |   |
 | Muxin | ✅ | | | | | | | | | | | | |   |
 | Q |   | | | | | | | | | | | | |   |
-| wureny |   | | | | | | | | | | | | |   |
+| wureny | ✅ | | | | | | | | | | | | |   |
 | zedz |   | | | | | | | | | | | | |   |
 | 唐三水 |   | | | | | | | | | | | | |   |
 | Helios |   | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
