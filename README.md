@@ -206,7 +206,7 @@ https://app.uniswap.org/swap
 | Xue-L |   | | | | | | | | | | | | |   |
 | mark | ⭕️ |   | | | | | | | | | | | |   |
 | Sifotd |   | | | | | | | | | | | | |   |
-| Kristin |   | | | | | | | | | | | | |   |
+| Kristin | ✅ | | | | | | | | | | | | |   |
 | Lu |   | | | | | | | | | | | | |   |
 | Affe | ✅ | | | | | | | | | | | | |   |
 | Zemmer |   | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
