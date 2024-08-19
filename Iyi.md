@@ -60,9 +60,10 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.19
 
-笔记内容
+阅读稳定币文章：https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download
+了解到稳定币有：法币抵押的稳定币、商品抵押的稳定币、算法稳定不
 
 ### 2024.07.12
 

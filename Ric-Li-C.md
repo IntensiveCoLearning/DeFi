@@ -65,10 +65,17 @@ Yes 75%
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.19
 
-笔记内容
+Tren Finance:
 
-### 2024.07.12
+    申请到 Referral code；
+    水龙头 claim 各种代币；
+    Deposit collateral tokens into respective modules in exchange for trenUSD loans；
+    Stake TrenUSD into the stability pool to earn rewards.
+
+问题：虽然 Stake 了，但是似乎一直没有 Rewards.
+
+### 2024.08.20
 
 <!-- Content_END -->
