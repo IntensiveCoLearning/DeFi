@@ -8,11 +8,11 @@
 
 <!-- Content_START -->
 
-### 2024.07.14
+### 2024.08.14
 - 今天参加了Marcus和q老师的开营启动课，对DeFi有了初步了解
 - [第一节课笔记](https://blog.ithuo.net/posts/defi-1-decentralized-finance/)
 
-### 2024.07.19
+### 2024.08.19
 - 学习这篇[去中心化指数](https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-9-zhang-qu-zhong-xin-hua-zhi-shu)
 - 去中心化指数和传统ETF虽然都是追踪某个资产组合的投资工具,但它们之间存在一些重要区别:
 1. 发行和管理方式:
