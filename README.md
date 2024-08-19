@@ -217,7 +217,7 @@ https://app.uniswap.org/swap
 | wzl | ✅ |   | | | | | | | | | | | |   |
 | haomiao | ✅ |   | | | | | | | | | | | |   |
 | Nova_Notes | ✅ |   | | | | | | | | | | | |   |
-| gills | ✅ |✅| | | | | | | | | | | |   |
+| gills | ✅ |   | | | | | | | | | | | |   |
 | Neal | ✅ |   | | | | | | | | | | | |   |
 | wodeche | ⭕️ |   | | | | | | | | | | | |   |
 | WENDY123 | ✅ |   | | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ |   | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
