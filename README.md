@@ -221,7 +221,7 @@ https://app.uniswap.org/swap
 | Neal | ✅ | | | | | | | | | | | | |   |
 | wodeche |   | | | | | | | | | | | | |   |
 | WENDY123 | ✅ |   | | | | | | | | | | | |   |
-| Naomi | ⭕️ |   | | | | | | | | | | | |   |
+| Naomi | ✅ |   | | | | | | | | | | | |   |
 | Coooder |   | | | | | | | | | | | | |   |
 | alex_lee | ⭕️ |   | | | | | | | | | | | |   |
 | Young-Jeff | ⭕️ |   | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
