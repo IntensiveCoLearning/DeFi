@@ -225,13 +225,14 @@ https://app.uniswap.org/swap
 | Coooder |   | | | | | | | | | | | | |   |
 | alex_lee | ⭕️ |   | | | | | | | | | | | |   |
 | Young-Jeff | ⭕️ |   | | | | | | | | | | | |   |
-| Stella | ⭕️ |   | | | | | | | | | | | |   |
+| Stella | ✅ |   | | | | | | | | | | | |   |
 | Elemen |   | | | | | | | | | | | | |   |
 | leokkk | ⭕️ |   | | | | | | | | | | | |   |
 | Defi残酷共学-Mark |   | | | | | | | | | | | | |   |
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
