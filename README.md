@@ -192,7 +192,7 @@ https://app.uniswap.org/swap
 | Helios |   | | | | | | | | | | | | |   |
 | Ric-Li-C | ✅ | | | | | | | | | | | | |   |
 | qiaopengjun |   | | | | | | | | | | | | |   |
-| Oscar |   | | | | | | | | | | | | |   |
+| Oscar | ✅ | | | | | | | | | | | | |   |
 | xiaodongQ |   | | | | | | | | | | | | |   |
 | Iyi | ✅ | | | | | | | | | | | | |   |
 | Derick |   | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
