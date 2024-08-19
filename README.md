@@ -187,7 +187,7 @@ https://app.uniswap.org/swap
 | Muxin | ✅ | | | | | | | | | | | | |   |
 | Q |   | | | | | | | | | | | | |   |
 | wureny | ✅ | | | | | | | | | | | | |   |
-| zedz |   | | | | | | | | | | | | |   |
+| zedz | ✅ | | | | | | | | | | | | |   |
 | 唐三水 |   | | | | | | | | | | | | |   |
 | Helios |   | | | | | | | | | | | | |   |
 | Ric-Li-C | ✅ | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
