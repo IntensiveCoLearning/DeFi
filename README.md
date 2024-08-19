@@ -195,7 +195,7 @@ https://app.uniswap.org/swap
 | Oscar | ✅ | ✅ | | | | | | | | | | | |   |
 | xiaodongQ | ⭕️ |   | | | | | | | | | | | |   |
 | Iyi | ✅ |   | | | | | | | | | | | |   |
-| Derick | ⭕️ |   | | | | | | | | | | | |   |
+| Derick | ✅ |   | | | | | | | | | | | |   |
 | Ray | ✅ |   | | | | | | | | | | | |   |
 | hansen | ✅ |   | | | | | | | | | | | |   |
 | Ellen | ⭕️ |   | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ |   | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
