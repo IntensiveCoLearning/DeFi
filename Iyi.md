@@ -51,15 +51,10 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# Ric Li C
+# {你的名字}
 
-1. 自我介绍
-
-Ric Li C, 家庭主夫，天天在家带 2 个女儿，自学了 Solidity，NextJS，TypeScript，前一段时间在 BSC 链上，发行了个人的半慈善性质的 NFT 项目：MAS Awareness (http://mas-awareness.top)。
-
-2. 你认为你会完成本次残酷学习吗？
-
-Yes 75%
+1. Iyi[奕]
+2. 你认为你会完成本次残酷学习吗？会
 
 ## Notes
 
@@ -67,15 +62,9 @@ Yes 75%
 
 ### 2024.08.19
 
-Tren Finance:
+阅读稳定币文章：https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download
+了解到稳定币有：法币抵押的稳定币、商品抵押的稳定币、算法稳定不
 
-    申请到 Referral code；
-    水龙头 claim 各种代币；
-    Deposit collateral tokens into respective modules in exchange for trenUSD loans；
-    Stake TrenUSD into the stability pool to earn rewards.
-
-问题：虽然 Stake 了，但是似乎一直没有 Rewards.
-
-### 2024.08.20
+### 2024.07.12
 
 <!-- Content_END -->

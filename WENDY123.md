@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -51,30 +51,22 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# Ric Li C
+# {你的名字}
 
 1. 自我介绍
-
-Ric Li C, 家庭主夫，天天在家带 2 个女儿，自学了 Solidity，NextJS，TypeScript，前一段时间在 BSC 链上，发行了个人的半慈善性质的 NFT 项目：MAS Awareness (http://mas-awareness.top)。
-
-2. 你认为你会完成本次残酷学习吗？
-
-Yes 75%
-
+   WENDY123,文科生，没有学过编程。。
+3. 你认为你会完成本次残酷学习吗？
+会。。。。
 ## Notes
 
 <!-- Content_START -->
 
 ### 2024.08.19
 
-Tren Finance:
-
-    申请到 Referral code；
-    水龙头 claim 各种代币；
-    Deposit collateral tokens into respective modules in exchange for trenUSD loans；
-    Stake TrenUSD into the stability pool to earn rewards.
-
-问题：虽然 Stake 了，但是似乎一直没有 Rewards.
+笔记内容：稳定币的优势
+稳定性：与传统加密货币相比，稳定币为用户提供了更稳定的投资选择，传统加密货币以其高波动性而闻名。 ...
+快速交易：稳定币可用于跨境快速和低成本交易。 ...
+隐私：稳定币为用户提供高度的隐私，因为交易通常在去中心化平台上进行，不需要用户披露他们的个人信息
 
 ### 2024.08.20
 

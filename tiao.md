@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone:
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -51,31 +51,18 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# Ric Li C
+# {跳}
 
-1. 自我介绍
-
-Ric Li C, 家庭主夫，天天在家带 2 个女儿，自学了 Solidity，NextJS，TypeScript，前一段时间在 BSC 链上，发行了个人的半慈善性质的 NFT 项目：MAS Awareness (http://mas-awareness.top)。
-
-2. 你认为你会完成本次残酷学习吗？
-
-Yes 75%
-
+1. 人
+2. 会
 ## Notes
 
 <!-- Content_START -->
 
-### 2024.08.19
+### 2024.07.11
 
-Tren Finance:
+笔记内容
 
-    申请到 Referral code；
-    水龙头 claim 各种代币；
-    Deposit collateral tokens into respective modules in exchange for trenUSD loans；
-    Stake TrenUSD into the stability pool to earn rewards.
-
-问题：虽然 Stake 了，但是似乎一直没有 Rewards.
-
-### 2024.08.20
+### 2024.07.12
 
 <!-- Content_END -->
