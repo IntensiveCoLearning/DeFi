@@ -214,7 +214,7 @@ https://app.uniswap.org/swap
 | YuKirasawa |   | | | | | | | | | | | | |   |
 | evilgenius | ✅ | | | | | | | | | | | | |   |
 | breeze |   | | | | | | | | | | | | |   |
-| wzl |   | | | | | | | | | | | | |   |
+| wzl | ✅ | | | | | | | | | | | | |   |
 | haomiao | ✅ | | | | | | | | | | | | |   |
 | Nova_Notes |   | | | | | | | | | | | | |   |
 | gills | ✅ | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
