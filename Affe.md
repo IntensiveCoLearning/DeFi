@@ -1,52 +1,6 @@
 ---
 timezone: Asia/Shanghai
 ---
-
-> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
-> 时区请参考以下列表，请移除 # 以后的内容
-
-timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
-
-timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
-
-timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
-
-timezone: America/Denver # 山地标准时间 (UTC-7)
-
-timezone: America/Chicago # 中部标准时间 (UTC-6)
-
-timezone: America/New_York # 东部标准时间 (UTC-5)
-
-timezone: America/Halifax # 大西洋标准时间 (UTC-4)
-
-timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
-
-timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
-
-timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
-
-timezone: Europe/London # 格林威治标准时间 (UTC+0)
-
-timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
-
-timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
-
-timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
-
-timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
-
-timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
-
-timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
-
-timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
-
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
-
-timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
-
-timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
-
 timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
@@ -62,10 +16,32 @@ GCC 的运营小组成员 & Co-Host， Apache RocketMQ Committer，喜欢参与�
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.19
 
-笔记内容
+- 今天第一个部分学习稳定币相关的知识：
+    - 之前知道算法稳定币的作用，但是不清楚稳定币的具体实现以及潜在的风险，今天主要是想研究一下稳定币的本质究竟是什么，在传统的金融体系里相当于什么产品？（或者是衍生品？）
+    - How to Defi 的中文翻译非常难读，如果能找到英文原文就好了。
+    - 有锚定物的稳定币（比如美元 / 黄金 等等）“听起来”要更安全一些。
+    - USDT / USDC / BUSD / PAX 又被称为中心化稳定币，锚定物是法币。
+    - DAI 是通过 ETH 或者其他第三方资产抵押产生的。
+    - 大部分算法稳定币都以失败告终了（所以算法稳定币并不稳定）
+    - 之后有时间了再来看具体的算法，不过也只是作为了解
+    - 昨天刚读了伯南克关于美联储的四讲，还有货币金融学的第一章，我看到 “算法稳定币实际上是DeFi对取代“中央银行”的一种尝试，而算法稳定资产是DeFi模仿黄金标准和创造可靠的数字抵押品的方式”，有一点疑惑，具体如下：
+    - 我认为“取代中央银行”在中短期内都是不可实现的目标。央行实际上就是为了有中心化的需求才出现的。在美联储出现之前，政府几乎没有对宏观经济调控的调整工具，美联储之前的两次建立央行的尝试都因美国人对“政府权力过大”对反对而失败了。
+    - 在这样的背景下建立起来的央行，本就是作为一种“中心化”的精英组织出现的。所以央行不仅没有必要中心化，反而是为了解决“过于去中心化“的金融体系的产物。不过即便如此，算法稳定币本身的思想还是非常有趣。 
+- 去中心化借贷协议
+    - 读完了：https://banklessdao.substack.com/p/the-lending-edition-defi-download
+    - 没懂一个词：超额抵押贷款：就是贷款数字超过了抵押物应有的价值（可以理解为这里是有杠杆）
+    - 没懂一个词儿：什么是可变利率
+    - 和昨天阅读的联动：“贷款”是一项资产，资产可以被打包为债券出售。08年的时候似乎有很多中间商将房贷 + 保险 + 各种奇怪的资产打包成债券然后卖给客户，其中有些贷款属于不良贷款。当这些贷款坏账的时候，客户的债券就会贬值从而受到损失。去中心化借贷是如何衡量贷款质量的呢？作为散户（我不知道可不可以叫散户LP）如何衡量风险呢？
+    - 利基市场：（Niche），一些小市场和发育不完整的市场？
+    - “为了确保无信任贷款能够发生，借款人将需要存入价值大于借款金额的资产（抵押品）。这被称为过度抵押，是DeFi借贷协议偿付能力的基础。借款人可以借多少钱，取决于各种DeFi借贷协议上每种资产的抵押率。”
+    - DAI 看起来是一个 APY 很高的抵押资产。Compound上可以达到10%
+- DEX
+    - AMM：自动化做市商；今天看不动了嘛，明天再看。
+    - 需要搞清楚这里面的各种套利机会具体是怎么工作的。
 
-### 2024.07.12
+
+
 
 <!-- Content_END -->
