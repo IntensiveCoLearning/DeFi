@@ -196,7 +196,7 @@ https://app.uniswap.org/swap
 | xiaodongQ |   | | | | | | | | | | | | |   |
 | Iyi | ✅ | | | | | | | | | | | | |   |
 | Derick |   | | | | | | | | | | | | |   |
-| Ray |   | | | | | | | | | | | | |   |
+| Ray | ✅ | | | | | | | | | | | | |   |
 | hansen |   | | | | | | | | | | | | |   |
 | Ellen |   | | | | | | | | | | | | |   |
 | Harris |   | | | | | | | | | | | | |   |
@@ -232,6 +232,7 @@ https://app.uniswap.org/swap
 | John |   | | | | | | | | | | | | |   |
 | char |   | | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
