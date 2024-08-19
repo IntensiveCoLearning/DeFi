@@ -1,9 +1,7 @@
 ---
-timezone: Pacific/Auckland
+timezone: Asia/Shanghai
 ---
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
 
----
 
 # Hansen
 
@@ -14,10 +12,12 @@ timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.19
 
-笔记内容
+我的时区搞错了， 本来应该没过时间的  
+- 关注了  Bankless DAO  的 Defi download
+- 注册了  testnet.tren.finance   并领了相关的coin
+- 了解了 stable coin  的作用，意义 
 
-### 2024.07.12
 
 <!-- Content_END -->
