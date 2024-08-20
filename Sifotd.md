@@ -51,7 +51,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {Sifotd}
+# Sifotd
 
 1. 自我介绍
 
