@@ -212,7 +212,7 @@ https://app.uniswap.org/swap
 | Zemmer | ⭕️ | ✅ | | | | | | | | | | | |   |
 | wayhome | ✅ |   | | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ |   | | | | | | | | | | | |   |
-| evilgenius | ✅ |   | | | | | | | | | | | |   |
+| evilgenius | ✅ | ✅ | | | | | | | | | | | |   |
 | breeze | ⭕️ |   | | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | | | | | | | | | | | |   |
 | haomiao | ✅ |   | | | | | | | | | | | |   |
@@ -235,7 +235,7 @@ https://app.uniswap.org/swap
 | Zemmer | ⭕️ | ✅ | | | | | | | | | | | |   |
 | wayhome | ✅ |   | | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ |   | | | | | | | | | | | |   |
-| evilgenius | ✅ |   | | | | | | | | | | | |   |
+| evilgenius | ✅ | ✅ | | | | | | | | | | | |   |
 | breeze | ⭕️ |   | | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | | | | | | | | | | | |   |
 | haomiao | ✅ |   | | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
