@@ -48,6 +48,8 @@ timezone: Asia/Shanghai
 - DAI（可简单理解成以太坊上的美元）
   DAI 是 MakerDAO 协议提供的第一个去中心化的基础稳定货币，可简单理解成以太坊上的美元
 
+  DAI 系统运行逻辑：用户通过抵押资产创建 Vault 生成 DAI，涉及存入、借出、偿还和赎回四个操作，未偿还时会涉及利率调整和清算。
+  ![DAI 原理](https://img.foresightnews.pro/202303/1261514c11f32db96f7825055e2a2f78.png)
 ### 2024.07.12
 
 <!-- Content_END -->

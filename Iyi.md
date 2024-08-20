@@ -65,6 +65,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 阅读稳定币文章：https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download
 了解到稳定币有：法币抵押的稳定币、商品抵押的稳定币、算法稳定不
 
-### 2024.07.12
+### 2024.08.20
+
+1. 阅读文章：https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan
+2. 学习之前的 DeFi 公学视频 https://www.youtube.com/watch?v=7ATOeYxz3N0 （一定要学会深入思考， 钱是怎么来的，怎么没得）
 
 <!-- Content_END -->
