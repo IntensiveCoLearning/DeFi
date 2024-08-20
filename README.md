@@ -199,7 +199,7 @@ https://app.uniswap.org/swap
 | Ray | ✅ |   | | | | | | | | | | | |   |
 | hansen | ✅ |   | | | | | | | | | | | |   |
 | Ellen | ⭕️ |   | | | | | | | | | | | |   |
-| Harris | ⭕️ |   | | | | | | | | | | | |   |
+| Harris | ✅ |   | | | | | | | | | | | |   |
 | dethan3 | ⭕️ |   | | | | | | | | | | | |   |
 | tiao | ⭕️ |   | | | | | | | | | | | |   |
 | yuxing | ⭕️ |   | | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
