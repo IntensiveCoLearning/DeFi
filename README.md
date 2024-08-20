@@ -197,7 +197,7 @@ https://app.uniswap.org/swap
 | Iyi | ✅ | ✅ | | | | | | | | | | | |   |
 | Derick | ✅ |   | | | | | | | | | | | |   |
 | Ray | ✅ | ✅ | | | | | | | | | | | |   |
-| hansen | ✅ |   | | | | | | | | | | | |   |
+| hansen | ✅ | ✅ | | | | | | | | | | | |   |
 | Ellen | ⭕️ |   | | | | | | | | | | | |   |
 | Harris | ✅ |   | | | | | | | | | | | |   |
 | dethan3 | ⭕️ |   | | | | | | | | | | | |   |
@@ -215,8 +215,8 @@ https://app.uniswap.org/swap
 | evilgenius | ✅ | ✅ | | | | | | | | | | | |   |
 | breeze | ⭕️ |   | | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | | | | | | | | | | | |   |
-| haomiao | ✅ |   | | | | | | | | | | | |   |
-| Nova_Notes | ✅ |   | | | | | | | | | | | |   |
+| haomiao | ✅ | ✅ | | | | | | | | | | | |   |
+| Nova_Notes | ✅ | ✅ | | | | | | | | | | | |   |
 | gills | ✅ |   | | | | | | | | | | | |   |
 | Neal | ✅ |   | | | | | | | | | | | |   |
 | wodeche | ⭕️ |   | | | | | | | | | | | |   |
@@ -238,8 +238,8 @@ https://app.uniswap.org/swap
 | evilgenius | ✅ | ✅ | | | | | | | | | | | |   |
 | breeze | ⭕️ |   | | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | | | | | | | | | | | |   |
-| haomiao | ✅ |   | | | | | | | | | | | |   |
-| Nova_Notes | ✅ |   | | | | | | | | | | | |   |
+| haomiao | ✅ | ✅ | | | | | | | | | | | |   |
+| Nova_Notes | ✅ | ✅ | | | | | | | | | | | |   |
 | gills | ✅ |   | | | | | | | | | | | |   |
 | Neal | ✅ |   | | | | | | | | | | | |   |
 | wodeche | ⭕️ |   | | | | | | | | | | | |   |
@@ -255,6 +255,10 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | | | | | | | | | | | |   |
 | char | ⭕️ | ⭕️ |   | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
+
+
+
 
 
 
