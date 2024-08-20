@@ -63,7 +63,11 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.08.19
 
-笔记内容
+看了 USDT 的官网，发现tron 的发行数量还是超过了ETH 上发行的数量，看来孙哥当时的USDT 免手续费威力真的很猛，同时也看了usdc 发行量，就没有tron 的发行，大多数都在ETH网络上，而sol 上 usdt+usdc 的发行量也只有3.2b 
+
+今天把测试网的token 进行了claim
+
+https://sepolia.etherscan.io/tx/0xb829df95d25530e91e0c57dce33dd42c9368a75b92b862f1e7d597b81ecbf378
 
 ### 2024.07.12
 
