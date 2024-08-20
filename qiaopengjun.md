@@ -129,7 +129,33 @@ We have different classes of the off-chained collateralized stablecoins which ar
 
 ### 2024.08.20
 
-笔记内容
+中心化稳定币
+Tether (USDT)
+去中心化稳定币
+DAI
+算法稳定币利用算法来控制稳定币的市场结构和经济基础。
+对各种去中心化的算法稳定币有两种分类方法：
+
+a) 没有抵押品（ESD、AMPL和BAC）
+
+b) 部分/全部由他们自己的原生代币抵押（FRAX、sUSD和UST）
+
+算法稳定币可以进一步细分为不同的类别--主要的子类别是：rebase（弹性）和seigniorage（铸币税）模式。
+弹性模式（rebase）
+弹性模式通过改变稳定币的全部供应量来控制价格。根据稳定币的价格是高于还是低于预定的挂钩价格，协议将在一个固定的时期内自动增加或减少每个持有人钱包中代币的供应量。
+每隔24小时，Ampleforth（AMPL）的全部流通供应量都会按比例增加或减少，以确保价格保持在1美元。
+铸币税模式（Seigniorage Model）
+铸币税模式通过引入一个动态影响市场的奖励系统来控制价格。如果价格高于挂钩，新的代币就会被铸造出来，并分配给提供流动性或有代币抵押的参与者。
+
+如果价格低于挂钩，代币将停止铸造，并引入机制以减少供应。用户可以购买燃烧相关代币的优惠券，将其从供应中销毁。这些优惠券在未来可以被兑换成更多的代币，但只有当价格回到或超过预定的挂钩时才可以。
+Empty Set Dollar
+Basis Cash是一种双代币征税模式。
+Frax Finance
+算法稳定币实际上是DeFi对取代“中央银行”的一种尝试，而算法稳定资产是DeFi模仿黄金标准和创造可靠的数字抵押品的方式。
+
+#### 学习参考
+
+- <https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan>
 
 ### 2024.08.21
 
