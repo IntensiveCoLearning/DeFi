@@ -208,7 +208,7 @@ https://app.uniswap.org/swap
 | Sifotd | ⭕️ |   | | | | | | | | | | | |   |
 | Kristin | ✅ |   | | | | | | | | | | | |   |
 | Lu | ⭕️ |   | | | | | | | | | | | |   |
-| Affe | ✅ |   | | | | | | | | | | | |   |
+| Affe | ✅ | ✅ | | | | | | | | | | | |   |
 | Zemmer | ⭕️ | ✅ | | | | | | | | | | | |   |
 | wayhome | ✅ |   | | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ |   | | | | | | | | | | | |   |
@@ -231,7 +231,7 @@ https://app.uniswap.org/swap
 | Defi残酷共学-Mark | ⭕️ |   | | | | | | | | | | | |   |
 | John | ⭕️ | ✅ | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
-| Affe | ✅ |   | | | | | | | | | | | |   |
+| Affe | ✅ | ✅ | | | | | | | | | | | |   |
 | Zemmer | ⭕️ | ✅ | | | | | | | | | | | |   |
 | wayhome | ✅ |   | | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ |   | | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | | | | | | | | | | | |   |
 | char | ⭕️ |   | | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
