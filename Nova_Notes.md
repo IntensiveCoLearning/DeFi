@@ -37,4 +37,11 @@ timezone: Asia/Shanghai
 测试网操作：1.8 wstETH作为抵押品，铸造并借出4027.8 TrenUSD稳定币
 Txn: 0x100535692c3e25f069252adfa5889d3b33e1245173ca7feec00985a122219b4c
 
+### 2024.08.21
+用BulbaSwap在Morph Holesky测试网换了一些ETH为USDT，Txn 0xb4a5fd369c8c709c21d26b79698d2052a13780e45ce0f19257fda41daf6de85e
+并为ETH/USDT交易对和ETH/WBTC交易对注入了流动性：
+Txn 0xc047585fe418c5ad5998bea19f39ff1b8de8a74c62d5b797a3cbd17ed2f7fdbf
+Txn 0xb1e4a73e429b162b5fe280dd47f87c33e7fcfab059ebc483040b6f2615af127a
+
+
 <!-- Content_END -->
