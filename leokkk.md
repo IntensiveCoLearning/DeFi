@@ -68,7 +68,7 @@ leok
 ### 2024.07.12
 
 <!-- Content_END -->
-### 2024.08。19
+### 2024.08.19
 主要看How to DEFI（Beginne&Advanced）两本书
 
 一、了解传统金融弊端
