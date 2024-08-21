@@ -213,7 +213,7 @@ https://app.uniswap.org/swap
 | wayhome | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | evilgenius | ✅ | ✅ | ✅ | | | | | | | | | | |   |
-| breeze | ⭕️ | ✅ |   | | | | | | | | | | |   |
+| breeze | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | haomiao | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Nova_Notes | ✅ | ✅ | ✅ | | | | | | | | | | |   |
@@ -236,7 +236,7 @@ https://app.uniswap.org/swap
 | wayhome | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | YuKirasawa | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | evilgenius | ✅ | ✅ | ✅ | | | | | | | | | | |   |
-| breeze | ⭕️ | ✅ |   | | | | | | | | | | |   |
+| breeze | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | haomiao | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Nova_Notes | ✅ | ✅ | ✅ | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | char | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
