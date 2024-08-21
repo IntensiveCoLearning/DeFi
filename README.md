@@ -184,7 +184,7 @@ https://app.uniswap.org/swap
 | Punkcan | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Anchor | ✅ | ⭕️ |   | | | | | | | | | | |   |
 | hython | ⭕️ | ✅ |   | | | | | | | | | | |   |
-| Muxin | ✅ | ✅ |   | | | | | | | | | | |   |
+| Muxin | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Q | ✅ | ⭕️ | ✅ | | | | | | | | | | |   |
 | wureny | ✅ | ✅ |   | | | | | | | | | | |   |
 | zedz | ✅ | ✅ |   | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | char | ⭕️ | ⭕️ |   | | | | | | | | | | |   |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
