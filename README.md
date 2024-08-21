@@ -216,7 +216,7 @@ https://app.uniswap.org/swap
 | breeze | ⭕️ | ✅ |   | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | haomiao | ✅ | ✅ |   | | | | | | | | | | |   |
-| Nova_Notes | ✅ | ✅ |   | | | | | | | | | | |   |
+| Nova_Notes | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | gills | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Neal | ✅ | ✅ |   | | | | | | | | | | |   |
 | wodeche | ⭕️ | ⭕️ |   | | | | | | | | | | |   |
@@ -239,7 +239,7 @@ https://app.uniswap.org/swap
 | breeze | ⭕️ | ✅ |   | | | | | | | | | | |   |
 | wzl | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | haomiao | ✅ | ✅ |   | | | | | | | | | | |   |
-| Nova_Notes | ✅ | ✅ |   | | | | | | | | | | |   |
+| Nova_Notes | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | gills | ✅ | ✅ | ✅ | | | | | | | | | | |   |
 | Neal | ✅ | ✅ |   | | | | | | | | | | |   |
 | wodeche | ⭕️ | ⭕️ |   | | | | | | | | | | |   |
@@ -255,6 +255,7 @@ https://app.uniswap.org/swap
 | John | ⭕️ | ✅ | ✅ | | | | | | | | | | |   |
 | char | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
