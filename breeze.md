@@ -61,10 +61,21 @@ of course
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.20
+study the https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download
 
-笔记内容
+1. Why the World Needs Stablecoins:
 
-### 2024.07.12
+- Frictionless Cryptocurrency Trading: Stablecoins eliminate the need to convert cryptocurrency to fiat currency when trading, reducing reliance on traditional banking systems and their associated fees and delays.
+- Faster and Cheaper International Remittances: Compared to traditional wire transfers, stablecoins offer significantly lower fees and near-instantaneous transaction speeds, making them ideal for international payments and remittances.
+- Enhanced Security and Transparency: Stablecoins leverage blockchain technology, providing greater security against fraud and arbitrary seizures compared to traditional banking systems. Transactions are transparent, cryptographically secured, and require personal accountability, minimizing risks associated with intermediaries.
+
+
+todo:
+- Why did the Luna algorithmic stablecoin collapse?
+
+
+
+### 2024.08.21
 
 <!-- Content_END -->

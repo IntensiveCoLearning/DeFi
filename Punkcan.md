@@ -182,6 +182,24 @@ LTV=(借款金额抵押品价值)×100%\text{LTV} = \left(\frac{\text{借款金�
 
 ### 2024.08.21
 
+今天沉溺在安装VM跟设置Aptos的开发环境
+Linux开发环境是最没有版本问题的，我使用的是Kali，他的Term还特别智能，推荐使用
+使用  curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
+不过这个要用VPN，因为很多code都是从Github下
+不要使用root，要使用自己常用的帐号，因为他是装在帐号下的.local/bin中
+安装好之后要aptos init
+接着选哪个测试链，我选dev，因为测试币好拿
+然后输入私钥
+为了方便测试，他可以设置多个profile
+aptos init --profile XXX
+
+aptos account fund-with-faucet 这个可以索取测试币
+
+config也可以设定多个，不过这个我就没有特别研究了
+
+接下来是安装Aptos-core，采用git方式，然后执行安装的sh
+
+完成开发环境了~
 
 ### 2024.08.22
 

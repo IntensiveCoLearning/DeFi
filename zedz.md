@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 
 ### 2024.08.20
 
-笔记内容
+[笔记内容](https://gigantic-bandicoot-5c1.notion.site/Day-2024-8-20-df4de23a77a046bd83c5da0a46b201ae?pvs=4)
 
 ### 2024.08.21
 
