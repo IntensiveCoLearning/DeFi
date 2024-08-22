@@ -102,13 +102,21 @@ Network state的定义，略显冗长但包含了所有的基本子元素
 
 ### 2024.08.21
 
-#### Chapter 5 （截至5.2.6）
+#### Chapter 5
 
 其余的大部分总结都在[微信公众号文章里](https://mp.weixin.qq.com/s/Vrtb1EWt23Wx3IRFVaI0qA)。我的Take-Away：
 
 - 日本无论从各个方面来说（历史，文化，以及些许的排他性？）的确是目前可能是最好的nation state样本，不过目前因为一系列的原因，日本也在开始接受外来移民（尽管有诸多的隐性限制）
 - 人们对于state和nation之间的关系总是很纠结的。我认为这也可能是DAO在其长期愿景中需要去面对和解决的一个重要问题——我们是state还是nation？还是一个中间态？或者只是一个中介？
 - Nation state会有很多分支
+
+### 2024.08.22
+
+#### Chapter 5（截至5.2.14）
+- Nation state会有很多分支，但无论如何，the idealized nation state is one where the members of a given group — the nation — are physically centralized within a single bounded set on the surface of the globe.
+- 不同的政治学家在定义state的时候有这对于自己领域非常强的倾向性，因此state在现实中的定义可能还是需要类似于UN这样的权威机构作为媒介，拥有解释权。并且他们在自己所属的state践行自己的政治理论时，也会体现这样的倾向性。
+- 一个nation state的扩大，需要人口，版图，经济，和意识形态四方面的增长，而且可能是需要同时增长的，并且各自也有互补和促进彼此的作用。
+- 一个nation state的巩固则需要技术方面的配合和演变。
 
 ### 2024.09.20
 

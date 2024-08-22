@@ -91,4 +91,12 @@ DSR 是一个系统全局参数，决定了 Dai 持有者可基于其存款获�
 
 Ref: https://makerdao.com/zh-CN/whitepaper/
 
+### 2024.08.22
+
+关于 DAI 的一些问题的资料：
+
+从用户的角度，为什么要付出超额抵押和 Stability Fee 产生 DAI，而不是直接购买：https://www.reddit.com/r/MakerDAO/comments/j67r6c/why_would_i_ever_want_to_mint_new_dai/，我的理解：少量的 DAI 需求确实可以通过直接购买实现，但对于大量的 DAI 需求，直接购买会推动市场上的 DAI 价格上涨，从而使用户有抵押产生 DAI 套利的动力。此外，如果看多 ETH 价格而临时需要使用 DAI，通过抵押可以获得 ETH 上涨的收益。相对的，如果市场普遍看空抵押资产，确实会出现用户不愿抵押的情况。但现在使用稳定币的抵押不会出现这个问题。
+
+Stability Fee 和 DSR 的关系：https://forum.makerdao.com/t/why-sf-dsr-request-for-discussion/1086、https://forum.makerdao.com/t/is-anything-wrong-with-the-dsr-and-stability-rate-calculations-as-planned-for-mcd/39/2
+
 <!-- Content_END -->
