@@ -21,10 +21,11 @@ timezone: Asia/Bangkok
 去中心化的稳定币 & 稳定资产
 =============
 1. 稳定币总市值（total market capitalization）上升的原因：稳定（non-volatile assets）。
-2. 中心化稳定币（Centralized Stablecoin）USDT VS 去中心化稳定币（Decentralized Stablecoin）DAI。  
-USDT是2015年在Bitfinex交易上市。它具有先发优势（first-mover advantage），于2021年占40b的总市值（market capitalization），这约是66%的市场份额（market share）。
-Tether maintains its $1 peg (挂钩） through a 1:1 collateral system (1:1的抵押品系统).   
-Tether的缺点也来自于它是中心化的、不透明的（non-transparent issuance process）。2019年，它们修改条款，把loans（贷款）to affiliate companies as part of its collateral reserve（抵押品存储），人们怀疑它并不具备所说的有那么多的现金储备（reserves）。   
+2. 中心化稳定币（Centralized Stablecoin）USDT VS 去中心化稳定币（Decentralized Stablecoin）DAI。     
+   USDT是2015年在Bitfinex交易上市。它具有先发优势（first-mover advantage），于2021年占40b的总市值（market capitalization），这约是66%的市场份额（market share）。   
+   Tether maintains its $1 peg (挂钩） through a 1:1 collateral system (1:1的抵押品系统).       
+   Tether的缺点也来自于它是中心化的、不透明的（non-transparent issuance process）。2019年，它们修改条款，把loans（贷款）to affiliate companies as part of its 
+   collateral reserve（抵押品存储），人们怀疑它并不具备所说的有那么多的现金储备（reserves）。       
 *   好困惑，为什么loan比起现金更没有价值？因为钱不一定追得回来，还是说因为贷款可能是虚高？
 
   
