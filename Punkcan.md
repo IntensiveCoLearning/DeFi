@@ -1,5 +1,5 @@
 ---
-timezone: Pacific/Auckland
+timezone: Asia/Shanghai
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -200,6 +200,7 @@ config也可以设定多个，不过这个我就没有特别研究了
 接下来是安装Aptos-core，采用git方式，然后执行安装的sh
 
 完成开发环境了~
+
 
 ### 2024.08.22
 
