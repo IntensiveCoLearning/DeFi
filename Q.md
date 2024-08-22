@@ -63,8 +63,22 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.08.19
 
-笔记内容
+看了 USDT 的官网，发现tron 的发行数量还是超过了ETH 上发行的数量，看来孙哥当时的USDT 免手续费威力真的很猛，同时也看了usdc 发行量，就没有tron 的发行，大多数都在ETH网络上，而sol 上 usdt+usdc 的发行量也只有3.2b 
 
-### 2024.07.12
+今天把测试网的token 进行了claim
+
+https://sepolia.etherscan.io/tx/0xb829df95d25530e91e0c57dce33dd42c9368a75b92b862f1e7d597b81ecbf378
+
+### 2024.08.21
+今天学习了 USDC 母公司发表的文章
+代币资本充足框架（Token Capital Adequacy Framework, TCAF），这是一种为稳定价值代币（包括稳定币、存款代币和代币化现金）设计的基于风险的资本框架
+	1. 鼓励在产品设计、开发周期及日常运营中持续改进风险管理实践；
+	2. 通过风险评估过程中的决策和输入，引入对风险责任人的问责制；
+	3. 为“持续经营”提供足够的损失吸收能力，以确保业务的持续运作；
+	4. 保护监管机构和公共部门免受溢出风险的影响，同时增强对受监管的稳定价值代币的消费者保护和信任。
+
+今天把测试网的token 都进行了claim
+
+https://sepolia.etherscan.io/tx/0x688379c9a45b0af05345c1ae678d97a9af4182d40a8c1d58fcfb0d9d664461f4
 
 <!-- Content_END -->

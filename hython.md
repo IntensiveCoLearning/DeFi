@@ -64,10 +64,15 @@ hython, base tokyo, web3自由职业者，量化交易员。熟悉Dapps开发，
 
 <!-- Content_START -->
 
-### 2024.08.11
+### 2024.08.19
+skip
 
+### 2024.08.20
 笔记内容
-
-### 2024.08.12
+学习时间：50 分钟
+学习内容：
+  - DeFi 历史（直播回放）
+  - Aptos Move 解锁 Uniswap v2（直播）
+  - 对 Aptos 级 Move 的初步了解
 
 <!-- Content_END -->

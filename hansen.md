@@ -1,9 +1,7 @@
 ---
-timezone: Pacific/Auckland
+timezone: Asia/Shanghai
 ---
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
 
----
 
 # Hansen
 
@@ -13,11 +11,42 @@ timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
 ## Notes
 
 <!-- Content_START -->
+### 2024.08.21
 
-### 2024.07.11
+阅读：去中心化的稳定币和稳定资产2
 
-笔记内容
+- 算法稳定币： rebase 弹性   和  seigniorage  铸币税
+  - 弹性模式：通过改变稳定币的全部供应量来控制价格
+  - 铸币税模式通过引入一个动态影响市场的奖励系统来控制价格，包括：ESD ，Basis Cash，Frax
+  - 虽然FRAX在很大程度上是成功的，但人们可以说它不是真正的去中心化。这是因为它仍然部分由USDC抵押
+  - FEI，RAI，Float
+  - ESD ，DSD ，GYR ，UST
 
-### 2024.07.12
+阅读：去中心化衍生品
+
+- 中心化的衍生品：去中心化的永久合约，去中心化的期权，以及合成资产
+- 头寸：在期货里，交易中做的 品种，方向，数量
+  - 多头，空头； 我现在持有原油期货 50手 多单
+- 永续合约：
+
+### 2024.08.20
+
+阅读：去中心化的稳定币和稳定资产
+
+- 稳定币是不易“挥发”的资产，能够实现价值的全球转移。
+- 常见的稳定币：USDT ,Dai ，USDC 
+- Tether通过1:1的抵押品系统维持其1美元的挂钩。通过持有现金作为储备抵押品，然后发行等量的USDT
+- Maker是DeFi在去中心化"中央银行"的首次尝试。作为一个借贷协议. 
+- 其抵押率为150%，需要借款人再拿出1.5美元来铸造1个DAI
+
+USDT 中心化稳定币有信任问题， Dai去中心化稳定币 资本效率低下。
+
+### 2024.08.19
+
+我的时区搞错了， 本来应该没过时间的  
+- 关注了  Bankless DAO  的 Defi download
+- 注册了  testnet.tren.finance   并领了相关的coin
+- 了解了 stable coin  的作用，意义 
+
 
 <!-- Content_END -->

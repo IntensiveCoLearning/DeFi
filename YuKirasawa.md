@@ -65,10 +65,38 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 <!-- Content_START -->
 
-### 2024.07.11
+### 2024.08.20
 
-笔记内容
+大体了解了各类稳定币。
 
-### 2024.07.12
+1. 法币抵押稳定币：通过法定货币资产储备保证与法定货币价格的锚定。现在常用的 USDT、USDC 都属于此类。其风险主要在于资产储备的真实性。
+2. 加密货币抵押稳定币：通过加密货币资产储备保证其价格的稳定。由于抵押资产具有价格波动，需要超额 (比如 150%) 的资产抵押。链上资产抵押的透明度较高，但即使存在超额抵押，仍有抵押物价格剧烈波动产生黑天鹅事件的可能。
+3. 算法稳定币：通过算法调整供应量，从而试图稳定其价格。不需要抵押资产，从而缺少“硬通货”提供的信心，容易从抛售行为演变为崩盘 (死亡螺旋)。
+
+### 2024.08.21
+
+MakerDAO 的稳定币 DAI 是一种使用多种链上资产抵押的稳定币。Maker Vault 是存储抵押资产的智能合约，用户可以通过将资产存入 Maker Vault 来生成 DAI. 存入抵押品获得 DAI 的过程可以看成通过抵押向 Maker Vault 借出 DAI. 还回 DAI 时需要支付稳定费 (Stability Fee)
+
+Maker Vault 接受的担保品资产由 MKR 持有者投票纳入，并确定其清算率。清算率决定了抵押资产会在多少的超额抵押率下被清算。
+
+Maker Vault 的拍卖机制：在进行清算时，Maker 协议会使用基于市场的拍卖机制将担保物卖出，这被称为担保品拍卖 (Collateral Auction)。拍卖得到的 DAI 会偿还从 Maker Vault 的借款。
+
+Dai Savings Rate (DSR) 允许 Dai 用户获得储蓄收益 ，只需用户将他们的 DAI 锁入 Maker 协议的 DSR 合约即可，该合约可以通过 Oasis 的存款平台或其他接入 Maker 协议的平台访问。DSR 合约不对用户设置最低存款要求，用户可以随时从 DSR 合约中取出部分或全部 Dai。
+
+DSR 是一个系统全局参数，决定了 Dai 持有者可基于其存款获得的收益。当 Dai 的市场价格由于市场变化而偏离目标价格时，MKR 持有者可以通过投票更改 DSR 来维护价格的稳定性。
+
+当 DAI 低于挂钩价时：系统会提高稳定费，激励用户偿还债务、取回抵押品，或者提高 DAI 储蓄率，增加 DAI 的需求。
+
+当 DAI 高于挂钩价时：系统会降低稳定费，激励用户抵押资产借出 DAI，或是降低 DAI 储蓄率，降低 DAI 的需求。
+
+Ref: https://makerdao.com/zh-CN/whitepaper/
+
+### 2024.08.22
+
+关于 DAI 的一些问题的资料：
+
+从用户的角度，为什么要付出超额抵押和 Stability Fee 产生 DAI，而不是直接购买：https://www.reddit.com/r/MakerDAO/comments/j67r6c/why_would_i_ever_want_to_mint_new_dai/，我的理解：少量的 DAI 需求确实可以通过直接购买实现，但对于大量的 DAI 需求，直接购买会推动市场上的 DAI 价格上涨，从而使用户有抵押产生 DAI 套利的动力。此外，如果看多 ETH 价格而临时需要使用 DAI，通过抵押可以获得 ETH 上涨的收益。相对的，如果市场普遍看空抵押资产，确实会出现用户不愿抵押的情况。但现在使用稳定币的抵押不会出现这个问题。
+
+Stability Fee 和 DSR 的关系：https://forum.makerdao.com/t/why-sf-dsr-request-for-discussion/1086、https://forum.makerdao.com/t/is-anything-wrong-with-the-dsr-and-stability-rate-calculations-as-planned-for-mcd/39/2
 
 <!-- Content_END -->
