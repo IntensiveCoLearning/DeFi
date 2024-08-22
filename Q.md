@@ -81,4 +81,18 @@ https://sepolia.etherscan.io/tx/0xb829df95d25530e91e0c57dce33dd42c9368a75b92b862
 
 https://sepolia.etherscan.io/tx/0x688379c9a45b0af05345c1ae678d97a9af4182d40a8c1d58fcfb0d9d664461f4
 
+
+### 2024.08.22
+
+今天继续学习了 USDC 母公司发表的文章
+他们提出了资本框架我们提出的资本框架模型强调以下五个目标：
+1. 提供“持续经营”和“终止经营”情况下的损失吸收能力。
+2. 补充对操作风险的监管干预措施。
+3. 保持简单的同时，尽可能地反映现实中的复杂尾部风险。
+4. 提供跨机构和司法管辖区的可比性。
+5. 提供激励措施，以最小化和缓解风险事件带来的负外部性。
+
+今天把测试网的token 进行了 稳定币 mint
+https://sepolia.etherscan.io/tx/0x5e067a0bb5d66e69d187da1917f6d386c6bf9f86c01892c38139c1715d0695f4
+
 <!-- Content_END -->
