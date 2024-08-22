@@ -169,4 +169,30 @@ MEV 是 Maximal (or Maximum) Extractable Value 的缩写。在一个区块内，
 
 **III.无常损失（Impermanent Loss）**
 
+### 2024.08.22
+#### Uniswap V4 新特性
+
+- 单例取代工厂
+
+在 Uniswap v3 中，我们为每个流动性池部署一个新合约，这使得创建流动性池和执行多池兑换的成本更高。
+在 v4 中，我们将所有流动性池保存在一个「单例」合约中，这将很大程度上节约 Gas，因为代币交易将不再需要在不同合约中持有的流动性池之间转移代币。
+
+- 引入 Hooks
+
+引入 hooks 在流动性池的整个生命周期中的关键点执行指定的操作——例如在交易代币之前或之后，或者在 LP 头寸更改之前或之后。
+
+Uniswap V4 目前支持在 8 个特定的位置进行 hook 回调：
+
+  - beforeInitialize / afterInitialize
+  - beforeModifyPosition / afterModifyPosition
+  - beforeSwap / afterSwap
+  - beforeDonate / afterDonate
+
+- 闪电记账系统
+
+使用 V4 中的闪电记账系统，每个操作（交换 / 部署）只会导致内部余额更新，其中余额以「delta」为单位计价。到交换结束时，它只会在一系列计算之后换出净「delta」余额。
+
+在 V4 中，每一个操作会更新内部的一个净余额（delta），在所有操作结束时会校验该值是否为 0，必须保证该值为 0 才能交易成功。当 Flash accounting 和 Singleton 结合时，可以大大简化多跳交易。
+
+
 <!-- Content_END -->
