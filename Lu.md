@@ -42,12 +42,13 @@ USDT是2015年在Bitfinex交易上市。它具有先发优势（first-mover adva
 DAI的问题在于它的发行方式（over-collateralization）限制了资本效率（limits capital efficiency），很难使得DAI扩大规模（scale with demand）。
 *   什么叫做capital efficiency？
 
-人们试图通过Peg Stability Module solution等方法解决DAI遇到的问题，但是DAI的需求是受杠杆需求（leverage）而扩大的，而非是对对更分散的交易媒介（medium of transaction）。       
-3. 所有稳定币需要解决的问题 
+人们试图通过Peg Stability Module solution等方法解决DAI遇到的问题，但是DAI的需求是受杠杆需求（leverage）而扩大的，而非是对对更分散的交易媒介（medium of transaction）。      
+     
+3. 所有稳定币需要解决的问题。   
      
    ethos of decentralization VS  creating a currency that can reliably maintain its peg
    去中心化精神 和 资产稳定
        
-4. 算法型稳定币（algorithmic stablecoins）和 稳定资产Stableassets
+4. 算法型稳定币（algorithmic stablecoins）和 稳定资产Stableassets。   
 
 <!-- Content_END -->
