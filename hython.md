@@ -75,4 +75,11 @@ skip
   - Aptos Move 解锁 Uniswap v2（直播）
   - 对 Aptos 级 Move 的初步了解
 
+### 2024.08.22
+笔记内容
+学习时间：30 分钟
+学习内容：
+  - DeFi 历史（直播回放）
+  - 对稳定币的认识（笔记整理总）
+
 <!-- Content_END -->

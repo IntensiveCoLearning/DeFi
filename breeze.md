@@ -105,5 +105,12 @@ The Luna collapse highlighted the risks associated with algorithmic stablecoins 
 ![Stablecoin Types](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff01519d-c60c-4177-88f7-deb355389319_653x457.png)
 
 [image]()
+### 2024.08.21
+- read the chapter “future of defi” and complete the the-stablecoin-edition-defi-download 
+- read the https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan
+### 2024.08.22
+
+### 2024.08.23
+
 
 <!-- Content_END -->

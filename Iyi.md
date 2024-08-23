@@ -74,4 +74,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 1. 学习 https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b how to Defi 的前 3 章，初步了解 AMM 自动化市商 是怎么一回事
 
+### 2024.08.22
+
+1. 开始学习 https://www.youtube.com/watch?v=_sofdktmD_8 DeFi 探索之旅丨用 Aptos Move 解锁 Uniswap v2
+
 <!-- Content_END -->
