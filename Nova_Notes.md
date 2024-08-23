@@ -42,6 +42,18 @@ Txn: 0x100535692c3e25f069252adfa5889d3b33e1245173ca7feec00985a122219b4c
 并为ETH/USDT交易对和ETH/WBTC交易对注入了流动性：
 Txn 0xc047585fe418c5ad5998bea19f39ff1b8de8a74c62d5b797a3cbd17ed2f7fdbf
 Txn 0xb1e4a73e429b162b5fe280dd47f87c33e7fcfab059ebc483040b6f2615af127a
+### 2024.08.22
+今天查看了TrenFinance铸造稳定币的合约`0x31bEEee3CF731B1A4Cc4649504518DA3782c242e`，学习了Defi的合约一般把代理合约和实现合约分离，前者负责管理和升级，后者负责具体的实现逻辑。这样可以在不改变合约地址的情况下，升级合约的实现逻辑，代理合约规定了admin只有维护实现合约的权力，而不能通过合约交互监守自盗。
+今天还把从TrenFinance借出的稳定币trenUSD存入了稳定币池，我的理解是这相当于从银行贷出的款又在银行开户存回了银行，可以帮助稳定币值。
+### 2024.08.23
+测试网的Defi应用似乎还是有Bug：
+1. BulbaSwap的UNI价格高到离谱，比ETH都贵了
+2. AbraFinance识别不到Holesky测试网的USDT和WETH余额，于是只能抵押UNI
 
+Deposit UNI: `0x2d4069bd0dbbf5b4df387716bb2c86e4fe76f436720502bf5b38f24d5e2bada0`
+
+把存的UNI作为抵押品：`0x5d7555f9b7954a0fd6745bddff3bb3971be5c138e614209e38025472d8393205`
+
+借出USDT：`0x3cd0e191e665302c1cc9407d7eb760e241edf7acb72401d465adf92e0868f6be`
 
 <!-- Content_END -->
