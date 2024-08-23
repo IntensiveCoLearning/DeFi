@@ -12,6 +12,16 @@ A：我认为我会完成！
 
 <!-- Content_START -->
 
+### 2024.08.23
+
+refer: https://tether.io/news/
+
+今天到 USDT 官网上看了下最新的新闻，都是与中东相关的：
+
+1. Tether 宣布将开发一种与阿联酋迪拉姆 (AED) 挂钩的新稳定币，计划与阿联酋的科技集团 Phoenix Group PLC 合作推出，并获得 Green Acorn Investments Ltd 的支持。该稳定币将与 Tether 的其他产品一样，遵守透明和强大的储备标准，确保每枚代币都与 AED 的价值挂钩。Tether 的迪拉姆挂钩稳定币旨在简化国际贸易和汇款，降低交易费用，并在阿联酋及其他地区发挥重要作用。Tether 首席执行官 Paolo Ardoino 表示，这一新产品将为用户提供安全、高效的交易方式。Phoenix Group 联合创始人兼首席执行官 Seyedmohammad Alizadehfard 也对这一合作充满信心，认为该稳定币将为区域和全球用户带来数字经济的变革。
+
+2. Tether 宣布对汇款和财务管理平台 Kem App 进行 300 万美元的战略投资，以在其平台上推出 USD₮，促进该稳定币在中东地区的广泛采用。这项投资旨在改善海湾国家和邻近地区的经济状况，特别是为数百万外籍人士提供便利的金融服务，以应对通货膨胀和经济不稳定。此举标志着 Tether 在中东市场的战略扩张，并支持其致力于全球金融包容性的承诺。Tether 首席执行官 Paolo Ardoino 强调，这项投资体现了 Tether 通过去中心化生态系统促进金融稳定和包容性的使命，同时帮助 Kem App 更好地服务中东地区的企业和个人。
+
 ### 2024.08.21
 
 refer: https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan
