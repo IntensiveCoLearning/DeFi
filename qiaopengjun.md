@@ -202,7 +202,30 @@ DeFi 的魅力在于，它使获取复杂的金融服务变得像访问互联网
 
 ### 2024.08.23
 
-笔记内容
+AMM
+用户需要一种方式来交换价值（不会因滑点而造成损失）、保管自己的资产并降低交易对手风险。
+<http://bafybeidynfkz2mipcr7pv26jlt3i5hqvydzcrr362bbdrc7gkcojwrqouy.ipfs.localhost:8080/general/2017/06/22/marketmakers.html>
+AMM 是一组智能合约，可创建资产池，为交易者提供流动性——无需订单簿。
+
+Slippage is the difference between the expected price and what the final price is when the exchange is executed. While slippage occurs in many marketplaces, including stock markets and crypto order book markets, it can be significant in AMMs and DEXs — particularly with large trades and small liquidity pools. Large pools with deep liquidity are better at handling swaps with less slippage.
+
+大多数 AMM 和 DEX 都会显示预计滑点，并允许您设置可接受的滑点限额。但是，设置较低的滑点容忍限额可能会导致您的订单需要很长时间才能完成。
+
+无常损失
+
+虽然流动性提供者从其存入的代币中赚取费用和奖励，但他们也面临着最终可能导致他们亏损的风险：无常损失。当存入资产的市场价格与存入时相比发生变化时，就会发生无常损失。
+
+AMM 流动性池使用算法来维持池中代币价值的稳定比率。例如，50/50 ETH/DAI 池旨在使池中 ETH 代币的价值等于 DAI 代币的价值。如果 ETH 的价格在公开市场上上涨，套利交易者（或机器人）将通过存入 DAI 购买流动性池中低于市场价格的 ETH，直到两种代币的价值比率恢复到 50/50。
+
+因此，当流动性提供者赎回其 LP 代币时，他们可能会发现收到的代币价值低于他们只是将其放在钱包中时的价值。这种损失被称为无常损失，因为在赎回 LP 代币之前，损失是不确定的。如果代币的价格回到存入时的水平，预计的损失将消失。
+
+套利
+
+套利是指交易者利用价格之间或市场内的价差来获利。一个简单的例子是，当交易者发现两个不同的 DEX 上的资产价格存在差异时。如果他们行动迅速，他们可以在一个交易所买入大量低价代币，然后在另一个交易所以更高的价格卖出，赚取差价。
+
+当订单簿交易所的买卖价差较大，或者如上所述，当流动性池中发生无常损失时，也存在其他套利机会。不幸的是，对于人类交易者来说，很难超越被编程为寻找并快速抢占套利机会的机器人的速度。
+
+<https://banklessdao.substack.com/p/the-amm-edition-part-i-defi-download>
 
 ### 2024.08.24
 
