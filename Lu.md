@@ -49,6 +49,33 @@ DAI的问题在于它的发行方式（over-collateralization）限制了资本�
    ethos of decentralization VS  creating a currency that can reliably maintain its peg
    去中心化精神 和 资产稳定
        
-4. 算法型稳定币（algorithmic stablecoins）和 稳定资产Stableassets。   
-
+4. 算法型稳定币（algorithmic stablecoins）和稳定资产（Stableassets）。   
+### 2024.08.23
+昨天学习了作为中心化稳定币USDT和去中心化稳定币DAI的各自发行机制以及其弊端，今天要了解其他的稳定币类型，即算法型稳定币。   
+稳定币的不可能三角是去中心化（decentralization）, 币价稳定（price stability）, 资本效率（capital efficiency）     
+1. 算法型稳定币 & 稳定资产
+   =============
+      
+1.1 是何？   
+   
+算法型稳定币就是用算法来调节币价。   
+算法型稳定资产的特点是浮动挂钩（a floating peg），可作为抵押品（Collateral）。 
+       
+1.2 分类？    
+   
+algorithmic stablecoins 可分为两类 
+      
+   1） 没有抵押品      
+   2） 部分或全部（partially/fully）由原生代币抵押     
+依靠自身发行的资产（natively issued assets）作为抵押品会产生递归的价值（recursive value），需要算法功能来调节价格（regulate the price）。
+      
+还可以分类成   
+   1）rebase（弹性）    
+特点：改变供应量（changing the entire supply）   
+理由：通货膨胀/通货紧缩的经济理论（inflationary/ deflationary economic theory）    
+应用例子：Ampleforth     
+   2）seigniorage（铸币税）模式
+特点：a reward system
+三种模式迭代（three basic iterations）：Empty Set Dollar -> Basis Cash -> Frax Finance 
+### 2024.08.24
 <!-- Content_END -->
