@@ -62,8 +62,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.08.21
 
-笔记内容 https://www.notion.so/helios-home/Defi-837dd77e5ca84cbe9e9702bb65ab7926?pvs=4
+笔记内容：[https://www.notion.so/helios-home/Defi-837dd77e5ca84cbe9e9702bb65ab7926?pvs=4](https://www.notion.so/helios-home/c3c9fdfcc86b432788c1537d9313cf83?pvs=4)
 
-### 2024.07.12
+### 2024.08.22
 
+笔记内容：https://www.notion.so/helios-home/44532c1d219c4ac5960e93355a81d21c?pvs=4
+
+### 2024.08.23
+
+笔记内容：[https://www.notion.so/helios-home/44532c1d219c4ac5960e93355a81d21c?pvs=4](https://www.notion.so/helios-home/fca40d415a9b4fb79a58973263672b1c?pvs=4)
 <!-- Content_END -->

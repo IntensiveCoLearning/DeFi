@@ -76,6 +76,12 @@ Tren Finance:
 
 问题：虽然 Stake 了，但是似乎一直没有 Rewards.
 
-### 2024.08.20
+### 2024.08.22
+
+观看 DeFi 探索之旅 - 用 Aptos Move 解锁 Uniswap v2（https://www.youtube.com/watch?v=_sofdktmD_8）的视频回放
+
+### 2024.08.23
+
+研究 Uniswap v2 机制（https://www.bilibili.com/video/BV1kZ421M7Ke/?spm_id_from=333.337.search-card.all.click&vd_source=d01eaad3e1b3172062c191e49bd6ff85），特别是滑点在合约中的应用
 
 <!-- Content_END -->

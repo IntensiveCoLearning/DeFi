@@ -74,8 +74,43 @@ study the https://banklessdao.substack.com/p/the-stablecoin-edition-defi-downloa
 todo:
 - Why did the Luna algorithmic stablecoin collapse?
 
-
-
 ### 2024.08.21
+
+continue study
+
+Types of Stablecoins
+
+- Fiat-collateralized Stablecoins (USDT, USDC, BUSD, etc.)
+- Crypto-backed Stablecoins (DAI, USDP, etc.)
+- Commodity-backed Stablecoins (USDC.io, etc.)
+- Algorithmic Stablecoins (UST, etc.)
+
+
+The collapse of the Luna algorithmic stablecoin was due to several interconnected factors:
+
+1. Flawed Design: The Luna/UST system relied on an algorithmic mechanism to maintain UST's peg to the US dollar. This mechanism was based on the ability to swap 1 UST for $1 worth of Luna, which was supposed to create arbitrage opportunities to keep UST at $1. However, this design was vulnerable to extreme market conditions.
+
+2. Bank Run: When large amounts of UST were sold off rapidly, it triggered a "death spiral." As UST's price fell below $1, more people tried to redeem UST for Luna, causing Luna's price to plummet. This further eroded confidence in UST, leading to more sell-offs.
+
+3. Lack of Sufficient Backing: Unlike traditional stablecoins backed by real assets, UST was primarily backed by Luna tokens and some Bitcoin reserves. When the system was stressed, these reserves proved insufficient to maintain the peg.
+
+4. Market Volatility: The crypto market was experiencing a downturn, which added pressure to the already strained system.
+
+5. Loss of Confidence: As the mechanism failed to maintain the peg, users lost confidence in the system, accelerating the collapse.
+
+6. Complexity and Lack of Understanding: Many users may not have fully understood the risks associated with algorithmic stablecoins, leading to panic when the system showed signs of stress.
+
+The Luna collapse highlighted the risks associated with algorithmic stablecoins and the importance of robust backing and risk management in stablecoin designs.
+
+![Stablecoin Types](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff01519d-c60c-4177-88f7-deb355389319_653x457.png)
+
+[image]()
+### 2024.08.21
+- read the chapter “future of defi” and complete the the-stablecoin-edition-defi-download 
+- read the https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan
+### 2024.08.22
+
+### 2024.08.23
+
 
 <!-- Content_END -->
