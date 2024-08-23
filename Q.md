@@ -95,4 +95,18 @@ https://sepolia.etherscan.io/tx/0x688379c9a45b0af05345c1ae678d97a9af4182d40a8c1d
 今天把测试网的token 进行了 稳定币 mint
 https://sepolia.etherscan.io/tx/0x5e067a0bb5d66e69d187da1917f6d386c6bf9f86c01892c38139c1715d0695f4
 
+### 2024.08.23
+今天学习了
+用于金融风险的资本 (κF) 包括针对市场和信用风险敞口的准备金，我们分别用 κF,M 和 κF,C 表示。我们保守地假设市场和信用风险有100%的相关性，即：
+
+ \kappa_F = \kappa_{F,M} + \kappa_{F,C} 
+
+ 通过将极端损失部分与清算价格影响部分结合起来（均以收益表示），我们得出市场风险的总体资本 κF,M：
+
+ \kappa_{F,M} = - (L_{M,min} + \delta_p) e_M 
+
+对于某些加密资产支持的代币或算法稳定币，δp 可能较大。例如，在支持算法稳定币 Terra 的 Luna 代币的情况下，δi 可能接近 -100%，因为 Terra 的赎回需求导致 Luna 实际上失去了所有的价值。
+
+今天在测试网里进行了跨链操作：
+https://holesky.etherscan.io/tx/0x2b84676b85c7b436d8af1426ee69a294679032c431c381cfe1a6b90b192f2e6e
 <!-- Content_END -->
