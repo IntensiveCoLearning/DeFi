@@ -70,12 +70,27 @@ algorithmic stablecoins 可分为两类
 依靠自身发行的资产（natively issued assets）作为抵押品会产生递归的价值（recursive value），需要算法功能来调节价格（regulate the price）。
       
 还可以分类成   
+   
    1）rebase（弹性）    
+   
 特点：改变供应量（changing the entire supply）   
 理由：通货膨胀/通货紧缩的经济理论（inflationary/ deflationary economic theory）    
 应用例子：Ampleforth     
-   2）seigniorage（铸币税）模式
-特点：a reward system
-三种模式迭代（three basic iterations）：Empty Set Dollar -> Basis Cash -> Frax Finance 
+   
+   2）seigniorage（铸币税）模式   
+   
+特点：a reward system   
+三种模式迭代（three basic iterations）：Empty Set Dollar -> Basis Cash -> Frax Finance   
+     
+Empty Set Dollar是单币抵押模式（a single-token seigniorage model）   
+Basis Cash是双代币征税模式（a dual-token seigniorage model）   
+Frax Finance是由两种类型的抵押品支持，法币(Fiat）稳定币USDT和原生代币FXS，且是零散的抵押方式。Frax稳定币（FRAX）可以被铸造，并允许从协议中赎回1美元的价值。    
+* 这里Frax看不太明白原理。还有为什么偏偏是1美元的价值？   
+     
+1.3 发展情况？
+
+   1.4 为什么Frax能成功？
+
+   1.5 算法型稳定币 & 稳定资产的未来
 ### 2024.08.24
 <!-- Content_END -->
