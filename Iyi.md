@@ -82,4 +82,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 1. 学习 https://www.youtube.com/watch?v=_sofdktmD_8 DeFi 探索之旅丨用 Aptos Move 解锁 Uniswap v2  30 分钟
 
+### 2024.08.24
+
+1. 完成学习 https://www.youtube.com/watch?v=_sofdktmD_8 DeFi 探索之旅丨用 Aptos Move 解锁 Uniswap v2 
+
 <!-- Content_END -->
