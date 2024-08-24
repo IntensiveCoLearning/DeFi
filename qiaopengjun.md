@@ -202,11 +202,59 @@ DeFi 的魅力在于，它使获取复杂的金融服务变得像访问互联网
 
 ### 2024.08.23
 
-笔记内容
+AMM
+用户需要一种方式来交换价值（不会因滑点而造成损失）、保管自己的资产并降低交易对手风险。
+<http://bafybeidynfkz2mipcr7pv26jlt3i5hqvydzcrr362bbdrc7gkcojwrqouy.ipfs.localhost:8080/general/2017/06/22/marketmakers.html>
+AMM 是一组智能合约，可创建资产池，为交易者提供流动性——无需订单簿。
+
+Slippage is the difference between the expected price and what the final price is when the exchange is executed. While slippage occurs in many marketplaces, including stock markets and crypto order book markets, it can be significant in AMMs and DEXs — particularly with large trades and small liquidity pools. Large pools with deep liquidity are better at handling swaps with less slippage.
+
+大多数 AMM 和 DEX 都会显示预计滑点，并允许您设置可接受的滑点限额。但是，设置较低的滑点容忍限额可能会导致您的订单需要很长时间才能完成。
+
+无常损失
+
+虽然流动性提供者从其存入的代币中赚取费用和奖励，但他们也面临着最终可能导致他们亏损的风险：无常损失。当存入资产的市场价格与存入时相比发生变化时，就会发生无常损失。
+
+AMM 流动性池使用算法来维持池中代币价值的稳定比率。例如，50/50 ETH/DAI 池旨在使池中 ETH 代币的价值等于 DAI 代币的价值。如果 ETH 的价格在公开市场上上涨，套利交易者（或机器人）将通过存入 DAI 购买流动性池中低于市场价格的 ETH，直到两种代币的价值比率恢复到 50/50。
+
+因此，当流动性提供者赎回其 LP 代币时，他们可能会发现收到的代币价值低于他们只是将其放在钱包中时的价值。这种损失被称为无常损失，因为在赎回 LP 代币之前，损失是不确定的。如果代币的价格回到存入时的水平，预计的损失将消失。
+
+套利
+
+套利是指交易者利用价格之间或市场内的价差来获利。一个简单的例子是，当交易者发现两个不同的 DEX 上的资产价格存在差异时。如果他们行动迅速，他们可以在一个交易所买入大量低价代币，然后在另一个交易所以更高的价格卖出，赚取差价。
+
+当订单簿交易所的买卖价差较大，或者如上所述，当流动性池中发生无常损失时，也存在其他套利机会。不幸的是，对于人类交易者来说，很难超越被编程为寻找并快速抢占套利机会的机器人的速度。
+
+<https://banklessdao.substack.com/p/the-amm-edition-part-i-defi-download>
 
 ### 2024.08.24
 
-笔记内容
+集中流动性的引入使 Uniswap 成为有史以来最灵活、最高效的 AMM，同时也解决了创建资本高效的去中心化市场的一些主要挑战。
+与其他使用 50/50 资产分割来创建流动性池的 AMM 不同，Balancer 允许用户创建最多包含八种不同代币的池。这些池会根据智能合约自动平衡，从而大大降低无常损失的风险。
+DEX 聚合器监控 DeFi 中的多个流动性来源，并使用复杂的算法来检测滑点最小的最优惠利率。
+MEV 代表最大可提取价值，是加密生态系统的重要组成部分。它不仅是利润来源，而且是维持系统平衡的无形之手。让我们深入了解它是什么、谁使用它、它的不同类型以及它的优点和缺点。
+
+在一个区块内，经济能量通过所有传入交易流入区块链。MEV Extraction 通过重新排序、包含和排除交易来收获这种能量以获取货币收益。
+
+MEV 搜索者会从大量数据中寻找有利可图的交易（因此得名），并运行自动执行这些交易的机器人。这对矿工也有好处，因为他们可以通过搜索者通常支付的更高 gas 费获得利润分成，以确保他们被纳入下一个区块。要成为一名搜索者，你需要精通技术，懂得如何编码，并愿意应对激烈的竞争。
+
+但是搜索者在哪里可以找到 MEV 机会呢？答案是通过链上数据和内存池。
+
+内存池是所有传入交易的驻留地，等待矿工拾取并包含在下一个区块中。由于此池是公开的，搜索者会对其进行监控以检测可能带来利润的交易。
+
+链上数据也是公开的，也可以进行分析以寻找机会。例如，搜索者可以监控去中心化交易所 (DEX) 上的 ETH 价格。
+
+There is a vast range of different MEV types. We will have an overview on
+
+Arbitrage
+
+Liquidations
+
+Front and Back Running
+
+Sandwich Trading
+
+<https://banklessdao.substack.com/p/the-amm-edition-part-ii-defi-download>
 
 ### 2024.08.25
 
@@ -229,6 +277,50 @@ DeFi 的魅力在于，它使获取复杂的金融服务变得像访问互联网
 笔记内容
 
 ### 2024.08.30
+
+笔记内容
+
+### 2024.08.31
+
+笔记内容
+
+### 2024.09.01
+
+笔记内容
+
+### 2024.09.02
+
+笔记内容
+
+### 2024.09.03
+
+笔记内容
+
+### 2024.09.04
+
+笔记内容
+
+### 2024.09.05
+
+笔记内容
+
+### 2024.09.06
+
+笔记内容
+
+### 2024.09.07
+
+笔记内容
+
+### 2024.09.08
+
+笔记内容
+
+### 2024.09.09
+
+笔记内容
+
+### 2024.09.10
 
 笔记内容
 
