@@ -68,6 +68,14 @@ timezone: Asia/Shanghai
     2. **功能有限**：与 CEX 提供的广泛业务（如网格交易、定投机器人、理财产品等）相比，DeFi 的功能相对简单和分散。目前 DeFi 主要提供的服务包括简单的 Swap 交易、流动性挖矿、Staking 和 Farming 等，缺乏定制化和多样化的金融工具。
     3. **交互体验差**：DeFi 的用户交互体验远不如成熟的 CEX。交易延迟几秒、签名内容不直观、术语不统一、产品流转逻辑不顺畅等问题普遍存在。不过，这些问题是可以改进的。随着标准逐步统一，前端代码和产品逻辑将趋于成熟，各平台的用户体验也会逐步提升。
 
+### 2024.08.23
+
+- 学习主题：测试网使用文档
+
+- 学习内容总结：
+  - **TrenFinance**， MakerDAO 的替代平台，可以铸造稳定币，👉 [token claim](https://sepolia.etherscan.io/tx/0x02e70cb7cb85d99baf738708cbf65de5fd8aa616be3df8a8e4d3edd4a7dc6c4a) 
+  - **AbraFinance**，Aave 和 Compound 的替代平台，可以进行借贷，使用的测试网是 **Morph Holeskey**。没有连接起 🤔 TODO
+  - **bulbswap**，Uniswap 的替代平台，可以进行交换操作。使用相同的测试网，所以无需额外发放测试币。
 
 
 

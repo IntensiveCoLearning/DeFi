@@ -12,6 +12,24 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.08.23
+
+阅读：去中心化交易所  
+- DEX的类型
+	- 订单薄类型
+	- 流动性池（Liquidity pools）
+	
+- 自动做市商（AMM，Automated Market Makers）
+	- 恒定乘积做市商公式：x * y = k 
+		- x和y代表流动性池中两个代币的数量，而k代表乘积
+		- 假设1个ETH现在在Uniswap上的价值是2,289DAI。但当ETH的价格在其他地方，如Balancer上降到2100DAI时，套利机会就出现了。套利者将利用价格差异，在Balancer上买入便宜的ETH，然后在Uniswap上卖出，快速获利（为简单起见，忽略了交易费用）。套利者将重复这样做，直到价格在两个交易所之间达到平衡。
+		
+	在Curve上，资金池的权重是动态的
+- AMM的相关风险
+	- 价格滑点（Price Slippage）
+	- 无常损失
+	- 抢跑
+
 ### 2024.08.22
 
 阅读：去中心化的借贷
