@@ -99,4 +99,20 @@ Ref: https://makerdao.com/zh-CN/whitepaper/
 
 Stability Fee 和 DSR 的关系：https://forum.makerdao.com/t/why-sf-dsr-request-for-discussion/1086、https://forum.makerdao.com/t/is-anything-wrong-with-the-dsr-and-stability-rate-calculations-as-planned-for-mcd/39/2
 
+### 2024.08.23
+
+了解了一些借贷协议的基本内容。
+
+比较容易想象的借贷模式就是基于抵押的借贷。DAI 的产生模式就是一种基于抵押的借贷，用户通过抵押代币借出 DAI，归还时需要额外付利息。
+
+Compound 一个以太坊上的借贷协议。用户向流动资金池提供资金以赚取利息，而借款人从流动资金池贷款并支付债务利息。这种运行方式类似储蓄银行。
+
+Aave 是另一个优秀的去中心化货币市场协议，相比于 Compound，Aave 提供了一些更多的操作。
+
+- 利率转换：Aave的借款人可以在可变利率和稳定利率之间转换。
+
+- 抵押品互换：借款人可以将他们的抵押品换成另一种资产。这有助于防止贷款低于最低抵押品比率而面临清算。
+
+- 闪电贷：如果借款人在同一笔交易中借出贷款又偿还了贷款和额外的利息和费用，借款人可以在无抵押的情况下贷款。这允许用户进行高效的套利操作。
+
 <!-- Content_END -->
