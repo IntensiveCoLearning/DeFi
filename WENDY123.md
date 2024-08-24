@@ -93,4 +93,7 @@ Curve Finance是一个专注于稳定币交易的AMM，它通过将同类资产�
 1、尝试了OP链上的USDC理财，手续费较低。
 2、搞不懂USDC.E这些货币和USDC的区别，需要理解。
 
+### 2024.08.24
+FDUSD的安全性如何？
+
 <!-- Content_END -->
