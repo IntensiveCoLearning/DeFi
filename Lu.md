@@ -93,9 +93,11 @@ Frax Finance是由两种类型的抵押品支持，法币(Fiat）稳定币USDT�
    1.4 为什么Frax能成功？
 
    1.5 算法型稳定币 & 稳定资产的未来
-### 2024.08.24
-学习材料：https://www.binance.com/en/square/post/43195     
+### 2024.08.24 
+关键词：overcollateralization、CDP、Maker Yield Pool、Governance Polls、Executive Voting
+ =============
 学习方式：MakerDAO案例学习    
+学习材料：https://www.binance.com/en/square/post/43195  
 预期学习收获：看看MakerDAO如何在以波动性强的货币作为抵押品的情况下，仍然保持与美元1:1挂钩的      
       
 1. What：MakerDao是何     
@@ -106,21 +108,37 @@ ETH项目
 2. What：DAI是何      
      DAI是MakerDAO的稳定币，与美元挂钩     
      MakerDAO使用加密货币抵押品来维持DAI挂钩比率
-     
-2.1 How：（加密货币）抵押品如何运作？     
-     实物抵押品，如当铺支持珠宝 -> 法币抵押品，如BUSD支持法币 -> 加密货币抵押品，如DAI支持加密货币
+     凭什么能用加密货币（不稳定）作为抵押物？——超额抵押。
+   
+4. How: DAI的用例（Use cases）     
+        杠杠（Leverage）和 DAI储蓄率（Savings Rate）
+        前者例如，预见到ETH会上涨，就用ETH抵押借出一部分DAI，再用这部分DAI去购买更多的ETH。
+   
+5. How：（加密货币）抵押品如何运作？     
+     实物（Physical）抵押品，如当铺支持珠宝 -> 法币抵押品（Fiat Collateral），如BUSD支持法币 -> 加密货币抵押品，如DAI支持加密货币
 
      What：超额抵押是什么？    
      是面对加密货币作为抵押品的价格波动大、贷方有更大风险时的一种解决方案，如要付出500美元的ETH才能借到300美元的DAI。
-
-     What：抵押债务头寸（CDP）是什么？
-     CDP = Collateralized Debt Position
-     是个position，由智能合约（smart contract）、抵押品（collateral）、已发行的抵押品支持的稳定币 三个特征构成
-     功能是设置强制平仓比率（a forced liquidation ratio）
-     * “头寸” 是用来描述投资者或交易者持有的资产或负债的一个术语     
+     
+     What：抵押债务头寸（CDP）是什么？     
+     CDP = Collateralized Debt Position     
+     是个position，由智能合约（smart contract）、抵押品（collateral）、已发行的抵押品支持的稳定币 三个特征构成     
+     功能是设置强制平仓比率（a forced liquidation ratio）     
+     * “头寸” 是用来描述投资者或交易者持有的资产或负债的一个术语          
       
-3. What：Maker收益池（Maker Yield Pool）是什么？      
+6. What：Maker收益池（Maker Yield Pool）是什么？      
       users place collateral and generate DAI
 * Yield是指协议产生的收益——用户需要支付stability fee，而不是直接归属于用户的回报           
-            
+     
+7. Why：DAI的价值能保持稳定（remain stable）？     
+the CDP mechanism + 调整 stability fee + 调整 the DAI savings rate     
+* stability fee 相当于贷款利率，费用增加时，借款成本变高，这会减少借款者的需求     
+* DAI savings rate相当于存款利率。当 DAI 储蓄率增加时，持有 DAI可以获得更多的利息，吸引更多人持有 DAI，从而减少 DAI 的流通量，维持 DAI 的稳定价值。
+       
+9. How: participate in MakerDAO’s governance system      
+持有governance token, MKR      
+两种参与方式      
+Governance Polls 更倾向于非技术性治理决策      
+Executive Voting 涉及技术性的变更，尤其是与智能合约代码相关的调整
+
 <!-- Content_END -->
