@@ -105,12 +105,19 @@ The Luna collapse highlighted the risks associated with algorithmic stablecoins 
 ![Stablecoin Types](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff01519d-c60c-4177-88f7-deb355389319_653x457.png)
 
 [image]()
-### 2024.08.21
+### 2024.08.22
 - read the chapter “future of defi” and complete the the-stablecoin-edition-defi-download 
 - read the https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-6-zhang-qu-zhong-xin-hua-de-wen-ding-bi-he-wen-ding-zi-chan
-### 2024.08.22
-
 ### 2024.08.23
 
+### 2024.08.24
+- study the MakerDAO, and The Maker Protocol Smart Contract Modules System is complicated
+![alt text](https://docs.makerdao.com/~gitbook/image?url=https%3A%2F%2F4167714931-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-LtJ1VeNJVW-jiKH0xoL%252Fuploads%252Fuu2gnwI8XK0MXMGImPgD%252FMCD%2520System%25202.1.png%3Falt%3Dmedia%26token%3Da7898b0e-71a3-460b-a6e9-6b95b40d66f6&width=768&dpr=4&quality=100&sign=ca447c47&sv=1)
+- https://drive.google.com/file/d/1VtGV8Ct2iBO8WjWsjFYLg5DnwlGmetSp/view?pli=1 
+    - Vat - The single source of truth for the Maker Protocol.
+    - Cat - Public interface for confiscating unsafe urns (Vaults) and processing seized collateral
+    - Spotter - Allows external actors to update the price feed in Vat for a given Ilk 
+- smart contract https://github.com/makerdao/dss.git；
 
-<!-- Content_END -->
+
+<!-- Content_END -->    

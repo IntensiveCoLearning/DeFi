@@ -84,4 +84,8 @@ Tren Finance:
 
 研究 Uniswap v2 机制（https://www.bilibili.com/video/BV1kZ421M7Ke/?spm_id_from=333.337.search-card.all.click&vd_source=d01eaad3e1b3172062c191e49bd6ff85），特别是滑点在合约中的应用
 
+### 2024.08.24
+
+查看 Telegram 消息，查看 github 其他同学的文档，看其他同学都学了些什么
+
 <!-- Content_END -->
