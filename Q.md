@@ -109,4 +109,8 @@ https://sepolia.etherscan.io/tx/0x5e067a0bb5d66e69d187da1917f6d386c6bf9f86c01892
 
 今天在测试网里进行了跨链操作：
 https://holesky.etherscan.io/tx/0x2b84676b85c7b436d8af1426ee69a294679032c431c381cfe1a6b90b192f2e6e
+
+### 2024.08.24
+今天周末花的时间比较少 主要是在测试网进行了借贷
+https://sepolia.etherscan.io/tx/0x9ad187878714605db7445146a67ee6904fa939d8215be0514efec8ea46aedd7d
 <!-- Content_END -->

@@ -33,11 +33,11 @@ timezone: Asia/Shanghai
 
 ### 2024.08.23
 
-笔记内容
+[笔记内容](https://gigantic-bandicoot-5c1.notion.site/Day-2024-8-23-92d5d64fb2914577bd67d63c278de7dc?pvs=4)
 
 ### 2024.08.24
 
-笔记内容
+[笔记内容](https://gigantic-bandicoot-5c1.notion.site/Day-2024-8-24-dcdb5457c4d94a2c86262f7002071cb7?pvs=4)
 
 ### 2024.08.25
 
