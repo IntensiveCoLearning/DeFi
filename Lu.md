@@ -141,8 +141,10 @@ the CDP mechanism + 调整 stability fee + 调整 the DAI savings rate
 Governance Polls 更倾向于非技术性治理决策      
 Executive Voting 涉及技术性的变更，尤其是与智能合约代码相关的调整
 ### 2024.08.25 
+关键词：RWA - Real World Assets、SPV - Special Purpose Entity、Legal Wrapper
+ =============
 学习材料：https://web3caff.com/zh/archives/80903      
-预期收获：从MakerDAO RWA 看链下资产的治理体系与交易架构      
+预期收获：从MakerDAO RWA 看链下资产的治理体系与交易架构    
 关联待看：从Centrifuge看链下资产上链的路径      
       
       1. why：为什么需要捕获链下资产？            
@@ -156,8 +158,26 @@ Executive Voting 涉及技术性的变更，尤其是与智能合约代码相关
       
       2.1 Why：为什么需要法律包装（Legal Wrapper）      
       交易对手风险（对方拿钱跑路）；主体资格认证（不然没法购买链下资产）；破产清算资格（同二，没有主体资格，对手跑路了就没办法追责）     
-      
+   
       2.2 How：如何进行法律包装
       “下设” 对应的法人实体，使得DAO或者链上协议在相关司法辖区下有公认的法律地位。
+      Foundation + SPV or Trust
+      
+      3. How：MakerDAO 的 RWA 实践案例
+      * 这部分内容略过，难度系数略大，就看了一遍留个印象
+      3.1 New Silver Restructuring（信贷资产 RWA）
+      Foundation + SPV 的交易架构
+      3.2 BlockTower Credit（信贷资产 RWA）
+      3.3 BlockTower Andremeda（美债 RWA）
+      3.4 Monetalis Clydesdale（美债 RWA）
+      3.5 Centrifuge——RWA Roadmap（美债 RWA）
+      * 为什么有「美债 RWA 5% 的无风险收益」？无风险的收益是怎么做到的？
+      * 什么叫做把「基金代币化」？自己发币，1:1的那种，类似于买了个链上支票吗？
+      
+      4. 目前发展的弊端以及未来？
+      弊端：不是任何RWA平台将资产上链后，所有用户就可以参加。
+      目前大多数RWA项目只针对单一/限定资金方，或合格投资者，无法做到散户都能参与。
+      RWA 和 DeFi 结合，可以无需许可（为什么？）
+      * 关注RWA和DeFi结合的项目是怎么做到无需许可，同时散户参与的理由是什么？
       
 <!-- Content_END -->
