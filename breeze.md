@@ -119,5 +119,27 @@ The Luna collapse highlighted the risks associated with algorithmic stablecoins 
     - Spotter - Allows external actors to update the price feed in Vat for a given Ilk 
 - smart contract https://github.com/makerdao/dss.git；
 
+### 2024.08.25
+the maker protocol Design Considerations
+
+1. Token Agnostic
+- System is indifferent to implementation of external tokens
+- The Join adapters abstract away the differences between ERC 20s, Non Fungible Tokens
+(NFTs), invoice tokens, etc
+
+2. Verifiable
+○ Designed from bottom up to be well suited for formal verification; every Vat state defined
+and proved
+○ The Vat makes no external calls, as functions in external contracts are subject to change
+○ The Vat contains no precision loss; it only adds, subtracts, and multiplies
+3. Modular and Upgradable
+○ Implementations of e.g. auctions, liquidation, Vault risk conditions, and new collateral types, to
+be altered on a live system through Maker Governance
+
+
+ Vault States within the Vat
+<img width="977" alt="image" src="https://github.com/user-attachments/assets/fef56fb1-4dd4-4f19-bbbe-77619505147e">
+
+
 
 <!-- Content_END -->    
