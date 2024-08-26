@@ -180,7 +180,7 @@ Executive Voting 涉及技术性的变更，尤其是与智能合约代码相关
       RWA 和 DeFi 结合，可以无需许可（为什么？）
       * 关注RWA和DeFi结合的项目是怎么做到无需许可，同时散户参与的理由是什么？
 
-### 2024.08.22
+### 2024.08.26
 Stablecoin
 =============
 学习材料：[banklessdao-defi-download-stablecoin](https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download)
