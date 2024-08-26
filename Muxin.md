@@ -12,6 +12,24 @@ A：我认为我会完成！
 
 <!-- Content_START -->
 
+### 2024.08.25
+
+refer: https://docs.makerdao.com/
+
+今天先简单学习一下 MakerDAO
+
+- MakerDAO 是一个致力于为加密货币经济带来稳定性的去中心化组织。
+- Maker 协议采用双代币系统
+  - Dai，是一种提供稳定性的抵押品支持的稳定币。
+  - MKR，是一种治理代币，利益相关者使用它来维护系统和管理 Dai。MKR 代币持有者是 Maker 协议的决策者，受到更大的公共社区和其他各种外部各方的支持。
+- Maker 协议新版本 —— 多抵押 Dai (MCD) ：接受任何基于以太坊的资产作为抵押品来生成 Dai，前提是它已获得 MKR 持有者的批准，并通过 Maker 去中心化治理流程获得了特定的相应风险参数。
+  - 新的 Dai 代币 ($DAI)：https://blog.makerdao.com/creating-the-brand-identity-for-the-worlds-first-unbiased-currency-dai/
+  - 支持多种 Vault 抵押品类型（使用 ETH 和 BAT 推出）
+  - Dai 储蓄利率 (DSR)：https://blog.makerdao.com/why-the-dai-savings-rate-is-a-game-changer-for-the-defi-ecosystem-and-beyond/
+  - 更强大的挂钩保障机制（MKR 作为后盾）
+  - 稳定费是按每个区块支付的，而不是按 Dai 偿还时支付
+  - MKR 和治理保持不变
+
 ### 2024.08.23
 
 refer: https://tether.io/news/
