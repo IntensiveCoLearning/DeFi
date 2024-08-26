@@ -88,4 +88,12 @@ Tren Finance:
 
 查看 Telegram 消息，查看 github 其他同学的文档，看其他同学都学了些什么
 
+### 2024.08.25
+
+查看 Telegram 消息；使用 Tren Finance ；学习 DeFi 相关文档
+
+### 2024.08.26
+
+查看 Telegram 消息，在群内进行讨论；参加 DeFi 残酷共学分享会 #1 稳定币的探索
+
 <!-- Content_END -->

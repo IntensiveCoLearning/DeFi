@@ -53,7 +53,8 @@ DAI的问题在于它的发行方式（over-collateralization）限制了资本�
 ### 2024.08.23
 昨天学习了作为中心化稳定币USDT和去中心化稳定币DAI的各自发行机制以及其弊端，今天要了解其他的稳定币类型，即算法型稳定币。   
 稳定币的不可能三角是去中心化（decentralization）, 币价稳定（price stability）, 资本效率（capital efficiency）     
-1. 算法型稳定币 & 稳定资产
+  
+   算法型稳定币 & 稳定资产
    =============
       
 1.1 是何？   
@@ -92,5 +93,91 @@ Frax Finance是由两种类型的抵押品支持，法币(Fiat）稳定币USDT�
    1.4 为什么Frax能成功？
 
    1.5 算法型稳定币 & 稳定资产的未来
-### 2024.08.24
+### 2024.08.24 
+关键词：overcollateralization、CDP、Maker Yield Pool、Governance Polls、Executive Voting
+ =============
+学习方式：MakerDAO案例学习    
+学习材料：https://www.binance.com/en/square/post/43195  
+预期学习收获：看看MakerDAO如何在以波动性强的货币作为抵押品的情况下，仍然保持与美元1:1挂钩的      
+      
+1. What：MakerDao是何     
+Rune Christensen https://twitter.com/RuneKek 发起的一个DAO组织      
+ETH项目      
+用户通过Oasis DApp访问MakerDAO，申请抵押贷款      
+
+2. What：DAI是何      
+     DAI是MakerDAO的稳定币，与美元挂钩     
+     MakerDAO使用加密货币抵押品来维持DAI挂钩比率
+     凭什么能用加密货币（不稳定）作为抵押物？——超额抵押。
+   
+4. How: DAI的用例（Use cases）     
+        杠杠（Leverage）和 DAI储蓄率（Savings Rate）
+        前者例如，预见到ETH会上涨，就用ETH抵押借出一部分DAI，再用这部分DAI去购买更多的ETH。
+   
+5. How：（加密货币）抵押品如何运作？     
+     实物（Physical）抵押品，如当铺支持珠宝 -> 法币抵押品（Fiat Collateral），如BUSD支持法币 -> 加密货币抵押品，如DAI支持加密货币
+
+     What：超额抵押是什么？    
+     是面对加密货币作为抵押品的价格波动大、贷方有更大风险时的一种解决方案，如要付出500美元的ETH才能借到300美元的DAI。
+     
+     What：抵押债务头寸（CDP）是什么？     
+     CDP = Collateralized Debt Position     
+     是个position，由智能合约（smart contract）、抵押品（collateral）、已发行的抵押品支持的稳定币 三个特征构成     
+     功能是设置强制平仓比率（a forced liquidation ratio）     
+     * “头寸” 是用来描述投资者或交易者持有的资产或负债的一个术语          
+      
+6. What：Maker收益池（Maker Yield Pool）是什么？      
+      users place collateral and generate DAI
+* Yield是指协议产生的收益——用户需要支付stability fee，而不是直接归属于用户的回报           
+     
+7. Why：DAI的价值能保持稳定（remain stable）？     
+the CDP mechanism + 调整 stability fee + 调整 the DAI savings rate     
+* stability fee 相当于贷款利率，费用增加时，借款成本变高，这会减少借款者的需求     
+* DAI savings rate相当于存款利率。当 DAI 储蓄率增加时，持有 DAI可以获得更多的利息，吸引更多人持有 DAI，从而减少 DAI 的流通量，维持 DAI 的稳定价值。
+       
+9. How: participate in MakerDAO’s governance system      
+持有governance token, MKR      
+两种参与方式      
+Governance Polls 更倾向于非技术性治理决策      
+Executive Voting 涉及技术性的变更，尤其是与智能合约代码相关的调整
+### 2024.08.25 
+关键词：RWA - Real World Assets、SPV - Special Purpose Entity、Legal Wrapper
+ =============
+学习材料：https://web3caff.com/zh/archives/80903      
+预期收获：从MakerDAO RWA 看链下资产的治理体系与交易架构    
+关联待看：从Centrifuge看链下资产上链的路径      
+      
+      1. why：为什么需要捕获链下资产？            
+      链下资产可以补充现有抵押物的不足
+      * 2021年的DeFi Summer都出现了哪些不可持续的DeFi收益率产品？为什么会在那个夏天涌现，有什么利好的消息使得当时大家都做DeFi吗？这样的情况有可能再次上演吗？
+      
+      2. How：如何捕获链下资产？            
+      最简单的方式是购买第三方发型的代币化美债，如Solv Protocol推出的两只RWA基金是由Red Cedar Digital. Ltd. 提供的代币化美债。      
+      ———这样做的弊端是如果第三方跑路就完蛋。      
+      最好的方式是构建适合链上协议或DAO组织的治理体系和法律架构。      
+      
+      2.1 Why：为什么需要法律包装（Legal Wrapper）      
+      交易对手风险（对方拿钱跑路）；主体资格认证（不然没法购买链下资产）；破产清算资格（同二，没有主体资格，对手跑路了就没办法追责）     
+   
+      2.2 How：如何进行法律包装
+      “下设” 对应的法人实体，使得DAO或者链上协议在相关司法辖区下有公认的法律地位。
+      Foundation + SPV or Trust
+      
+      3. How：MakerDAO 的 RWA 实践案例
+      * 这部分内容略过，难度系数略大，就看了一遍留个印象
+      3.1 New Silver Restructuring（信贷资产 RWA）
+      Foundation + SPV 的交易架构
+      3.2 BlockTower Credit（信贷资产 RWA）
+      3.3 BlockTower Andremeda（美债 RWA）
+      3.4 Monetalis Clydesdale（美债 RWA）
+      3.5 Centrifuge——RWA Roadmap（美债 RWA）
+      * 为什么有「美债 RWA 5% 的无风险收益」？无风险的收益是怎么做到的？
+      * 什么叫做把「基金代币化」？自己发币，1:1的那种，类似于买了个链上支票吗？
+      
+      4. 目前发展的弊端以及未来？
+      弊端：不是任何RWA平台将资产上链后，所有用户就可以参加。
+      目前大多数RWA项目只针对单一/限定资金方，或合格投资者，无法做到散户都能参与。
+      RWA 和 DeFi 结合，可以无需许可（为什么？）
+      * 关注RWA和DeFi结合的项目是怎么做到无需许可，同时散户参与的理由是什么？
+      
 <!-- Content_END -->

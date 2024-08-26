@@ -12,6 +12,65 @@ A：我认为我会完成！
 
 <!-- Content_START -->
 
+### 2024.08.26
+
+突然发现前几天都没有进行链上操作。。
+
+- mint: https://sepolia.etherscan.io/tx/0xe63d0ff5214c136cbbbdcd60336b2f0da8b8a7ba2390fad64275f2fd6e6d5f3c
+- stake: https://sepolia.etherscan.io/tx/0x846e100dac3268ebf1069a4ed4b55a2b986b7b65e0d04e1ae13f03fa3de01300
+
+今天学习一下 阿望 Will 老师的文章：https://web3caff.com/zh/archives/80903
+
+- 由于加密货币市场的高波动性，依赖单一抵押资产可能会导致大量清算。对于 MakerDAO 这样的巨型借贷协议来说，关键的考量因素是：抵押品的价值稳定。因此，MakerDAO 或者 DeFi 迫切需要一种更为稳定的基础层抵押品（a Baselayer Level of Collateral），以支持稳定币 DAI 在加密世界大规模采用，构筑一条可持续、可规模化的通路。
+- RWA（Real World Asset Tokenization）现实世界资产的代币化
+- MakerDAO 在 2022 年 5 月发布的 Endgame 计划中，也强调 MakerDAO 构建去中心化稳定币的其中一个关键部分是将 RWA 作为抵押品。
+- RWA 的益处包括：
+  - 提高市场风险和资产使用的透明度
+  - 提供 DeFi 的可组合性
+  - 改善银行服务不足和资金不足人群的可触达性
+  - 从更大更稳定传统金融市场中捕获价值。
+- 对于 MakerDAO 来说，RWA 具有两个重要特性 —— 稳定性和规模化。
+- 几十亿美元 RWA 资金体量的 MakerDAO 所面临的一些可识别的风险：
+  - 交易对手风险。试想交易对手破产/跑路的案例，MakerDAO 需要保障的是任何第三方（包括基金经理/投资顾问）都没有能力直接控制、支配、转移其巨额资金
+  - 主体资格认证。链上协议或 DAO 组织无法完成合法持有资产需要的客户识别认证（KYC/AML），导致无法合法购买、持有链下资产。同理，也无法持有自身的 IP 资产
+  - 破产清算资格。一旦出现链下资产的违约、破产、清算情形，由于链上协议或 DAO 并不是一个法律主体，无法立即与现实世界的法院、清算机构做交互。那么就需要保障 MakerDAO 有能力通过治理体系以及法律架构，及时行使处置链下资产的权利
+- 法律包装（Legal Wrapper）：它的本质是将链上协议或 DAO 组织 “包装” 在一个法律框架内，或 “下设” 一个法律框架，由此连通现实世界交互，使得链上协议或 DAO 组织能够与传统的法律体系进行连接。
+- MakerDAO 治理链下法人实体例子：
+  - 根据开曼法律框架下（the Foundation Company Law of the Cayman Islands 2017）设立 RWA Foundation # 1 的基金会，基金会能够为链上协议或 DAO 组织提供一个灵活的治理框架。
+  - 基金会作为法人实体对内而言，无需任何注册资本，无需股东/成员角色，使得基金会成为单一目的独立孤儿法人实体；基金会也可类似于信托，指定 MakerDAO 或其成员为受益人（Beneficiary）；同时基金会也能做到破产隔离（Bankruptcy-Remote），即使 MakerDAO 或者基金会 “Go Dark” 也不会影响彼此。
+  - 基金会作为法人实体对外而言，能够实现：
+    - 与链下实体进行交互，如签约、提供服务等
+    - 通过 KYC/AML 合法持有链下资产/IP
+    - 保护 DAO 成员的有限责任
+    - 根据 DAO 的决议，代表 DAO 执行一系列链下的操作。
+
+后面列举了一些 RWA 的例子，了解了一下 Centrifuge Prime 服务：
+
+- 为链上 DeFi 协议进行法律包装，如为 Aave 设立一个专门的法律主体——开曼基金会。
+- Anemoy Liquid Treasury Fund 1 是以美债为底层资产的资产池，需要把持有美债资产的 Anemoy LTF 基金直接代币化
+- Anemoy LTF 是注册在 BVI 的基金，首先通过 Centrifuge 协议将该基金代币化；然后，Aave 将金库资金投资于 Anemoy LTF 对应的 Centrifuge 资产池中，并产生的基金代币凭证；之后，Centrifuge 资产池通过协议将 Aave 金库投入的资产分配到 Anemoy LTF 基金手中；最后 Anemoy LTF 基金通过出入金、托管、经纪商买入美国国债，实现美债收益上链。
+
+我对 RWA 的理解是：
+将链上协议进行法律包装，方便捕获链下资产价值，并将链下资产收益上链。
+
+### 2024.08.25
+
+refer: https://docs.makerdao.com/
+
+今天先简单学习一下 MakerDAO
+
+- MakerDAO 是一个致力于为加密货币经济带来稳定性的去中心化组织。
+- Maker 协议采用双代币系统
+  - Dai，是一种提供稳定性的抵押品支持的稳定币。
+  - MKR，是一种治理代币，利益相关者使用它来维护系统和管理 Dai。MKR 代币持有者是 Maker 协议的决策者，受到更大的公共社区和其他各种外部各方的支持。
+- Maker 协议新版本 —— 多抵押 Dai (MCD) ：接受任何基于以太坊的资产作为抵押品来生成 Dai，前提是它已获得 MKR 持有者的批准，并通过 Maker 去中心化治理流程获得了特定的相应风险参数。
+  - 新的 Dai 代币 ($DAI)：https://blog.makerdao.com/creating-the-brand-identity-for-the-worlds-first-unbiased-currency-dai/
+  - 支持多种 Vault 抵押品类型（使用 ETH 和 BAT 推出）
+  - Dai 储蓄利率 (DSR)：https://blog.makerdao.com/why-the-dai-savings-rate-is-a-game-changer-for-the-defi-ecosystem-and-beyond/
+  - 更强大的挂钩保障机制（MKR 作为后盾）
+  - 稳定费是按每个区块支付的，而不是按 Dai 偿还时支付
+  - MKR 和治理保持不变
+
 ### 2024.08.23
 
 refer: https://tether.io/news/
