@@ -18,6 +18,47 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.08.27
+
+- 学习 LXDAO 公开课视频 https://www.youtube.com/watch?v=Is70Ybq28Ls
+
+### 2024.08.26
+Solayer
+
+#### 再质押
+
+再质押是由 Eigenlayer 提出的一个概念。这一概念允许质押者使用他们在以太坊上已经质押的资产，作为在其他PoS证明系统（也称为主动验证服务，Actively Validated Services，简称AVS）中的抵押品，来增强其加密经济的安全性
+
+Solayer 是原生构建在 Solana 上的高级重新质押协议，旨在为链上去中心化应用程序（dApps）提供更高的网络带宽，同时增强 L1 安全性。
+
+虽然 Solana Restaking 与以太坊的 Restaking 名字相同，但是两者业务的侧重点和目标客户群完全不同。
+
+**Eigenlayer 更侧重于对外提供服务（外源性 AVS），而 Solayer 更侧重于 Solana 内部应用提供服务（内源性 AVS），当然，Solayer 也可以对外扩展，目前只是 Solayer 的第一阶段。**
+
+#### 核心组件
+
+##### **再质押架构**
+
+Solayer 的再质押组件包括：
+
+- 再质押池管理器：监督资产流动并转换为 Solayer 特定的代币（例如，sSOL）
+- 委托管理器：处理跨验证器和 AVS 的权益分配
+- 权益池：管理验证器选择和 MEV 增强的回报
+
+##### **共享验证器网络**
+
+- SVN 促进跨链互操作性，使得基于 Solana 的区块链能够共享安全性。
+- 优化资源分配：根据权益高效地分配网络资源。
+
+#### 业务模式
+
+**设想 Solana 是一条高速公路，拥有多个车道，不同车道的收费及拥堵程度不同，代表着不同的 Staking Tiers。而不同 DApp 作为通行的汽车所需速度和能接受的收费也有所差异。Solayer 通过接受用户资金委托充当着协调汽车（DApp）、高速公路各个车道（Validators）、各个车道的收费站（Restakers）等多方的角色。**
+
+参与 Solayer Restaking 的用户的收益来自于三个方面：
+
+- Solana Staking Rewards；
+- MEV 收入；
+- 可能的 Solayer 代币空投；
 
 ### 2024.08.25
 Solana 
