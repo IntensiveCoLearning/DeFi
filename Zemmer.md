@@ -273,4 +273,36 @@ real world assets
 
 #### 
 
+
+### 2024.08.27
+依然没有进入借贷学习，还在rwa的海洋遨游
+## RWA的项目
+
+| 类别                                                    | 公司/项目                                                    |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| Tokenized Treasuries & Securities（代币化的国库与证券） | • Franklin Templeton<br>• OpenEden<br>• Matrixdock<br>• Hashnote<br>• Backed<br>• Ondo<br>• WisdomTree Prime<br>• Securitize<br>• Superstate |
+| Private Credit（私人信贷）                              | • NAOS Finance<br>• Maple<br>• Centrifuge<br>• TrueFi<br>• Clearpool<br>• Florence Finance<br>• Goldfinch<br>• CREDIX<br>• ARC<br>• Bluejay<br>• Figure |
+| Real Estate（房地产）                                   | • PROPY<br>• Parcel<br>• RealT<br>• Prochain<br>• ROBINLAND<br>• CitadelDAO |
+| Exchanges（交易所）                                     | • Oasis Pro Markets<br>• DigiFT<br>• Swarm<br>• Mauve<br>• Stobox |
+| Stablecoins（稳定币）                                   | • Tether<br>• Circle<br>• Paxos<br>• MakerDAO<br>• Gemini<br>• STASIS<br>• Frax Finance<br>• Labs<br>• StraitsX<br>• Mountain Protocol |
+| Regenerative Finance（再生金融）                        | • Regen Network<br>• Open Forest Protocol<br>• Flowcarbon<br>• Toucan<br>• Fishcoin<br>• Senken |
+| Art & Collectibles（艺术和收藏品）                      | • Courtyard.io<br>• Americana<br>• RTFKT<br>• Freeport<br>• Watches.io |
+
+## CWA和借贷的不同
+
+相同点：都是以链上加密货币作为抵押品，贷款其他加密货币（通常是稳定币）
+
+| 不同点             | CWA                                          | 借贷                     |
+| ------------------ | -------------------------------------------- | ------------------------ |
+| 贷款规模           | 大，企业级别                                 | 小，个人级别             |
+| 贷款对象（借款人） | B端                                          | C端                      |
+| 贷款期限           | 固定期限，通常30-60-90天                     | 非固定期限               |
+| 贷款利率           | 根据借款人风险定，通常低                     | 根据供需动态调整，通常高 |
+| 风险评估方式       | 链下一个Pool Delegates进行尽职调查和风险评估 | 链上算法和超额抵押       |
+| 抵押品类型         | 加密货币，接受不主流的、流动性差的加密货币   | 主流加密货币             |
+| 抵押品价值         | 合理                                         | 较高（超额抵押）         |
+| 借款人身份验证     | KYC、AML                                     | 无需                     |
+| 清算规则           | 自定义的                                     | 预设的标准化的           |
+
+
 <!-- Content_END -->
