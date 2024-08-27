@@ -305,4 +305,10 @@ real world assets
 | 清算规则           | 自定义的                                     | 预设的标准化的           |
 
 
+### 2024.08.28
+深入了解了centrifuge和Tinlake项目，该项目非常精妙，完美的在避开资金的同时，完成了应收账款融资的RWA。
+![image](https://github.com/user-attachments/assets/9f4e5cf2-ef54-43da-9c10-8d3c846d830d)
+
+下一步去了解ondo的美债如何上链。
+
 <!-- Content_END -->
