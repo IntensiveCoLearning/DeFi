@@ -95,4 +95,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 1. 阅读 https://mp.weixin.qq.com/s/gzr9q9kM3j-R0ec7sCb3NQ
 2. 阅读 https://foresightnews.pro/article/detail/26988
 
+### 2024.08.27
+
+1. 学习 https://youtu.be/Is70Ybq28Ls DeFi 残酷共学分享：稳定币的探索 30 分钟
+
 <!-- Content_END -->
