@@ -251,6 +251,10 @@ AMMs是一种数学函数，根据流动性池对资产进行算法定价。目�
 
 假设1个ETH现在在Uniswap上的价值是2,289DAI。但当ETH的价格在其他地方，如Balancer上降到2100DAI时，套利机会就出现了。套利者将利用价格差异，在Balancer上买入便宜的ETH，然后在Uniswap上卖出，快速获利（为简单起见，忽略了交易费用）。套利者将重复这样做，直到价格在两个交易所之间达到平衡
 
+### 2024.08.27
+
+![img](https://nigdaemon.gitbook.io/~gitbook/image?url=https%3A%2F%2Ftva1.sinaimg.cn%2Flarge%2F008i3skNgy1gsghahleo7j31eo07u3yv.jpg&width=768&dpr=4&quality=100&sign=b58ac09f&sv=1)
+
 
 
 <!-- Content_END -->

@@ -244,5 +244,65 @@ real world assets
 | 收益分配      | 中心化的交易和清算系统，手动操作                           | 智能合约                                  |
 | 信息披露      | 定期主动披露                                               | 随时被动披露                              |
 
+### 2024.08.26
+深入思考了房屋抵押贷款这个场景下的rwa，与传统的房抵贷的证券化不同点。并结构化的完成了消除SPV的推演（略）。下一步要将现有的房抵贷RWA项目底层逻辑往上靠，并尝试写一些合约。
+### 房抵贷
+
+#### 流程
+
+| 步骤 | 参与人               | 行为                                         | 收益                           | 风险/成本                |
+| ---- | -------------------- | -------------------------------------------- | ------------------------------ | ------------------------ |
+| 1    | 房屋拥有者（借款人） | 抵押房产，不放弃使用权（住或租自己决定）     | 获得资金                       | 支付利息或失去房产所有权 |
+| 2    | 房抵贷公司/SPV       | 发放贷款给借款人                             | 获得房产抵押权证，获得利息承诺 | 失去资金或获取房产       |
+| 3    | 房抵贷公司/SPV       | 使用抵押权证来发行房产证券/发行代币          | 获得资金                       | 支付利息                 |
+| 4    | 散户投资者           | 使用法币购买房产证券或用稳定币购买代币或份额 | 获得证券/代币，获得利息承诺    | 失去现金/代币            |
+
+##### 流程分析：两次贷款
+
+第一次：资产所有人向作为中介的SPV借款。
+
+第二次：中介向散户借款。
+
+##### 房抵贷相关方风险分析
+
+1、房屋拥有者（借款人）：风险大小：抵押贷款额和房产当前价值的差额。
+
+2、房抵贷公司/SPV：由于将风险转嫁给了散户投资者，其实具有非常小的风险。而且手上还有一份来自下游借款人的房产抵押权证做保障。换句话说，这是一个比较好的买卖。
+
+3、散户投资者：风险最大，完全依赖于对于SPV的信任产生的利息保障。
+
+#### 
+
+
+### 2024.08.27
+依然没有进入借贷学习，还在rwa的海洋遨游
+## RWA的项目
+
+| 类别                                                    | 公司/项目                                                    |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| Tokenized Treasuries & Securities（代币化的国库与证券） | • Franklin Templeton<br>• OpenEden<br>• Matrixdock<br>• Hashnote<br>• Backed<br>• Ondo<br>• WisdomTree Prime<br>• Securitize<br>• Superstate |
+| Private Credit（私人信贷）                              | • NAOS Finance<br>• Maple<br>• Centrifuge<br>• TrueFi<br>• Clearpool<br>• Florence Finance<br>• Goldfinch<br>• CREDIX<br>• ARC<br>• Bluejay<br>• Figure |
+| Real Estate（房地产）                                   | • PROPY<br>• Parcel<br>• RealT<br>• Prochain<br>• ROBINLAND<br>• CitadelDAO |
+| Exchanges（交易所）                                     | • Oasis Pro Markets<br>• DigiFT<br>• Swarm<br>• Mauve<br>• Stobox |
+| Stablecoins（稳定币）                                   | • Tether<br>• Circle<br>• Paxos<br>• MakerDAO<br>• Gemini<br>• STASIS<br>• Frax Finance<br>• Labs<br>• StraitsX<br>• Mountain Protocol |
+| Regenerative Finance（再生金融）                        | • Regen Network<br>• Open Forest Protocol<br>• Flowcarbon<br>• Toucan<br>• Fishcoin<br>• Senken |
+| Art & Collectibles（艺术和收藏品）                      | • Courtyard.io<br>• Americana<br>• RTFKT<br>• Freeport<br>• Watches.io |
+
+## CWA和借贷的不同
+
+相同点：都是以链上加密货币作为抵押品，贷款其他加密货币（通常是稳定币）
+
+| 不同点             | CWA                                          | 借贷                     |
+| ------------------ | -------------------------------------------- | ------------------------ |
+| 贷款规模           | 大，企业级别                                 | 小，个人级别             |
+| 贷款对象（借款人） | B端                                          | C端                      |
+| 贷款期限           | 固定期限，通常30-60-90天                     | 非固定期限               |
+| 贷款利率           | 根据借款人风险定，通常低                     | 根据供需动态调整，通常高 |
+| 风险评估方式       | 链下一个Pool Delegates进行尽职调查和风险评估 | 链上算法和超额抵押       |
+| 抵押品类型         | 加密货币，接受不主流的、流动性差的加密货币   | 主流加密货币             |
+| 抵押品价值         | 合理                                         | 较高（超额抵押）         |
+| 借款人身份验证     | KYC、AML                                     | 无需                     |
+| 清算规则           | 自定义的                                     | 预设的标准化的           |
+
 
 <!-- Content_END -->
