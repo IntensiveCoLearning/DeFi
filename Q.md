@@ -120,4 +120,23 @@ https://sepolia.etherscan.io/tx/0x9ad187878714605db7445146a67ee6904fa939d8215be0
 
 链上今天继续进行了mint 稳定币
 https://sepolia.etherscan.io/tx/0x9649043dac44a02a48fa7d037fa1651c6350b8adda05077ec3df3674a42a31b7
+
+### 2024.08.27
+稳定币的学习告一段落 之后继续学习。
+今天开始学习借贷相关的。主要是看aave 的历史。
+Aave 协议 V3 允许已批准的桥接器在源网络上销毁aToken，同时在目标网络上立即铸造它们。然后，基础资产可以在通过桥接器移动后，通过将其传递到池中，以延迟方式在目标网络上提供给 Aave。
+aave 已经将协议升级至了 v3 
+用户将桥接 tx提交给经过验证的桥接协议（比如 Connext），并且在tx被挖掘后就可以访问目标链上的资金。
+
+幕后桥接协议：
+
+在目标链上铸造无担保的 aTokens到中间合约，然后立即提取和转移基础资产给用户。
+
+批量处理多个桥接交易，并将基础资产实际转移到 L2
+
+稍后，一旦资金在 L2 上可用， L2 上的桥接合约（即具有BRIDGEAave V3 上的权限）就会向 Aave 池提供基础资产和费用，以支持之前铸造的未支持的 aTokens。
+
+今天进行了lend 操作
+https://explorer-holesky.morphl2.io/tx/0x707ac8c7ba996e3edd80503b5befc1747ee81b37704cb0552c54af6cfab618cb
 <!-- Content_END -->
+
