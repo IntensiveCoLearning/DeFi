@@ -18,6 +18,9 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.08.27
+
+- 学习 LXDAO 公开课视频 https://www.youtube.com/watch?v=Is70Ybq28Ls
 
 ### 2024.08.26
 Solayer
