@@ -273,4 +273,78 @@ real world assets
 
 #### 
 
+
+### 2024.08.27
+依然没有进入借贷学习，还在rwa的海洋遨游
+## RWA的项目
+
+| 类别                                                    | 公司/项目                                                    |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| Tokenized Treasuries & Securities（代币化的国库与证券） | • Franklin Templeton<br>• OpenEden<br>• Matrixdock<br>• Hashnote<br>• Backed<br>• Ondo<br>• WisdomTree Prime<br>• Securitize<br>• Superstate |
+| Private Credit（私人信贷）                              | • NAOS Finance<br>• Maple<br>• Centrifuge<br>• TrueFi<br>• Clearpool<br>• Florence Finance<br>• Goldfinch<br>• CREDIX<br>• ARC<br>• Bluejay<br>• Figure |
+| Real Estate（房地产）                                   | • PROPY<br>• Parcel<br>• RealT<br>• Prochain<br>• ROBINLAND<br>• CitadelDAO |
+| Exchanges（交易所）                                     | • Oasis Pro Markets<br>• DigiFT<br>• Swarm<br>• Mauve<br>• Stobox |
+| Stablecoins（稳定币）                                   | • Tether<br>• Circle<br>• Paxos<br>• MakerDAO<br>• Gemini<br>• STASIS<br>• Frax Finance<br>• Labs<br>• StraitsX<br>• Mountain Protocol |
+| Regenerative Finance（再生金融）                        | • Regen Network<br>• Open Forest Protocol<br>• Flowcarbon<br>• Toucan<br>• Fishcoin<br>• Senken |
+| Art & Collectibles（艺术和收藏品）                      | • Courtyard.io<br>• Americana<br>• RTFKT<br>• Freeport<br>• Watches.io |
+
+## CWA和借贷的不同
+
+相同点：都是以链上加密货币作为抵押品，贷款其他加密货币（通常是稳定币）
+
+| 不同点             | CWA                                          | 借贷                     |
+| ------------------ | -------------------------------------------- | ------------------------ |
+| 贷款规模           | 大，企业级别                                 | 小，个人级别             |
+| 贷款对象（借款人） | B端                                          | C端                      |
+| 贷款期限           | 固定期限，通常30-60-90天                     | 非固定期限               |
+| 贷款利率           | 根据借款人风险定，通常低                     | 根据供需动态调整，通常高 |
+| 风险评估方式       | 链下一个Pool Delegates进行尽职调查和风险评估 | 链上算法和超额抵押       |
+| 抵押品类型         | 加密货币，接受不主流的、流动性差的加密货币   | 主流加密货币             |
+| 抵押品价值         | 合理                                         | 较高（超额抵押）         |
+| 借款人身份验证     | KYC、AML                                     | 无需                     |
+| 清算规则           | 自定义的                                     | 预设的标准化的           |
+
+
+### 2024.08.28
+深入了解了centrifuge和Tinlake项目，该项目非常精妙，完美的在避开资金的同时，完成了应收账款融资的RWA。
+![image](https://github.com/user-attachments/assets/9f4e5cf2-ef54-43da-9c10-8d3c846d830d)
+
+下一步去了解ondo的美债如何上链。
+# STO
+
+1、Security Token Offering
+
+2、发行证券代币
+
+3、所谓的证券，意味着该代币收到中心化政府的监管，主要就是美国政府。
+
+4、其实就是传统意义上的RWA，属于RWA中最常用的一个子集，即将资产代币化后以证券形式发行来募资。
+
+5、法律上：是更严格的RWA，因为遵循美国的Regulation D、Regulation A+或S-1证券法。
+
+6、标准化：有标准规则，例如固定的代币供应量CAP、认证白名单、转账合规性检查、投资人KYC、项目链下审查、项目合同和法律文件链下签署等。
+
+7、centrifuge不属于STO，它属于NSTO，抵押借贷。
+
+## STO与ICO（Initial Coin Offering）的区别
+
+| 方面             | STO                                    | ICO                         |
+| ---------------- | -------------------------------------- | --------------------------- |
+| 现实世界资产     | 有：现实金融股票、债券、资产、实物权益 | 无：未来产品或服务的使用权  |
+| 监管             | 有：美国SEC                            | 无                          |
+| 投资者资质       | 需完成KYC，AML                         | 无                          |
+| 信息披露要求     | 完整严格                               | 无                          |
+| 二级市场交易平台 | 被监管的平台，如tZERO                  | 无要求，可以在任意DEX上交易 |
+| 是否法律上可追索 | 是                                     | 否                          |
+| 募资主体         | 现实中成熟企业或资产                   | 区块链中的早期项目          |
+| 是否有代币锁定期 | 有：遵循证券的锁定期约定               | 无                          |
+| 价值来源         | 现实中企业的业绩                       | 投机和市场预估              |
+| 发行成本         | 高：因为合规成本高                     | 低                          |
+| 发行时间         | 长                                     | 短                          |
+| 合约技术要求     | 复杂                                   | 简单                        |
+| 投资者权益       | 明确                                   | 不明确                      |
+| 跨境合规         | 限制                                   | 不限                        |
+| 总体风险         | 低                                     | 高                          |
+
+
 <!-- Content_END -->

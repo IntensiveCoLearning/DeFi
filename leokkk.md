@@ -179,3 +179,12 @@ DEX聚合器（Decentralized Exchange Aggregator）是一种去中心化金融�
 通过 Synthetix 的治理系统由社区决定代币组成比例和新增代币的决策，但通过采用的是锚定价格的衍生品方式。
 
 <!-- Content_END -->
+
+<!-- Content_START -->
+
+### 日期 2024.08.27
+
+预言机用于连接现实数据和区块链，或是区块链内部唔到数据。这些预言机将外部信息传递到区块链，以供 DeFi生态系统中的智能合约或Dapp进行验证和执行
+目前预言机主要有chinlink和brandprotocl等等
+
+<!-- Content_END -->

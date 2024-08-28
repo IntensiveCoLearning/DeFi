@@ -96,4 +96,8 @@ Tren Finance:
 
 查看 Telegram 消息，在群内进行讨论；参加 DeFi 残酷共学分享会 #1 稳定币的探索
 
+### 2024.08.28
+
+查看 Telegram 消息，查看 Usual 积分活动（https://www.youtube.com/watch?v=SaeqjfDoE68）
+
 <!-- Content_END -->
