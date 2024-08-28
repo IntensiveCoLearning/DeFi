@@ -100,11 +100,30 @@ timezone: Asia/Shanghai
 
 ### 2024.08.27
 
-- 学习主题：
+- 学习主题：[稳定币公开课](https://www.youtube.com/watch?v=Is70Ybq28Ls) 回放
+  - https://www.notion.so/lxdao/DeFi-b8e6a4c9dadb415cba199cb63e78b797
+  - https://grizzled-guarantee-6cd.notion.site/2ca98f8cb054463f83b497ba1543c779
+- 学习内容总结：摘要
+  - 稳定币体系主要分为三类：首先是基于现实抵押物的稳定币（如USDC、USDT、BUSD），这些稳定币声称足额抵押，但其透明度不足。其次是超额抵押稳定币，通过链上可查的虚拟资产进行超额抵押，如Dai的铸造机制，虽然保障了每个稳定币有足额抵押，但面对市场波动和治理攻击存在风险。最后是算法稳定币，如Ampl、UST和Frax，依赖算法调节供需，利用铸币税机制保持价值稳定，具有无需信任和高资本效率的优势。总的来看，算法稳定币在资本效率上优于其他类型，但各类稳定币都有各自的优缺点和风险。
+  - 所有稳定币铸造核心都是应用场景的增加：不论是超额抵押稳定币还是算法稳定币，他们都需要急剧扩展自己的应用场景，常见的就是将铸造出来的稳定币用于 DeFi 的再质押和用于其他 DeFi 协议的组合**（你铸造出的稳定币没有协议用，那就完蛋）**。例如，UST 会急剧扩展自己的质押场景，如 Cruve 大战想替换 USDC 的 3 币池，Venus 铸造出的稳定币 Vai 价格一直脱锚，但在小恐龙 DeFi 协议出现后价格回到 1 U 左右。现在，也有很多 DeFi 协议在思考如何引入 RWA 资产，扩展更多的稳定币场景。
+
+### 2024.08.28
+
+- 学习主题：测试网 mint deposit withdraw 
+
 - 学习内容总结：
+  - Mint sDAI: https://sepolia.etherscan.io/tx/0xc95c33d2162c2e4ba178c75677af26645e74f333c6bf7311d6e0a967df047b23
+  - Deposit : https://sepolia.etherscan.io/tx/0x14defecd77617f9dbbaa51af3bd4e526c554d1e4928dce6f7678b9cad0b52788
+  - Withdraw: https://sepolia.etherscan.io/tx/0x173afcc608f6fb1c76af97a6bc5f368f728ed852a1e4a013d6c5fb4b7ce3743c
+  - 借贷：https://abra.finance/dashboard/
 
 
 
+### 2024.08.29
+
+- 学习主题：
+
+- 学习内容总结：
 
 <!-- Content_END -->
 

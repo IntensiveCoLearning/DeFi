@@ -251,6 +251,24 @@ AMMs是一种数学函数，根据流动性池对资产进行算法定价。目�
 
 假设1个ETH现在在Uniswap上的价值是2,289DAI。但当ETH的价格在其他地方，如Balancer上降到2100DAI时，套利机会就出现了。套利者将利用价格差异，在Balancer上买入便宜的ETH，然后在Uniswap上卖出，快速获利（为简单起见，忽略了交易费用）。套利者将重复这样做，直到价格在两个交易所之间达到平衡
 
+### 2024.08.27
 
+![](https://nigdaemon.gitbook.io/~gitbook/image?url=https%3A%2F%2Ftva1.sinaimg.cn%2Flarge%2F008i3skNgy1gsghahleo7j31eo07u3yv.jpg&width=768&dpr=4&quality=100&sign=b58ac09f&sv=1)
+
+### 2024.08.28
+
+#### 中心化稳定币
+
+**Tether (USDT)** ![img](https://nigdaemon.gitbook.io/~gitbook/image?url=https%3A%2F%2Ftva1.sinaimg.cn%2Flarge%2F008i3skNgy1gse93hl8xdj30mb05pgmq.jpg&width=300&dpr=4&quality=100&sign=a53e33d3&sv=1)
+
+USDT（以前被称为RealCoin）是一种中心化的稳定币，于2015年首次在Bitfinex交易所开始交易。作为市场上第一个稳定币，它具有强大的先发优势，并一直保持着稳定币的市场领导者地位。截至2021年4月，Tether的市值为400亿美元，占整个稳定币市场份额的66%以上。
+
+Tether通过1:1的抵押品系统维持其1美元的挂钩。通过持有现金作为储备抵押品，然后发行等量的USDT。从理论上讲，这是一个可靠和直接的方法，以确保USDT保持其挂钩。毕竟，这是对黄金标准的复刻，在上个世纪，美元曾经由黄金支持。
+
+然而，问题在于Tether的非透明发行过程。由于其发行的集中化性质，加密货币社区的许多人都怀疑Tether是否有它所声称的储备。2019年3月，当Tether修改其政策声明，将对关联公司的贷款作为其抵押品储备的一部分时，怀疑者得到了部分证实。
+
+多年来，多个政府机构对Tether的做法展开了调查。2021年2月，纽约总检察长对Bitfinex和Tether内部财务的调查结束，没有正式指控。然而，纽约总检察长确实施加了1850万美元的集体罚款，以解决Bitfinex将客户和公司资金混合的指控。
+
+Tether的故事是一个持续的故事，不太可能很快解决。最近的事件进一步证明了它的合法性，比如Coinbase将Tether上市。Bitfinex的首席技术官Paolo Ardoino也重申，Tether是由FinCEN注册和监管的。
 
 <!-- Content_END -->

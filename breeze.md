@@ -135,11 +135,29 @@ and proved
 3. Modular and Upgradable
 ○ Implementations of e.g. auctions, liquidation, Vault risk conditions, and new collateral types, to
 be altered on a live system through Maker Governance
-
-
  Vault States within the Vat
 <img width="977" alt="image" src="https://github.com/user-attachments/assets/fef56fb1-4dd4-4f19-bbbe-77619505147e">
 
+### 2024.08.26
+read the https://web3caff.com/zh/archives/80903  and [Centrifuge](https://mp.weixin.qq.com/s?__biz=MzIyNzIzODcyMQ==&mid=2678429163&idx=1&sn=ddf9712d5363e2371da050acaa7556d9&chksm=f23503c5c5428ad34513e0abf64e6984e7aacbe3c0ddb5cecc29f85806192144e40e2a2de2c7&scene=21#wechat_redirect)
 
+- RWA: Real World Asset Tokenization
+
+- some project such as Monetalis Clydesdal, use the On-chain governance of MakerDAO + off-chain governance of the foundation system
+
+### 2024.08.27
+read the https://mp.weixin.qq.com/s/gzr9q9kM3j-R0ec7sCb3NQ
+
+
+<img width="733" alt="image" src="https://github.com/user-attachments/assets/3e970a6b-3350-498b-bed8-29365715ab55">
+
+- paypal publish the pyUsd
+- visa 
+
+<img width="730" alt="image" src="https://github.com/user-attachments/assets/89fdfaaa-696b-4eef-b339-768feb9a59ca">
+
+todo：
+1. We can use ETH to borrow DAI, then purchase US Treasury RWA (Real World Asset), which generally yields an annual return of about 5%. This is higher than the return from staking ETH on Lido. If we adopt this approach, what are the associated risks?
+2. https://debank.com/profile/0x3e8734ec146c981e3ed1f6b582d447dde701d90c/history 
 
 <!-- Content_END -->    

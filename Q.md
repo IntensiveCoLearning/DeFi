@@ -138,5 +138,9 @@ aave 已经将协议升级至了 v3
 
 今天进行了lend 操作
 https://explorer-holesky.morphl2.io/tx/0x707ac8c7ba996e3edd80503b5befc1747ee81b37704cb0552c54af6cfab618cb
+
+### 2024.08.28
+今天主要是进行了 借贷操作
+https://explorer-holesky.morphl2.io/tx/0x72c131ee19aa5bacda161ea0678b74d30febbf7b37763c11acb11b29e46acce1
 <!-- Content_END -->
 
