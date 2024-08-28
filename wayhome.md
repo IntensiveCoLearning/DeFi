@@ -18,6 +18,84 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+
+### 2024.08.28
+
+#### Uniswap V3 解析
+
+##### 基本介绍
+
+Uniswap 在其流动性池上构建了一种特定的自动做市商（AMM）机制。称为恒定乘积做市商（Constant Product Market Makers，CPMM）。
+
+**其核心是一个非常简单的乘积公式：**
+
+ **x∗y=k**
+
+流动性池是一个持有两种不同 token 的合约，x 和 y 分别代表 token0 的数目和 token1 的数目， k
+
+是它们的乘积，当 swap 发生时，token0 和 token1 的数量都会发生变化，但二者乘积保持不变，仍然为 k
+
+我们一般说的 token0 的价格是指在流动性池中相对于 token1 的价格，价格与数量互为倒数，因此公式为：
+
+P=y/x
+
+##### **Uniswap V3 代码解析**
+
+Uniswap 核心就是要基于 CPMM 来实现一个自动化做市商，除了用户调用的交易合约外，还需要有提供给 LP 管理流动性池子的合约，以及对流动性的管理。
+
+Uniswap V3 的合约大概被分为两类:
+
+- [Uniswap v3-periphery](https://github.com/Uniswap/v3-periphery)：面向用户的接口代码，如头寸管理、swap 路由等功能，Uniswap 的前端界面与 periphery 合约交互，主要包含三个合约：
+    - NonfungiblePositionManager.sol：对应头寸管理功能，包含交易池（又称为流动性池或池子，后文统一用交易池表示）创建以及流动性的添加删除；
+    - NonfungibleTokenPositionDescriptor.sol：对头寸的描述信息；
+    - SwapRouter.sol：对应 swap 路由的功能，包含单交易池 swap 和多交易池 swap。
+- [Uniswap v3-core](https://github.com/Uniswap/v3-core)：Uniswap v3 的核心代码，实现了协议定义的所有功能，外部合约可直接与 core 合约交互，主要包含三个合约；
+    - UniswapV3Factory.sol：工厂合约，用来创建交易池，设置 Owner 和手续费等级；
+    - UniswapV3PoolDeployer.sol：工厂合约的基类，封装了部署交易池合约的功能；
+    - UniswapV3Pool.sol：交易池合约，持有实际的 Token，实现价格和流动性的管理，以及在当前交易池中 swap 的功能。
+
+核心流程:
+
+- **部署交易池**
+    - 部署交易池调用的是 `NonfungiblePositionManager` 合约的 [createAndInitializePoolIfNecessary](https://github.com/Uniswap/v3-periphery/blob/main/contracts/base/PoolInitializer.sol#L13)，参数为：
+        - token0：token0 的地址，需要小于 token1 的地址且不为零地址；
+        - token1：token1 的地址；
+        - fee：以 1,000,000 为基底的手续费费率，Uniswap v3 前端界面支持四种手续费费率（0.01%，0.05%、0.30%、1.00%），对于一般的交易对推荐 0.30%，fee 取值即 3000；
+        - sqrtPriceX96：当前交易对价格的算术平方根左移 96 位的值，目的是为了方便合约中的计算。
+    - 代码为
+        
+        ```jsx
+        /// @inheritdoc IPoolInitializer
+        function createAndInitializePoolIfNecessary(
+            address token0,
+            address token1,
+            uint24 fee,
+            uint160 sqrtPriceX96
+        ) external payable override returns (address pool) {
+            require(token0 < token1);
+            pool = IUniswapV3Factory(factory).getPool(token0, token1, fee);
+        
+            if (pool == address(0)) {
+                pool = IUniswapV3Factory(factory).createPool(token0, token1, fee);
+                IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+            } else {
+                (uint160 sqrtPriceX96Existing, , , , , , ) = IUniswapV3Pool(pool).slot0();
+                if (sqrtPriceX96Existing == 0) {
+                    IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+                }
+            }
+        }
+        ```
+        
+- **swap**
+    - swap 也就指交易，是 Uniswap 中最常用的也是最核心的功能。对应 https://app.uniswap.org/swap 中的相关操作，接下来让我们看看 Uniswap 的合约是如何实现 swap 的。
+    - `SwapRouter` 合约包含了以下四个交换代币的方法：
+        - `exactInput`：多池交换，用户指定输入代币数量，尽可能多地获得输出代币；
+        - `exactInputSingle`：单池交换，用户指定输入代币数量，尽可能多地获得输出代币；
+        - `exactOutput`：多池交换，用户指定输出代币数量，尽可能少地提供输入代币；
+        - `exactOutputSingle`：单池交换，用户指定输出代币数量，尽可能少地提供输入代币。
+    
+    - 在多池 swap 中，会按照 swap 路径，拆成多个单池 swap，循环进行，直到路径结束。如果是第一步 swap。payer 为合约调用方，否则 payer 为当前 `SwapRouter` 合约。
 ### 2024.08.27
 
 - 学习 LXDAO 公开课视频 https://www.youtube.com/watch?v=Is70Ybq28Ls
