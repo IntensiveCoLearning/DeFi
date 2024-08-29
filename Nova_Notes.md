@@ -67,4 +67,7 @@ MakerDAO是如何控制DAI的币值稳定的？有几个手段：
 3. PSM锚定稳定模块 - 有点像引入一个套利机制，假如DAI价值下跌到不足1美元，人们可以用USDC换取便宜的DAI来套利
 以及DAI的央行实际上就是MakerDAO这个去中心化组织，大家在链上投票来决定准备金率和利率，投票的人需要质押自己的治理代币MKR（看投票记录发现有不少持有大量MKR的大股东）
 
+### 2024.08.28
+找到一篇讲Curve等稳定币交易所如何设计机制来引导流动性：https://crypto.nateliason.com/p/curve-wars?s=w
+
 <!-- Content_END -->
