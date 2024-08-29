@@ -11,6 +11,19 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.08.29
+
+看稳定币的探索 视频
+
+- https://defillama.com/   defi 必看网站 
+- 观察到 稳定币今年的走势是上升的， 目前170B，最高时189B ，说明入场的资金变多 
+- USDT : https://tether.to/en/     118b ,看了 它的透明度 ，流通量 
+- USDC : https://www.circle.com/en/usdc   看了透明度 和链的分布，发现base 上很多  
+- https://dune.com/  链上工具  
+	- https://cryptowesearch.com/blog/all/onchain-data-DUNE-analytics-intro  
+
+- 提到 要去了解一下 FRAX  ， 使用一下 makedao  ， defi 是有很多的机会的 ，要去体验
+
 ### 2024.08.28
 
 阅读：去中心化收益聚合器
