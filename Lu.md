@@ -186,5 +186,8 @@ Stablecoin
 学习材料：[banklessdao-defi-download-stablecoin](https://banklessdao.substack.com/p/the-stablecoin-edition-defi-download)
 预期收获：stablecoin的相关知识，之后可以学习代币经济学（tokennomics）、liquidity pools等关联信息。
  
+### 2024.08.29
+希望defi这轮结束后，自己可以对这篇文章有更多理解
+《无风险年化 360%？小白也能懂的 Crypto 套利》 https://twitter.com/taresky/status/1764616537674256696
 
 <!-- Content_END -->
