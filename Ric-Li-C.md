@@ -100,4 +100,8 @@ Tren Finance:
 
 查看 Telegram 消息，查看 Usual 积分活动（https://www.youtube.com/watch?v=SaeqjfDoE68）
 
+### 2024.08.30
+
+查看 Telegram 消息；学习 DeFi 相关文档
+
 <!-- Content_END -->
