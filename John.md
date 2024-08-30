@@ -82,6 +82,12 @@ Curve:
     质押：用户质押CRV并获得veCRV，交易费用的50%以LP代币的形式分配给质押者，回报率取决于质押时间
     提升：veCRV吃哟欧哲可以参与提案投票，并赚取2.5%的流动性池费用作为奖金
 
+### 2024.8.30
+聚合器：
+    作用：在做币种交易时有很多DEX可选择，但是用户无法直观地选出最低的滑点和最低的费率，这种时候就依赖聚合器，它可以帮用户实现最大的交易价值，甚至可以把单笔交易拆分成多次以实现利益最大化，
+    常见的聚合器：1inch 第一大聚合器，支持发币和gas退款，支持九大链(Ethereum, Binance Chain, Polygon, Optimism, Arbitrum, Gnosis, Avalanche, Fantom, Klaytn)；Paraswap
+
+    
 
 <!-- Content_END -->
 

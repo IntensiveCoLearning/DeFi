@@ -158,11 +158,25 @@ timezone: Asia/Shanghai
 
 ### 2024.08.30
 
-- 学习主题：
-
+- 学习主题：交换、借贷实践操作
 - 学习内容总结：
+  - mint 
+    - https://explorer-holesky.morphl2.io/tx/0x94a618522e11e090a204813f650262ab2fb003c616ed43d8ca77a0c31b386067
+    - https://explorer-holesky.morphl2.io/tx/0x20730968138c6c0fbce041aa024fb13bb90024c127e91cd9d64aeca75c41d9e3
 
+  - bulbswap
+    - https://explorer-holesky.morphl2.io/tx/0x81ba3fb987b61a539a81070557b4197b7e2b8038de6dfe999f9925f7bbdf5f1c
+    - https://explorer-holesky.morphl2.io/tx/0x7403292ff17acdaa6c54015577e7d639c636c5986af19e900cfa169841cc8ad0
 
+  - 借贷 https://docs.abra.finance/testnet-tutorial/get-started-morph
+    - https://explorer-holesky.morphl2.io/tx/0x6e8ee544fb2cd3a3bd06143f1161cf9699cfb72ac9bbf573093718c90d5dfb49
+
+  - 周六周日请假
+
+### 2024.09.02
+
+- 学习主题：
+- 学习内容总结：
 
 <!-- Content_END -->
 

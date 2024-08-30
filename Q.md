@@ -142,5 +142,15 @@ https://explorer-holesky.morphl2.io/tx/0x707ac8c7ba996e3edd80503b5befc1747ee81b3
 ### 2024.08.28
 今天主要是进行了 借贷操作
 https://explorer-holesky.morphl2.io/tx/0x72c131ee19aa5bacda161ea0678b74d30febbf7b37763c11acb11b29e46acce1
+
+### 2024.08.29
+今天学习了aave 的代币经济升级，
+Aave目前为可能发生的协议坏账提供了准备金，该机制被称为“安全模块”，这部分准备金目前由三部分构成：
+质押的Aave，现价值2.75亿美金
+质押的Aave原生稳定币GHO，现价值6000万美金
+质押的Aave-ETH LP，同时也是Aave链上流动性的主要来源之一，现价值1.24亿美金
+
+他们上线了一个安全模块，类似于cex 的平台保证金
+
 <!-- Content_END -->
 
