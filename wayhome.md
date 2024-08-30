@@ -18,6 +18,134 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+
+### 2024.08.29
+
+#### 预言机
+
+区块链外信息写入区块链内的机制，一般被称为预言机（Oracle mechanism）
+
+预言机能够更快地获取链上数据，它允许确定的智能合约对不确定的外部世界作出反应，是智能合约与外部进行数据交互的唯一途径
+
+#### Pyth
+Pyth 是一个旨在为加密货币、股票、外汇对、ETF 和大宗商品提供准确价格的语言网络。它提供三个核心产品：
+
+- 价格源（Price Feeds），智能合约的实时更新
+- 基准（Benchmarks），历史市场数据
+- Pyth 熵（Pyth Entropy），安全随机数生成器
+
+##### Pyth 解决的问题
+
+- **速度：对于许多链上金融场景来说，预言机的更新速度不够快**
+- **资产覆盖和可用性：开发者无法获取他们所需要的喂价数据**
+- **数据源和数据质量：数据是模糊的，且来自聚合的、第三方的数据源**
+
+##### Pyth **解决传统预言机的局限性**
+
+- **1. 低延迟、高频次的价格更新**
+- **2. 喂价数据覆盖和多链可用性**
+- **3. 高分辨率、高保真、透明的数据**
+
+##### Pyth 工作原理
+
+- 传统预言机的设计都有一个隐含的前提：所有数据，包括金融数据，都可以在 Web2 的世界中免费获取。
+- Pyth Network 建立在这样一个前提之上：金融数据是有价值的，并且不是免费获得的。Pyth 协议不仅仅提供这些数据的粗略近似值，而是支持并激励金融数据的*原始所有者*直接将其贡献到区块链上。Pyth 的数据源是“一手的”，因为这些数据是由他们创造并拥有的。
+
+##### **Pyth Network 的核心组件**
+
+Pyth 运行其协议的两个实例：一个在 Solana 主网上，另一个在 Pythnet Appchain 上。Solana 上的 Pyth 仅为 Solana 上的协议提供数据；Pythnet 上的 Pyth 为所有其他区块链上的协议提供数据。
+
+协议中主要有以下三个角色：
+
+1. **数据发布者**向 Pyth 的预言机程序提交价格信息。每一个喂价数据产品 Pyth 都有多个数据发布者，以提高系统的准确性和稳健性。
+2. **Pyth 协议**对数据发布者的数据进行组合，产生一个单一的聚合价格和置信区间。
+3. **数据用户**读取由预言机程序产生的价格信息。
+
+##### Solana 上的 Pyth
+
+价格源以两个 Solana 账户表示：产品账户和价格账户。产品账户存储有关价格源的元数据，如股票代码、资产类型、相应价格账户等。价格账户包含授权数据提供商的名称、每个提供商提交的价格和置信区间、指数移动平均值等。这两个账户都由预言机程序维护，该程序还包含一个第三个账户，基本上只列出产品账户。这种设置使应用程序能够对 Pyth 提供的完整价格源列表进行分类。
+
+##### Pythnet 应用链
+
+Pythnet 应用链是 Solana 主网的一种权威证明分叉，作为一个计算基础层，用于处理和聚合 Pyth 的数据提供商网络提供的数据。Pythnet 上的结果价格源可供 50 多个区块链访问，不仅仅包括 Solana，因为它的价格源直接发布到区块链上。由于 Pythnet 是 Solana 的分叉，因此 Solana 上的 Pyth 预言机框架和 Pythnet 上的 Pyth 预言机 框架在某种程度上是相似的，但存在一些区别
+
+### 2024.08.28
+
+#### Uniswap V3 解析
+
+##### 基本介绍
+
+Uniswap 在其流动性池上构建了一种特定的自动做市商（AMM）机制。称为恒定乘积做市商（Constant Product Market Makers，CPMM）。
+
+**其核心是一个非常简单的乘积公式：**
+
+ **x∗y=k**
+
+流动性池是一个持有两种不同 token 的合约，x 和 y 分别代表 token0 的数目和 token1 的数目， k
+
+是它们的乘积，当 swap 发生时，token0 和 token1 的数量都会发生变化，但二者乘积保持不变，仍然为 k
+
+我们一般说的 token0 的价格是指在流动性池中相对于 token1 的价格，价格与数量互为倒数，因此公式为：
+
+P=y/x
+
+##### **Uniswap V3 代码解析**
+
+Uniswap 核心就是要基于 CPMM 来实现一个自动化做市商，除了用户调用的交易合约外，还需要有提供给 LP 管理流动性池子的合约，以及对流动性的管理。
+
+Uniswap V3 的合约大概被分为两类:
+
+- [Uniswap v3-periphery](https://github.com/Uniswap/v3-periphery)：面向用户的接口代码，如头寸管理、swap 路由等功能，Uniswap 的前端界面与 periphery 合约交互，主要包含三个合约：
+    - NonfungiblePositionManager.sol：对应头寸管理功能，包含交易池（又称为流动性池或池子，后文统一用交易池表示）创建以及流动性的添加删除；
+    - NonfungibleTokenPositionDescriptor.sol：对头寸的描述信息；
+    - SwapRouter.sol：对应 swap 路由的功能，包含单交易池 swap 和多交易池 swap。
+- [Uniswap v3-core](https://github.com/Uniswap/v3-core)：Uniswap v3 的核心代码，实现了协议定义的所有功能，外部合约可直接与 core 合约交互，主要包含三个合约；
+    - UniswapV3Factory.sol：工厂合约，用来创建交易池，设置 Owner 和手续费等级；
+    - UniswapV3PoolDeployer.sol：工厂合约的基类，封装了部署交易池合约的功能；
+    - UniswapV3Pool.sol：交易池合约，持有实际的 Token，实现价格和流动性的管理，以及在当前交易池中 swap 的功能。
+
+核心流程:
+
+- **部署交易池**
+    - 部署交易池调用的是 `NonfungiblePositionManager` 合约的 [createAndInitializePoolIfNecessary](https://github.com/Uniswap/v3-periphery/blob/main/contracts/base/PoolInitializer.sol#L13)，参数为：
+        - token0：token0 的地址，需要小于 token1 的地址且不为零地址；
+        - token1：token1 的地址；
+        - fee：以 1,000,000 为基底的手续费费率，Uniswap v3 前端界面支持四种手续费费率（0.01%，0.05%、0.30%、1.00%），对于一般的交易对推荐 0.30%，fee 取值即 3000；
+        - sqrtPriceX96：当前交易对价格的算术平方根左移 96 位的值，目的是为了方便合约中的计算。
+    - 代码为
+        
+        ```jsx
+        /// @inheritdoc IPoolInitializer
+        function createAndInitializePoolIfNecessary(
+            address token0,
+            address token1,
+            uint24 fee,
+            uint160 sqrtPriceX96
+        ) external payable override returns (address pool) {
+            require(token0 < token1);
+            pool = IUniswapV3Factory(factory).getPool(token0, token1, fee);
+        
+            if (pool == address(0)) {
+                pool = IUniswapV3Factory(factory).createPool(token0, token1, fee);
+                IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+            } else {
+                (uint160 sqrtPriceX96Existing, , , , , , ) = IUniswapV3Pool(pool).slot0();
+                if (sqrtPriceX96Existing == 0) {
+                    IUniswapV3Pool(pool).initialize(sqrtPriceX96);
+                }
+            }
+        }
+        ```
+        
+- **swap**
+    - swap 也就指交易，是 Uniswap 中最常用的也是最核心的功能。对应 https://app.uniswap.org/swap 中的相关操作，接下来让我们看看 Uniswap 的合约是如何实现 swap 的。
+    - `SwapRouter` 合约包含了以下四个交换代币的方法：
+        - `exactInput`：多池交换，用户指定输入代币数量，尽可能多地获得输出代币；
+        - `exactInputSingle`：单池交换，用户指定输入代币数量，尽可能多地获得输出代币；
+        - `exactOutput`：多池交换，用户指定输出代币数量，尽可能少地提供输入代币；
+        - `exactOutputSingle`：单池交换，用户指定输出代币数量，尽可能少地提供输入代币。
+    
+    - 在多池 swap 中，会按照 swap 路径，拆成多个单池 swap，循环进行，直到路径结束。如果是第一步 swap。payer 为合约调用方，否则 payer 为当前 `SwapRouter` 合约。
 ### 2024.08.27
 
 - 学习 LXDAO 公开课视频 https://www.youtube.com/watch?v=Is70Ybq28Ls

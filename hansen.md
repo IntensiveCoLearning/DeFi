@@ -11,6 +11,43 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.08.29
+
+看稳定币的探索 视频
+
+- https://defillama.com/   defi 必看网站 
+- 观察到 稳定币今年的走势是上升的， 目前170B，最高时189B ，说明入场的资金变多 
+- USDT : https://tether.to/en/     118b ,看了 它的透明度 ，流通量 
+- USDC : https://www.circle.com/en/usdc   看了透明度 和链的分布，发现base 上很多  
+- https://dune.com/  链上工具  
+	- https://cryptowesearch.com/blog/all/onchain-data-DUNE-analytics-intro  
+
+- 提到 要去了解一下 FRAX  ， 使用一下 makedao  ， defi 是有很多的机会的 ，要去体验
+
+### 2024.08.28
+
+阅读：去中心化收益聚合器
+
+- 收益聚合器的诞生是为了满足用户投资策略自动化的需要，使他们不必为监测市场上的最佳收益农场而烦恼。
+收益聚合器的作用与主动管理基金或对冲基金类似。他们的工作是寻找最佳投资机会，并从中赚取收益。
+- 如果用户将DAI存入Yearn Finance，用户将收到一个yDAI代币作为回报，这是一个有收益的DAI代币。
+
+阅读：预言机与数据聚合器
+
+区块链和现实世界之间架起数据的桥梁  
+
+- 智能合约工作所需的真实世界数据并不存储在区块链上，如天气状况或交通信息。需要有协议来处理这一差距，将链外数据转发到区块链上，以便智能合约与数据互动
+
+- 预言机（Oracle）协议 
+	- chainlink 
+		- Chainlink是用于构建去中心化预言机网络的框架和基础设施，可将任何区块链网络上的智能合约安全地连接到外部数据资源和链下计算
+	- Band Protocol
+
+- 数据聚合器（Data Aggregators）
+	- 区块链数据编译成一种简化的格式，使项目和个人用户更容易创建他们的分析仪表板。
+	- Graph通过将区块链数据索引到“子图”（subgraphs）或使用标准GraphQL API构建的开放API查询
+	- Covalent是一个区块链数据提供商
+
 ### 2024.08.27
 
 去中心化预测市场
