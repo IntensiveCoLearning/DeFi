@@ -346,7 +346,79 @@ MEV其实也并不一定是坏事，总的来说有下面两个好处
 
 
 ### 2024.08.30
+尝试用代码的方式理解 mev 的原理和流程
 
+```python
+from web3 import Web3
+import time
+
+# 配置
+INFURA_URL = 'https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'
+PRIVATE_KEY = 'YOUR_PRIVATE_KEY'
+TARGET_ACCOUNT = 'TARGET_ACCOUNT_ADDRESS'
+GAS_PRICE = Web3.toWei('50', 'gwei')
+
+# 初始化Web3
+web3 = Web3(Web3.HTTPProvider(INFURA_URL))
+
+# 验证连接
+if not web3.isConnected():
+    raise Exception("Unable to connect to Ethereum network")
+
+# 获取账户地址
+account = web3.eth.account.privateKeyToAccount(PRIVATE_KEY)
+address = account.address
+
+# 监控交易池
+def monitor_mempool():
+    while True:
+        pending_txns = web3.eth.get_block('pending', full_transactions=True).transactions
+        for txn in pending_txns:
+            if txn['to'] == TARGET_ACCOUNT:
+                handle_sandwich_attack(txn)
+        time.sleep(1)
+
+# 处理夹心攻击
+def handle_sandwich_attack(target_txn):
+    nonce = web3.eth.getTransactionCount(address)
+
+    # 前置交易（买入）
+    front_run_txn = {
+        'nonce': nonce,
+        'to': target_txn['to'],
+        'value': target_txn['value'],
+        'gas': 21000,
+        'gasPrice': GAS_PRICE,
+        'data': target_txn['data']
+    }
+    signed_front_run_txn = web3.eth.account.signTransaction(front_run_txn, PRIVATE_KEY)
+    web3.eth.sendRawTransaction(signed_front_run_txn.rawTransaction)
+
+    # 等待目标交易上链
+    while web3.eth.getTransactionCount(TARGET_ACCOUNT) <= target_txn['nonce']:
+        time.sleep(1)
+
+    # 后置交易（卖出）
+    back_run_txn = {
+        'nonce': nonce + 1,
+        'to': target_txn['to'],
+        'value': target_txn['value'],
+        'gas': 21000,
+        'gasPrice': GAS_PRICE,
+        'data': target_txn['data']
+    }
+    signed_back_run_txn = web3.eth.account.signTransaction(back_run_txn, PRIVATE_KEY)
+    web3.eth.sendRawTransaction(signed_back_run_txn.rawTransaction)
+
+# 启动监控
+monitor_mempool()
+```
+
+这里要等到目标交易上链之后，我在下一个 block 卖出
+这也未必能保证我的前置交易会在目标交易之前完成，可以通过提高gas费等方式来实现优先
+不过由于不是矿工，所以其实无法最大化MEV的收益，因为矿工拥有最高的交易排序权力
+
+另外，通过 http 去轮询的方式，过于低效，很容易错过机会，应该用 websocket 或者其他的方案，保证网络的稳定性和实时性
 
 
 
