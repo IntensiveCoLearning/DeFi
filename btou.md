@@ -282,5 +282,6 @@ RWA（Real World Assets）
 金融普惠性：代币化降低了进入高价值市场的门槛，使得普通投资者能够参与以前只有富人或机构投资者才能进入的市场。例如，小额投资者现在可以购买部分房地产或大宗商品的权益。
 5. RWA 的金融创新与未来展望
 RWA的发展潜力在于，它将传统金融和去中心化金融（DeFi）结合在一起，创造了新的金融产品和服务。例如，基于RWA的结构性产品、指数基金、合成资产和保险产品等都可能出现。这将改变传统金融机构的运作方式，并且可能为整个金融体系带来深远的影响。
-
+### 2024.08.29
+今日学习：https://research.mintventures.fund/2024/07/26/zh-exploring-the-updated-aavenomics-buybacks-profit-distribution-and-safety-module-shift/
 <!-- Content_END -->
