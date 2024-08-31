@@ -163,4 +163,21 @@ todo：
 ### 2024.08.30
 reading the https://banklessdao.substack.com/p/the-lending-edition-defi-download  and learn defi lending basic
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8e574287-1db9-4703-a2c0-97eaed9de53f_606x526.png)
+
+### 2024.08。31
+Flash Loans
+- DeFi lending has enabled the rise of "Flash Loans". Flash loans allow users to borrow assets without providing collateral for a very limited amount of time (within the same block). These loans are typically used for arbitrage opportunities between different DeFi protocols.
+
+Use cases:
+1. Creating a fully leveraged position
+2. Collateral or debt asset swaps
+3. Closing a position
+4. Creating a liquidity mining position
+
+smart contract：
+- https://github.com/aave/protocol-v2
+- https://github.com/compound-finance/compound-protocol
+
+
+
 <!-- Content_END -->    
