@@ -160,4 +160,7 @@ todo：
 1. We can use ETH to borrow DAI, then purchase US Treasury RWA (Real World Asset), which generally yields an annual return of about 5%. This is higher than the return from staking ETH on Lido. If we adopt this approach, what are the associated risks?
 2. https://debank.com/profile/0x3e8734ec146c981e3ed1f6b582d447dde701d90c/history 
 
+### 2024.08.30
+reading the https://banklessdao.substack.com/p/the-lending-edition-defi-download  and learn defi lending basic
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8e574287-1db9-4703-a2c0-97eaed9de53f_606x526.png)
 <!-- Content_END -->    

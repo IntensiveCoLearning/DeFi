@@ -327,7 +327,7 @@ dex聚合器的功能一般都是通过智能合约来实现的，也就是说�
 - 矿工赚取了差价：由于矿工先买后卖，他们在这一系列操作中赚取了差价，这个差价就是矿工通过控制交易顺序而提取的价值，即MEV。
 - 你的交易成本增加了：因为矿工在你的交易之前进行了买入操作，导致你购买 ABC 代币的成本增加，获取的代币数量也减少了。
 
-### 2024.08.28
+### 2024.08.29
 MEV的解决方案
 
 1，使用闪电贷保护：闪电贷可以在一个原子交易中完成借款和还款，减少被夹心攻击（sandwich attack）的可能性。
@@ -345,8 +345,207 @@ MEV其实也并不一定是坏事，总的来说有下面两个好处
 2，套利等交易是可以促进市场效率的，当市场短时间内存在过高的价格差异，套利等良性MEV是可以促进市场的效率提升，同时提升流动性，这时候mev套利交易更像是做市商的角色。
 
 
+### 2024.08.30
+尝试用代码的方式理解 mev 的原理和流程
+
+```python
+from web3 import Web3
+import time
+
+# 配置
+INFURA_URL = 'https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'
+PRIVATE_KEY = 'YOUR_PRIVATE_KEY'
+TARGET_ACCOUNT = 'TARGET_ACCOUNT_ADDRESS'
+GAS_PRICE = Web3.toWei('50', 'gwei')
+
+# 初始化Web3
+web3 = Web3(Web3.HTTPProvider(INFURA_URL))
+
+# 验证连接
+if not web3.isConnected():
+    raise Exception("Unable to connect to Ethereum network")
+
+# 获取账户地址
+account = web3.eth.account.privateKeyToAccount(PRIVATE_KEY)
+address = account.address
+
+# 监控交易池
+def monitor_mempool():
+    while True:
+        pending_txns = web3.eth.get_block('pending', full_transactions=True).transactions
+        for txn in pending_txns:
+            if txn['to'] == TARGET_ACCOUNT:
+                handle_sandwich_attack(txn)
+        time.sleep(1)
+
+# 处理夹心攻击
+def handle_sandwich_attack(target_txn):
+    nonce = web3.eth.getTransactionCount(address)
+
+    # 前置交易（买入）
+    front_run_txn = {
+        'nonce': nonce,
+        'to': target_txn['to'],
+        'value': target_txn['value'],
+        'gas': 21000,
+        'gasPrice': GAS_PRICE,
+        'data': target_txn['data']
+    }
+    signed_front_run_txn = web3.eth.account.signTransaction(front_run_txn, PRIVATE_KEY)
+    web3.eth.sendRawTransaction(signed_front_run_txn.rawTransaction)
+
+    # 等待目标交易上链
+    while web3.eth.getTransactionCount(TARGET_ACCOUNT) <= target_txn['nonce']:
+        time.sleep(1)
+
+    # 后置交易（卖出）
+    back_run_txn = {
+        'nonce': nonce + 1,
+        'to': target_txn['to'],
+        'value': target_txn['value'],
+        'gas': 21000,
+        'gasPrice': GAS_PRICE,
+        'data': target_txn['data']
+    }
+    signed_back_run_txn = web3.eth.account.signTransaction(back_run_txn, PRIVATE_KEY)
+    web3.eth.sendRawTransaction(signed_back_run_txn.rawTransaction)
+
+# 启动监控
+monitor_mempool()
+```
+
+这里要等到目标交易上链之后，我在下一个 block 卖出
+这也未必能保证我的前置交易会在目标交易之前完成，可以通过提高gas费等方式来实现优先
+不过由于不是矿工，所以其实无法最大化MEV的收益，因为矿工拥有最高的交易排序权力
+
+另外，通过 http 去轮询的方式，过于低效，很容易错过机会，应该用 websocket 或者其他的方案，保证网络的稳定性和实时性
 
 
 
+### 2024.08.31
+尝试用 solidity 实现 token1 和 token2 的swap
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+
+contract SimpleSwap {
+    IERC20 public token1;
+    IERC20 public token2;
+    uint256 public rate; // 交换比率，假设1 token1 = rate token2
+
+    constructor(address _token1, address _token2, uint256 _rate) {
+        token1 = IERC20(_token1);
+        token2 = IERC20(_token2);
+        rate = _rate;
+    }
+
+    // 交换token1为token2
+    function swapToken1ForToken2(uint256 amount) external {
+        require(token1.transferFrom(msg.sender, address(this), amount), "Transfer of token1 failed");
+        uint256 amountToReceive = amount * rate;
+        require(token2.transfer(msg.sender, amountToReceive), "Transfer of token2 failed");
+    }
+
+    // 交换token2为token1
+    function swapToken2ForToken1(uint256 amount) external {
+        require(token2.transferFrom(msg.sender, address(this), amount), "Transfer of token2 failed");
+        uint256 amountToReceive = amount / rate;
+        require(token1.transfer(msg.sender, amountToReceive), "Transfer of token1 failed");
+    }
+
+    // 提取合约中的token1
+    function withdrawToken1(uint256 amount) external {
+        require(token1.transfer(msg.sender, amount), "Withdraw of token1 failed");
+    }
+
+    // 提取合约中的token2
+    function withdrawToken2(uint256 amount) external {
+        require(token2.transfer(msg.sender, amount), "Withdraw of token2 failed");
+    }
+}
+```
+
+不过这里的代码是固定rate的，也就是说token1/token2 的价格是保持不变的
+我们可以引入 amm 自动做市商的机制（uniswap）
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract SimpleAMM is Ownable {
+    IERC20 public token1;
+    IERC20 public token2;
+    uint256 public reserve1;
+    uint256 public reserve2;
+
+    event LiquidityAdded(address indexed provider, uint256 amount1, uint256 amount2);
+    event LiquidityRemoved(address indexed provider, uint256 amount1, uint256 amount2);
+    event Swapped(address indexed swapper, uint256 amountIn, uint256 amountOut, address indexed tokenIn, address indexed tokenOut);
+
+    constructor(address _token1, address _token2) {
+        token1 = IERC20(_token1);
+        token2 = IERC20(_token2);
+    }
+
+    // 添加流动性
+    function addLiquidity(uint256 amount1, uint256 amount2) external onlyOwner {
+        token1.transferFrom(msg.sender, address(this), amount1);
+        token2.transferFrom(msg.sender, address(this), amount2);
+        reserve1 += amount1;
+        reserve2 += amount2;
+        emit LiquidityAdded(msg.sender, amount1, amount2);
+    }
+
+    // 移除流动性
+    function removeLiquidity(uint256 amount1, uint256 amount2) external onlyOwner {
+        require(reserve1 >= amount1 && reserve2 >= amount2, "Insufficient liquidity");
+        token1.transfer(msg.sender, amount1);
+        token2.transfer(msg.sender, amount2);
+        reserve1 -= amount1;
+        reserve2 -= amount2;
+        emit LiquidityRemoved(msg.sender, amount1, amount2);
+    }
+
+    // 交换token1为token2
+    function swapToken1ForToken2(uint256 amountIn) external {
+        uint256 amountOut = getAmountOut(amountIn, reserve1, reserve2);
+        require(amountOut > 0, "Insufficient output amount");
+        token1.transferFrom(msg.sender, address(this), amountIn);
+        token2.transfer(msg.sender, amountOut);
+        reserve1 += amountIn;
+        reserve2 -= amountOut;
+        emit Swapped(msg.sender, amountIn, amountOut, address(token1), address(token2));
+    }
+
+    // 交换token2为token1
+    function swapToken2ForToken1(uint256 amountIn) external {
+        uint256 amountOut = getAmountOut(amountIn, reserve2, reserve1);
+        require(amountOut > 0, "Insufficient output amount");
+        token2.transferFrom(msg.sender, address(this), amountIn);
+        token1.transfer(msg.sender, amountOut);
+        reserve2 += amountIn;
+        reserve1 -= amountOut;
+        emit Swapped(msg.sender, amountIn, amountOut, address(token2), address(token1));
+    }
+
+    // 计算输出金额
+    function getAmountOut(uint256 amountIn, uint256 reserveIn, uint256 reserveOut) public pure returns (uint256) {
+        require(amountIn > 0, "Insufficient input amount");
+        require(reserveIn > 0 && reserveOut > 0, "Insufficient liquidity");
+        // 这里设置了 0.3% 的手续费
+        uint256 amountInWithFee = amountIn * 997;
+        uint256 numerator = amountInWithFee * reserveOut;
+        uint256 denominator = (reserveIn * 1000) + amountInWithFee;
+        return numerator / denominator;
+    }
+}
+```
+
+上面的 智能合约存在很多漏洞和简化的地方，但我觉得应该能更好的理解swap的原理
 
 <!-- Content_END -->

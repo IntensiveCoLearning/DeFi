@@ -190,4 +190,7 @@ Stablecoin
 希望defi这轮结束后，自己可以对这篇文章有更多理解
 《无风险年化 360%？小白也能懂的 Crypto 套利》 https://twitter.com/taresky/status/1764616537674256696
 
+### 2024.08.30
+今天在看Token2049 DEFI相关边会……
+
 <!-- Content_END -->
