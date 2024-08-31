@@ -286,5 +286,6 @@ RWA的发展潜力在于，它将传统金融和去中心化金融（DeFi）结�
 今日学习：https://research.mintventures.fund/2024/07/26/zh-exploring-the-updated-aavenomics-buybacks-profit-distribution-and-safety-module-shift/
 影响。
 ### 2024.08.31
+今日学习预言机
 https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-13-zhang-yu-yan-ji-yu-shu-ju-ju-he-qi
 <!-- Content_END -->
