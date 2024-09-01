@@ -409,7 +409,23 @@ DEX的类型
 
 ### 2024.09.01
 
-笔记内容
+Uniswap
+SushiSwap
+Balancer
+Curve Finance
+Bancor
+AMM之间的主要区别是什么？
+I.资金池费用
+II.流动性挖矿
+III.资金池权重
+使用AMM的相关风险
+I.价格滑点（Price Slippage）
+II.抢跑（Front-running）三明治攻击
+III.无常损失（Impermanent Loss）
+其他值得一提的协议
+PancakeSwap
+TerraSwap
+0x协议
 
 ### 2024.09.02
 
