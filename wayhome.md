@@ -19,6 +19,11 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.01
+
+给不懂MakerDAO、AAVE、Compound的贷款清算的借款人了解风险
+https://www.youtube.com/watch?v=kDpOYCewo2w
+
 ### 2024.08.31
 
 AAVE
