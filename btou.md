@@ -288,6 +288,6 @@ RWA的发展潜力在于，它将传统金融和去中心化金融（DeFi）结�
 ### 2024.08.31
 今日学习预言机
 https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-13-zhang-yu-yan-ji-yu-shu-ju-ju-he-qi
-### 2024.09.1
+### 2024.09.01
 https://m.theblockbeats.info/news/54837
 <!-- Content_END -->
