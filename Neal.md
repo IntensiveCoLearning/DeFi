@@ -543,5 +543,25 @@ Sentinel功能为清算引入了宽限期，并在特定情况下禁止借款。
 ##### 多个奖励代币
 提供了每个令牌有多个奖励的选项。现在，资产列表可以启用以本地协议令牌命名的额外激励。用户也可以在单笔交易中为每项资产申请多种奖励类型。
 
+### 2024.08.31
+#### 效率模式
+高效率模式功能（或“eMode”）旨在当抵押品和借入资产在价格上相关时最大限度地提高资本效率。
+由Aave Governance设置的RISK_ADMIN和POOL_ADMIN最多可以配置255个eMode类别，每个EModeCategory具有以下风险管理参数：
+- LTV (Loan to value) 
+<!-- 贷款价值比 -->
+- Liquidation threshold 
+<!-- 清算门槛 -->
+- Liquidation bonus 
+<!-- 清算红利 -->
+- A custom price oracle (optional)
+<!-- 自定义价格oracle（可选） -->
+Aave V3上列出的所有资产都可以通过RISK_ADMIN或POOL_ADMIN设置为任何预配置的eModeCategory。
+eMode还提供了为某一类别引入特定价格预言的可能性。
+
+##### 如何工作？
+如果用户已向协议提供流动性，则用户eMode类别默认设置为0。
+如果以下条件成立，则该方案允许用户将用户eMode类别设置为PoolManager配置的任何eModeCategories：
+- 用户的所有借用资产都在所选择的类别中
+- 改变eMode不会使用户头寸抵押不足
 
 <!-- Content_END -->
