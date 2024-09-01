@@ -284,4 +284,8 @@ RWA（Real World Assets）
 RWA的发展潜力在于，它将传统金融和去中心化金融（DeFi）结合在一起，创造了新的金融产品和服务。例如，基于RWA的结构性产品、指数基金、合成资产和保险产品等都可能出现。这将改变传统金融机构的运作方式，并且可能为整个金融体系带来深远的影响。
 ### 2024.08.29
 今日学习：https://research.mintventures.fund/2024/07/26/zh-exploring-the-updated-aavenomics-buybacks-profit-distribution-and-safety-module-shift/
+影响。
+### 2024.08.31
+今日学习预言机
+https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-13-zhang-yu-yan-ji-yu-shu-ju-ju-he-qi
 <!-- Content_END -->
