@@ -564,4 +564,52 @@ eMode还提供了为某一类别引入特定价格预言的可能性。
 - 用户的所有借用资产都在所选择的类别中
 - 改变eMode不会使用户头寸抵押不足
 
+### 2024.09.01
+#### 隔离模式
+隔离模式允许将新资产列为隔离资产，该资产具有特定的债务上限，并且只能用于借入由Aave Governance配置为在隔离模式下可识别的稳定币。独立代表的债务上限是可以根据抵押品借入的最高美元金额。
+- 供应隔离资产
+用户可以像使用 pool.sol 中的 supply() 方法提供任何其他资产一样提供隔离资产，但是，提供隔离资产时的默认行为可能会因以下条件而异
+开启：如果独立资产是用户提供的第一个资产或用户不启用其他提供的资产作为抵押品
+关闭： 如果当前启用了任何其他资产作为抵押品
+如果用户启用了其他资产作为抵押品，他们仍然可以提供隔离资产以获取收益，但不能将其用作抵押品
+
+- 在隔离模式下借用
+使用隔离资产作为抵押品的借款人只能使用该特定资产作为抵押品，并且只能借入在隔离模式下可抵押的资产，即在储备配置中设置了 BORROWABLE_IN_ISOLATION_MASK 位。
+
+- 退出隔离模式
+用户可以通过禁用隔离资产作为抵押品来关闭隔离模式。只有当用户没有未偿债务时才能这样做。在退出隔离模式之前，用户必须使用 Pool.sol 中的 repeat() 方法还清所有债务。
+
+#### 孤岛借贷
+此功能允许具有潜在可操纵的预言机的资产（例如非流动性Uni V3货币对）在Aave上作为单个借入资产列出。如果资产被配置为孤立的，它不能与其他资产同时借入。这有助于减轻与此类资产相关的风险，以免影响协议的整体偿付能力。
+孤岛借贷可以被认为是隔离模式对抵押品的补充特征：其中一个指示资产是否需要成为头寸中唯一被借贷的资产（孤岛），另一个指示抵押品是否是头寸中唯一受健康因素影响的资产（隔离抵押品）。
+
+- 供应孤岛资产
+用户可以像使用 pool.sol 中的 supply() 方法提供任何其他资产一样提供 Siloed Asset，但是，该资产将无法用作抵押品，即提供的金额不会添加到用户的总抵押品余额中。
+
+- 借用孤岛资产
+用户可以使用 pool.sol 中的 borrow() 方法借用孤立资产，但仅限于以下情况：
+这是第一次借用的地址或现有的用户债务是相同的孤立资产。
+要检查用户是否处于“孤岛借用”状态，您可以使用 AaveProtocolDataProvider.sol 上的 getSiloedBorrowing() 方法查看用户借用的基础资产是否处于孤岛状态。
+
+- 检查是否为孤立借用保留
+```Sol
+import {AaveProtocolDataProvider} from '@aave/core-v3/contracts/misc/AaveProtocolDataProvider.sol';
+AaveProtocolDataProvider poolDataProvider = AaveProtocolDataProvider(provider.getPoolDataProvider());
+// address of the underlying asset
+address asset = "0x...";
+
+protocolDataProvider.getSiloedBorrowing(asset);
+```
+
+#### 供应、借款上限
+Aave Governance可以指定RISK_ADMIN和POOL_ADMIN，他们能够配置各个储备的借入和供应上限。
+
+- 借款上限
+允许调整每种资产的借款金额，从而降低破产风险。
+默认情况下，资产的借用上限为0，表示没有上限。通过 ACLManager 被授予 RISK_ADMIN 或 POOL_ADMIN 角色的任何人都可以调用 PoolManager 中的 setBorrowCap 方法来更新给定储备的最大总借入（稳定+变量）。
+
+- 供应上限
+允许限制向Aave协议提供多少特定资产。这有助于减少对特定资产的暴露，并减轻诸如无限造币或价格预言操纵等攻击。
+默认情况下，资产的供应上限为0，表示没有上限。通过 ACLManager 被授予 RISK_ADMIN 或 POOL_ADMIN 角色的任何人都可以在 PoolManager 中调用 setSupplyCap 方法来更新给定准备金的流动性供应。
+
 <!-- Content_END -->
