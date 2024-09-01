@@ -191,11 +191,6 @@ Stablecoin
 《无风险年化 360%？小白也能懂的 Crypto 套利》 https://twitter.com/taresky/status/1764616537674256696
 
 ### 2024.08.30
-今天在看Token2049 DEFI相关边会……
-
-### 2024.08.31
-订完机票来补课orz
-### 2024.09.01
 去中心化的借贷      
 1. 四大代表：Compound、Maker、Aave和Cream      
 
