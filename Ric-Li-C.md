@@ -104,4 +104,16 @@ Tren Finance:
 
 查看 Telegram 消息；学习 DeFi 相关文档
 
+### 2024.08.31
+
+查看 Telegram 消息；学习 DeFi 相关文档
+
+### 2024.09.01
+
+查看 Telegram 消息；学习 DeFi 相关文档
+
+### 2024.09.02
+
+查看 Telegram 消息；参加 DeFi 残酷共学分享会 #2 借贷的探索
+
 <!-- Content_END -->

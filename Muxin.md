@@ -12,6 +12,17 @@ A：我认为我会完成！
 
 <!-- Content_START -->
 
+### 2024.08.30
+
+去中心化借贷，refer：https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-5-zhang-qu-zhong-xin-hua-de-jie-dai
+
+- Compound：基于以太坊的开源协议，允许用户无摩擦地借贷加密货币，重点是通过算法确定利率，市场份额最大，支持 9 种资产。
+- Maker：首个 DeFi 借贷协议，主要通过超额抵押生成 DAI 稳定币，支持 30 多种资产，主要面向 DAI 借款。
+- Aave：支持 24 种资产的借贷协议，提供利率转换、抵押品互换和闪电贷款等创新功能。
+- Cream：服务于长尾资产，支持最多的资产种类，借贷风险更高，专注于小币种市场和高收益。
+
+这些协议各自的风险和收益不同，其中担保不足的贷款被视为 DeFi 借贷的未来发展方向。
+
 ### 2024.08.27
 
 今天看到 TG 群里大家聊 Usual，就去看了一下 Youtube 视频：https://www.youtube.com/watch?v=SaeqjfDoE68

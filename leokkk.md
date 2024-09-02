@@ -188,3 +188,9 @@ DEX聚合器（Decentralized Exchange Aggregator）是一种去中心化金融�
 目前预言机主要有chinlink和brandprotocl等等
 
 <!-- Content_END -->
+
+### 日期 2024.08.30
+
+DEFI可以通过预言机、闪电贷和设计漏洞进行攻击，从而导致潜在损失
+
+<!-- Content_END -->

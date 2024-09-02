@@ -107,4 +107,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 1. 阅读学习 AMM 文章 https://banklessdao.substack.com/p/the-amm-edition-part-i-defi-download
 
+### 2024.08.31
+
+1. 体验 uniswap dapp, 目前支持的链较多
+
+### 2024.09.01
+
+1. 初步了解 USDC.e 是什么 和 USDC 的区别是什么
+
 <!-- Content_END -->
