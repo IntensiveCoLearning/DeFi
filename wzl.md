@@ -59,6 +59,117 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.02
+Aave协议概述
+摘要
+Aave是一个去中心化的非托管流动性协议，用户可以作为存款人或借款人参与其中。存款人通过提供流动性赚取被动收入，而借款人则可以选择超额抵押或单区块流动性借款。该协议通过以太坊区块链上的智能合约实现，确保安全性并消除中介的需求。
+工作流程
+![image](https://github.com/user-attachments/assets/cc0ffd97-1e2f-4f58-b53b-600694371b3d)
+这张图展示了Aave协议的工作流程和参与者。图中分为三个主要部分：
+参与者
+贷款人（Lenders）：提供流动性到Aave协议中。
+借款人（Borrowers）：从Aave协议中借款。
+钱包（Wallets）：用于存储和管理用户的加密资产。
+去中心化应用（Dapps）：与Aave协议集成的去中心化应用程序。
+Aave协议功能
+Aave协议提供了以下几种主要功能：
+
+固定利率贷款（Stable Rate Loan）：提供固定利率的贷款。
+浮动利率贷款（Variable Rate Loan）：提供浮动利率的贷款。
+利息代币（Interest Bearing Tokens）：用户存入的资产会生成利息代币，代表用户的存款和应得的利息。
+无抵押闪电贷（Uncollateralized Flash Loans）：提供无需抵押的闪电贷，必须在同一交易中偿还。
+资金池
+每种贷款类型和功能都对应一个储备资金池（Reserve LendingPool），这些资金池用于管理和分配贷款和存款。
+
+工作流程
+贷款人将资金存入Aave协议的储备资金池。
+借款人可以选择固定利率或浮动利率贷款，从储备资金池中借款。
+用户的存款会生成利息代币，代表他们的存款和应得的利息。
+去中心化应用可以与Aave协议集成，利用无抵押闪电贷等功能。
+这张图清晰地展示了Aave协议的参与者、功能和资金流动的整体架构。
+### 2024.09.01
+Maker Protocol Vow合约概述
+合约名称
+vow.sol
+
+类型/类别
+DSS —> 系统稳定器模块
+
+1. 引言（摘要）
+摘要： Vow合约代表Maker协议的资产负债表。具体而言，Vow作为系统盈余和系统债务的接收者。其主要功能是通过债务（Flop）拍卖来覆盖赤字，并通过盈余（Flap）拍卖来释放盈余。
+
+Vow合约交互
+
+2. 合约细节
+Vow（术语表）
+sin: 系统债务队列。
+Sin: 队列中的总债务金额。
+Ash: 拍卖中的总债务金额。
+wait: 债务队列的长度。
+sump: 债务拍卖出价大小，即任何一次债务拍卖要覆盖的固定债务数量。
+dump: 债务拍卖的批量大小，即用于覆盖lot/sump的初始MKR数量。
+bump: 盈余拍卖的批量大小，即任何一次盈余拍卖要出售的固定盈余数量。
+hump: 盈余缓冲区，必须超过该值才能进行盈余拍卖。
+清算管理器
+Fess - 将不良债务推送到拍卖队列（将债务添加到队列）。
+Flog - 释放排队的债务以进行拍卖（从队列中实现债务）。
+Heal - vow调用heal在vat合约上以抵消盈余和债务（优化债务缓冲区）。
+Kiss - 抵消盈余和拍卖中的债务。释放拍卖中的债务并进行Heal（vat.heal）。
+Flap - 触发盈余拍卖（flapper.kick）。
+Flop - 触发赤字拍卖（flopper.kick）。
+vow合约调用kick在flop和flap上启动拍卖（债务和盈余拍卖）。
+
+系统数据
+系统配置
+Vow.wait - Flop延迟
+Vow.sump - Flop固定出价大小
+Vow.dump - Flop起始批量大小
+Vow.bump - Flap固定批量大小
+Vow.hump - 盈余缓冲区
+债务（SIN）队列
+当一个Vault被清算（bite），被扣押的债务会被放入Vow的拍卖队列中（标记为sin[timestamp] - 系统债务单位）。这发生在bite操作的区块时间戳。债务在经过规定的Vow.wait（flop延迟）时间后，可以通过flog释放进行拍卖。
+
+Sin在债务队列中存储，但可拍卖的债务并没有明确存储。这是因为可拍卖的债务是通过比较Sin（即持有队列中的债务）与Vow在Vat.dai[Vow]中记录的DAI余额得出的。例如，如果Vat.sin[Vow]大于Vow.Sin和Ash的总和，则差额可能有资格进行Flop拍卖。
+
+注意：
+
+在执行cat.bite / vow.fess时，债务tab被添加到sin[now]和Sin中，这会阻止该tab金额发送到flop拍卖，所有DAI通过flip拍卖回收。理论上，解除Sin中的tab金额并不是必要的，但在实践中实际上是必要的。如果不解除该债务，则在需要发送flop拍卖时，可能会有一个大的Sin阻止它。因此，总结来说，每个sin[era]的注册金额> 0时，应在启动flop拍卖之前进行flog。
+
+每个sin[era]不需要是单个bite，它将把所有在同一以太坊区块中的bite组合在一起。
+
+auction-keeper将flog每个具有正Sin的era，如果woe + Sin >= sump，其中woe = vat.sin[vow] - vow.Sin - vow.Ash。
+
+会计
+Vow.Sin - 计算系统中排队的总债务。
+Vow.Ash - 计算拍卖中的总债务。
+3. 关键机制与概念
+需要注意的是，Maker协议将偏离其均衡状态。这发生在通过抵押品拍卖和Vault稳定费用积累接收系统债务和系统盈余时。Vow合约包含触发债务（flop）和盈余（flap）拍卖的逻辑，这些拍卖旨在纠正系统的货币失衡。
+
+总结
+
+系统债务： 在Vault被清算的情况下，其债务被Vow合约作为Sin（系统债务单位）接收。Sin金额随后被放入Sin队列。
+系统盈余： 由于稳定费用的积累，导致Vow中有额外的内部DAI。然后通过盈余拍卖（flap）释放该盈余。
+4. 注意事项（潜在用户错误来源）
+当Vow被升级时，必须同时更新多个引用（End、Jug、Pot）。
+Vow是唯一具有非零Sin余额的用户（不是vat不变，因为可以有多个Vow）。
+Ilk存储分布在Vat、Jug、Pot和Vow模块中。cat还存储清算罚金和最大拍卖规模。
+稳定费用的一部分通过在每次调用Pot.drip()时增加Vow中的Sin数量来分配给DAI储蓄率（DSR）。
+设置不正确的vow值可能导致盈余丢失或被盗。
+5. 失败模式（操作条件的界限与外部风险因素）
+Vault清算
+如果没有参与者调用kiss、flog或heal来调和/排队债务，可能会出现失败模式。
+拍卖
+如果用户不调用flap或flop来启动拍卖，可能会出现失败模式。
+Vow.wait设置过高（wait时间过长），将导致无法进行flop拍卖。这带来了低抵押品的风险。
+Vow.wait设置过低，可能导致过多的flop拍卖，同时阻止flap拍卖的发生。
+Vow.bump设置过高，可能导致无法进行flap拍卖。因此，如果没有进行flap拍卖，将不会有MKR竞标，进而不会有成功拍卖的自动MKR燃烧。
+Vow.bump设置过低，导致flap拍卖对参与者不盈利（lot大小低于燃气费用）。因此，在flap拍卖中不会有MKR竞标，结果将没有自动MKR燃烧。
+Vow.sump设置过高，导致无法进行flop拍卖。这将导致系统无法从低抵押状态中恢复。
+Vow.sump设置过低，flop拍卖对参与者不盈利（lot大小低于燃气费用）。这将导致由于自动MKR铸造而导致的MKR通货膨胀。
+Vow.dump设置过高，flop拍卖可能无法关闭或铸造大量MKR，造成MKR稀释的风险和治理攻击的可能性。
+Vow.dump设置过低，flop拍卖必须多次kick才能引起保持者的兴趣。
+Vow.hump设置过高，flap拍卖将永远不会发生。如果没有进行flap拍卖，则不会出售盈余，因此也不会燃烧竞标的MKR。
+Vow.hump设置过低，可能导致盈余通过flap拍卖被拍卖，而在用于抵消清算的sin之前，导致需要flop拍卖，使系统运行效率低下。
 ### 2024.08.31
 Maker Protocol债务拍卖概述
 合约名称
