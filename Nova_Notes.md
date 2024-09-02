@@ -85,4 +85,8 @@ MakerDAO是如何控制DAI的币值稳定的？有几个手段：
 
 用链桥把USDT从Holesky发送到Morph Holesky network: `0x2258a99fe75b90b354863a7de4cdabedf8fae0b4ae768cac69a6577bddb05687`
 
+还了之前借的USDT：`0xcd5ef346b5f5ed97b64d62a5df7b6e7064f26ce4328bbd88d8791313a662560c`
+
+又提供了5 USDT: `0xdc8b40bfb14bc6c502b2bc0c7f296099f7d9ac06409a89e251e47375785da307`
+
 <!-- Content_END -->
