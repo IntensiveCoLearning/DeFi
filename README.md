@@ -665,5 +665,16 @@ https://app.uniswap.org/swap
 
 
 
+
 <!-- STATISTICALDATA_START -->
+
+
+## 统计数据
+
+- 总参与人数: 51
+- 完成人数: 19
+- 全勤用户: wayhome, haomiao, qiaopengjun, Neal, wzl
+- 淘汰人数: 32
+- 淘汰率: 62.75%
+- Fork人数: 59
 <!-- STATISTICALDATA_END -->
