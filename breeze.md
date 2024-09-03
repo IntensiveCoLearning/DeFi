@@ -214,9 +214,13 @@ This table summarizes the key features and differences between the DeFi lending 
 
 
 ### 2024.09.02
-
 reading 
 - https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-5-zhang-qu-zhong-xin-hua-de-jie-dai
 - https://www.notion.so/lxdao/DeFi-642bdcdbc2304e0bbb7da998cc084299
+
+### 2024.09.03
+Attempting to connect to the testnet using Aave, obtain test tokens, and go through the lending process. However, I'm currently unable to proceed on Aave as it keeps prompting to use the mainnet. Still trying to figure it out.
+
+- Oracle Price Contract: https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419#code
 
 <!-- Content_END -->    
