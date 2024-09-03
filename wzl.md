@@ -59,6 +59,46 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.03
+Aave Protocol v2 概述
+Aave Protocol v2 是一个去中心化金融（DeFi）协议，提供借贷服务。其核心合约包括多个主要组件，确保用户能够高效地进行资产借贷和管理。以下是主要合约及其功能的详细说明：
+
+主要合约
+LendingPool
+
+Aave Protocol 的主要入口，用户与 Aave 进行大多数交互的地方，包括存款、借款等操作。
+LendingPoolAddressesProvider
+
+协议的主要地址注册合约，负责特定市场的合约地址管理。用户可以通过调用此合约获取最新的合约地址。
+LendingPoolAddressesProviderRegistry
+
+包含不同市场的活动 LendingPoolAddressesProvider 地址列表。
+aTokens
+
+代币化的存款，用于在 Aave 协议中生成收益。它们实现了大多数标准的 EIP-20/ERC20 代币方法，并包含 Aave 特定的方法，如 permit()，支持无手续费转账和单交易批准及操作。
+稳定和可变债务代币
+
+用于表示借款位置的代币，禁用了大多数标准的 EIP-20/ERC20 方法，因为债务代币不可转让。
+辅助合约
+LendingPoolCollateralManager
+
+通过 delegatecall 实现抵押品管理的操作，包括 liquidationCall() 函数。该函数应仅通过主 LendingPool 合约调用。
+Lending Pool Configurator
+
+提供配置 LendingPool 合约的功能，包括激活/禁用储备、借款、抵押品使用等。所有相关操作都会在区块链上发出事件，便于监控。
+Interest Rate Strategy
+
+存储计算和更新特定储备利率所需的信息。每个合约存储优化的基础曲线，利率根据借款金额和总流动性变化。
+Price Oracle Provider
+
+提供 Aave 协议所需的资产价格数据，使用 Chainlink 作为主要数据源，并在必要时提供后备方案。
+Library contracts
+
+Aave 协议中使用的各种库合约，详细信息可在 Github 上找到。
+相关链接
+Aave Protocol v2 GitHub
+Aave Protocol v2 NPM 包
+通过这些合约，Aave Protocol v2 提供了一个灵活且高效的借贷平台，用户可以在此进行资产管理和收益生成。
 ### 2024.09.02
 Aave协议概述
 摘要
