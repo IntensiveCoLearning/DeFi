@@ -19,6 +19,54 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.02
+
+来源: [Solana 交易的生命周期](https://www.umbraresearch.xyz/writings/lifecycle-of-a-solana-transaction)
+
+#### Solana 交易的结构
+
+Solana 交易由三部分组成：
+
+1. 一个或多个指令，指定交易应在链上运行哪些代码。例如，“将 5 SOL 从帐户 A 转移到帐户 B”。
+2. 交易所需的账户数组（离散状态），具有读写标志。例如，“账户 A[可写]，账户 B[可写]”。
+3. 交易所需的一个或多个签名。例如，“账户 A 所有者的签名”。
+
+![https://www.umbraresearch.xyz/assets/images/example_tx-2fb77b99f594139e54052e9e69d85256.png](https://www.umbraresearch.xyz/assets/images/example_tx-2fb77b99f594139e54052e9e69d85256.png)
+
+代码和状态的分离是 Solana 并行执行模型的必要条件
+
+#### Solana 交易的生命周期
+
+##### 发起交易
+
+用户在钱包中签名交易后，钱包将其发送到 Solana RPC 服务器，服务器根据领导者计划将交易转发给当前领导者及接下来的两个领导者。
+
+![https://www.umbraresearch.xyz/assets/images/lifecycle_1-eb3ee51e443965d8f439927d6b2340d3.png](https://www.umbraresearch.xyz/assets/images/lifecycle_1-eb3ee51e443965d8f439927d6b2340d3.png)
+
+##### **交易执行和排序**
+
+- 领导者验证交易签名并进行预处理，然后安排交易执行。
+- 大多数验证器使用 Solana Labs 提供的默认调度程序实现，该实现是多线程的，每个线程的交易队列按优先级费用和时间排序。
+- 交易执行时需获取必要的账户锁，若无法获取则重新排队。
+- Solana 通过并行执行提高性能，但对开发人员造成成本，因为需预先指定交易可能需要的任何状态。
+- 交易排序存在固有不确定性，这可能导致开发人员为了使紧急交易得到执行而进行大量发送。
+
+![https://www.umbraresearch.xyz/assets/images/scheduler-214ef51505fc279fe25d85b37fdb39f8.png](https://www.umbraresearch.xyz/assets/images/scheduler-214ef51505fc279fe25d85b37fdb39f8.png)
+
+##### **交易传播和状态更新**
+
+- 交易由领导者执行后，立即记录到验证者的账本副本中并传播到网络的其余部分。
+- 当一个区块获得必要的共识投票后，交易被视为 “已确认”，当有 31 个以上的确认区块构建在其上时，该区块被视为 “最终确定”。
+
+![https://www.umbraresearch.xyz/assets/images/lifecycle_2-777f10fd0629a6f44c70bb3a028faf99.png](https://www.umbraresearch.xyz/assets/images/lifecycle_2-777f10fd0629a6f44c70bb3a028faf99.png)
+
+#### **Solana 与以太坊的差异**
+
+1. Solana 没有公共内存池，待处理交易直接转发给当前领导者和接下来的几个领导者。
+2. Solana 默认验证器实现具有连续的区块生产，而以太坊的待处理交易在验证器或区块构建者处等待，每隔 12 秒构建完整区块。
+3. Solana 交易需要固定的网络费用（每签名通常为 0.000005 SOL），还可以包含可选的优先级费用（按每请求计算单位支付的费用计价）。
+4. Solana 上的协议外区块空间拍卖（Jito）市场份额较小，而以太坊上的 mev - boost 市场份额较大。
+
 ### 2024.09.01
 
 - 给不懂MakerDAO、AAVE、Compound的贷款清算的借款人了解风险 https://www.youtube.com/watch?v=kDpOYCewo2w
