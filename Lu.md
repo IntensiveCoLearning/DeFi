@@ -191,10 +191,11 @@ Stablecoin
 《无风险年化 360%？小白也能懂的 Crypto 套利》 https://twitter.com/taresky/status/1764616537674256696
 
 ### 2024.08.30
-今天在看Token2049 DEFI相关边会……
+去中心化的借贷      
+1. 四大代表：Compound、Maker、Aave和Cream      
 
-### 2024.08.31
-订完机票来补课orz
-
-
+      Compound是最大的DeFi借贷平台
+      Maker是最早的DeFi借贷协议。
+      AAVE类似于Compound，区别是**AAVE开创了新的借贷玩法**，如利率转换（可变利率和稳定利率）、抵押品互换（把抵押品换成另一种资产）和闪电贷款（如果借款人在同一笔交易中偿还了贷款和额外的利息和费用，就能无抵押的贷款）。
+      Cream Finance服务于长尾、小币种的DeFi资产。有更宽松的**资产入驻**策略（是首批接受**收益率代币**和**LP代币**作为抵押品的借贷协议之一）。
 <!-- Content_END -->

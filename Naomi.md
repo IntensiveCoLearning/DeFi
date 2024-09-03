@@ -1098,4 +1098,9 @@ Executor（通常是一个外部拥有账户EOA）
 5. Alice将字符串s发送到Bob的合约获得50个ETH;
 6. Bob观察到步骤5中Alice的s值，将其发送给Alice的合约成功获取1个BTC; 至此完成资产的交换。
 7. 如果超时，则锁定的资产返回原主。
+
+### 2024.09.02
+To be continued.. Begin Uniswap learning
+
+
 <!-- Content_END -->
