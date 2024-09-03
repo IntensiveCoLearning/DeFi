@@ -933,7 +933,7 @@ aToken表示存款的总价值+累积的利息。
 
 只有被赋予了 BRIDGE_ROLE 的地址才能执行涉及跨链流动性转移的操作。
 
-2024.08.30
+### 2024.08.30
 
 ### 效率模式eMode
 
@@ -1100,6 +1100,9 @@ Executor（通常是一个外部拥有账户EOA）
 7. 如果超时，则锁定的资产返回原主。
 
 ### 2024.09.02
+To be continued.. Begin Uniswap learning
+
+### 2024.09.03
 To be continued.. Begin Uniswap learning
 
 
