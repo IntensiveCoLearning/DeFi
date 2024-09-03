@@ -210,4 +210,13 @@ This table summarizes the key features and differences between the DeFi lending 
 | **Unique Features** | First DeFi project, DAI stablecoin | cTokens track earnings | Stable rate option, flash loans, AAVE token backstop | No liquidations, automatic repayment | Highly customizable, risk isolated | DeFi Interest Rate Swaps |  Supports various assets, risk tiering, multiple functionalities | Fixed-rate loans, fCash tokens |
 | **Advantages** | High security, long history, stable | Easy to use, good UX | Feature-rich, flexible | Reduced liquidation risk, no manual repayment | Meets diverse needs, manageable risk | Offers fixed-rate products, enables new trading strategies | Wide range of assets, robust risk management | Fixed rates, predictability |
 | **Disadvantages** | Potentially higher interest rates | Variable interest rates | Stable rates not perfectly stable | Yield uncertainty, limited use cases | Users must assess risk themselves | Market immaturity | Potentially complex to use | Platform risk, liquidity risk | 
+
+
+
+### 2024.09.02
+
+reading 
+- https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-5-zhang-qu-zhong-xin-hua-de-jie-dai
+- https://www.notion.so/lxdao/DeFi-642bdcdbc2304e0bbb7da998cc084299
+
 <!-- Content_END -->    
