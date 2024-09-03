@@ -12,6 +12,11 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.03
+
+- 在测试网络  了解uniswap 的使用， 
+- 并做了eth / usdt 的流动性池，  体验过程
+
 ### 2024.09.02
 
 学习 uniswap 的整合 
