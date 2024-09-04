@@ -12,6 +12,24 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.04
+
+学习： DeFi 残酷共学分享会：借贷的探索
+- makerdao  升级为 sky 
+- sky.money 
+- usds   需要关注 
+- https://tokenterminal.com/terminal/projects/makerdao   查看makedao  项目的情况 ，类似股票 
+- 衡量一家上市公司是高估還是低估，不是看它股價的絕對值是多少，而是看它的相對值是多少。最常見的相對估值的衡量指標，就是市盈率（PE）。
+
+- compound  ：  
+- Aave ：闪电贷  ，无抵押贷款  ，目前规模最大的借贷协议 。  ethlend  ， 安全比较好。 op 的aave 里面 获取稳定的收入  。   多个链都有 
+- https://aave.com/  
+- https://aave.tokenlogic.xyz/treasury   国库
+- https://tokenterminal.com/terminal/projects/aave
+- lido  第一大锁仓
+- testnet.abra.finance
+- debank  点用户，看别人怎么投资  
+
 ### 2024.09.03
 
 - 在测试网络  了解uniswap 的使用， 
