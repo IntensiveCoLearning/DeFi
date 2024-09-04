@@ -86,7 +86,7 @@ Tren Finance:
 
 ### 2024.08.24
 
-查看 Telegram 消息，查看 github 其他同学的文档，看其他同学都学了些什么
+查看 Telegram 消息；查看 github 其他同学的文档，看其他同学都学了些什么
 
 ### 2024.08.25
 
@@ -98,7 +98,7 @@ Tren Finance:
 
 ### 2024.08.28
 
-查看 Telegram 消息，查看 Usual 积分活动（https://www.youtube.com/watch?v=SaeqjfDoE68）
+查看 Telegram 消息；查看 Usual 积分活动（https://www.youtube.com/watch?v=SaeqjfDoE68）
 
 ### 2024.08.30
 
@@ -115,5 +115,13 @@ Tren Finance:
 ### 2024.09.02
 
 查看 Telegram 消息；参加 DeFi 残酷共学分享会 #2 借贷的探索
+
+### 2024.09.03
+
+查看 Telegram 消息；查看 github 其他同学的文档，看其他同学都学了些什么
+
+### 2024.09.04
+
+查看 Telegram 消息；查看 github 其他同学的文档，看其他同学都学了些什么（续）
 
 <!-- Content_END -->

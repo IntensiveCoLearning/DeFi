@@ -18,6 +18,86 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.03
+Move 语言
+#### **简介**：
+
+- Move是用于智能合约开发的新编程语言，源自Facebook已终止的项目，旨在革新智能合约开发，提高安全性并增强开发者体验。
+- 主要的基于Move的区块链有Aptos和Sui，Movement Labs将Move引入以太坊生态系统。
+
+#### **Move的关键特性**：
+
+- **基于资产的存储模型**：与Solidity基于地址的方法不同，Move将资产视为独立存在的“资源”，具有内置的稀缺性和访问控制属性，增强了安全性。
+- **程序组成与调度**：由交易脚本和模块组成，模块使用静态调度，消除了与动态调度相关的不确定性。
+- **安全性增强功能**：结合Move Prover（MVP）形式验证器、字节码验证器和强静态类型系统，提高了安全性和减少了运行时错误风险。
+
+#### **Aptos与Sui的对比**：
+
+- **基本架构和交易处理**：Aptos采用传统区块链模型，Sui采用对象中心模型和DAG。
+- **共识机制**：Aptos采用AptosBFT，Sui对涉及共享对象的交易使用BFT共识协议，并在测试网引入Mysticeti共识算法。
+- **智能合约功能**：Sui原生支持可升级智能合约，Aptos通过特定编程模式支持。Sui引入针对对象中心模型优化的扩展，Aptos鼓励模块化智能合约开发。
+- **独特功能**：Aptos引入“资源账户”和灵活的密钥管理方案，Sui提供可编程交易块。
+- **费用市场**：Sui实施本地化费用市场，Aptos使用全球费用市场。
+- **对比结论**：Aptos将Move资产集成到熟悉结构中，Sui完全拥抱并扩展Move的面向对象方法。
+- **当前采用情况数据**：Sui在用户、流动性、交易量等方面略微领先于Aptos。
+
+#### **Move向其他生态系统扩展**：
+
+- **M2**：作为以太坊的Layer 2解决方案，具有以太坊兼容性、Celestia集成、Snowman共识、跨虚拟机互操作性和本地化费用市场等特点，尚未公布主网启动日期和代币计划。
+- **其他生态系统**：Solana基金会正在进行Move集成工作，还有将Move带到Cosmos、Substrate和Polkadot生态系统的计划，但处于早期阶段。
+
+#### **未来展望**：
+
+- Move链的成功取决于吸引开发者构建应用生态系统，需要培养活力社区和提供商业机会。
+- Move可能吸引新开发者，实现更陡峭增长曲线，有望成为吸引区块链开发者及其创新的催化剂。
+
+### 2024.09.02
+
+来源: [Solana 交易的生命周期](https://www.umbraresearch.xyz/writings/lifecycle-of-a-solana-transaction)
+
+#### Solana 交易的结构
+
+Solana 交易由三部分组成：
+
+1. 一个或多个指令，指定交易应在链上运行哪些代码。例如，“将 5 SOL 从帐户 A 转移到帐户 B”。
+2. 交易所需的账户数组（离散状态），具有读写标志。例如，“账户 A[可写]，账户 B[可写]”。
+3. 交易所需的一个或多个签名。例如，“账户 A 所有者的签名”。
+
+![https://www.umbraresearch.xyz/assets/images/example_tx-2fb77b99f594139e54052e9e69d85256.png](https://www.umbraresearch.xyz/assets/images/example_tx-2fb77b99f594139e54052e9e69d85256.png)
+
+代码和状态的分离是 Solana 并行执行模型的必要条件
+
+#### Solana 交易的生命周期
+
+##### 发起交易
+
+用户在钱包中签名交易后，钱包将其发送到 Solana RPC 服务器，服务器根据领导者计划将交易转发给当前领导者及接下来的两个领导者。
+
+![https://www.umbraresearch.xyz/assets/images/lifecycle_1-eb3ee51e443965d8f439927d6b2340d3.png](https://www.umbraresearch.xyz/assets/images/lifecycle_1-eb3ee51e443965d8f439927d6b2340d3.png)
+
+##### **交易执行和排序**
+
+- 领导者验证交易签名并进行预处理，然后安排交易执行。
+- 大多数验证器使用 Solana Labs 提供的默认调度程序实现，该实现是多线程的，每个线程的交易队列按优先级费用和时间排序。
+- 交易执行时需获取必要的账户锁，若无法获取则重新排队。
+- Solana 通过并行执行提高性能，但对开发人员造成成本，因为需预先指定交易可能需要的任何状态。
+- 交易排序存在固有不确定性，这可能导致开发人员为了使紧急交易得到执行而进行大量发送。
+
+![https://www.umbraresearch.xyz/assets/images/scheduler-214ef51505fc279fe25d85b37fdb39f8.png](https://www.umbraresearch.xyz/assets/images/scheduler-214ef51505fc279fe25d85b37fdb39f8.png)
+
+##### **交易传播和状态更新**
+
+- 交易由领导者执行后，立即记录到验证者的账本副本中并传播到网络的其余部分。
+- 当一个区块获得必要的共识投票后，交易被视为 “已确认”，当有 31 个以上的确认区块构建在其上时，该区块被视为 “最终确定”。
+
+![https://www.umbraresearch.xyz/assets/images/lifecycle_2-777f10fd0629a6f44c70bb3a028faf99.png](https://www.umbraresearch.xyz/assets/images/lifecycle_2-777f10fd0629a6f44c70bb3a028faf99.png)
+
+#### **Solana 与以太坊的差异**
+
+1. Solana 没有公共内存池，待处理交易直接转发给当前领导者和接下来的几个领导者。
+2. Solana 默认验证器实现具有连续的区块生产，而以太坊的待处理交易在验证器或区块构建者处等待，每隔 12 秒构建完整区块。
+3. Solana 交易需要固定的网络费用（每签名通常为 0.000005 SOL），还可以包含可选的优先级费用（按每请求计算单位支付的费用计价）。
+4. Solana 上的协议外区块空间拍卖（Jito）市场份额较小，而以太坊上的 mev - boost 市场份额较大。
 
 ### 2024.09.01
 
