@@ -223,4 +223,10 @@ Attempting to connect to the testnet using Aave, obtain test tokens, and go thro
 
 - Oracle Price Contract: https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419#code
 
+### 2024.09.04
+turned on the testnet switch in the top right corner of the Aave system, and tried using the supply and borrow functions. Details can be found at https://sepolia.etherscan.io/address/0x54e5e5D90eB14e642d4c880c74ffd42D3762b1bb
+
+aave flash loan: https://docs.aave.com/developers/guides/flash-loans
+
 <!-- Content_END -->    
+
