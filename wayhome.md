@@ -18,6 +18,10 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.04
+
+学习 LXDAO 公开课 [(3) DeFi 残酷共学分享会：借贷的探索](https://www.youtube.com/watch?v=gTs3KjF3zVQ)
+
 ### 2024.09.03
 Move 语言
 #### **简介**：
