@@ -630,5 +630,50 @@ EigenLayer 的运作机制
 就好比当年炒房的人是一样的，他们会用首付买一套房子，然后用房子继续去抵押贷款出来，用贷款买更多的房子。
 这样的杠杆会快速放大，导致房价下跌的时候连环杠杆清算。
 
+### 2024.09.04
+今天看一下ETH 的 L2协议，都在fud以太坊
+Polygon (Plasma & PoS Sidechain):
+
+Polygon使用两种主要技术:
+  Plasma: 一种链下扩展框架,创建子链来处理交易,定期将状态提交到以太坊主网。
+  Proof of Stake (PoS) Sidechain: 一个独立的区块链,使用PoS共识机制,与以太坊主网并行运行。
+技术实现:
+  使用检查点系统将交易批量提交到以太坊主网
+  验证者节点负责验证交易和生成区块
+  使用Heimdall层作为验证者管理层,Bor作为区块生产层
+
+Arbitrum (Optimistic Rollup):
+Arbitrum使用Optimistic Rollup技术:
+  假设所有交易都是有效的,只在出现争议时执行链上验证
+  使用交互式欺诈证明来解决争议
+技术实现:
+  交易在链下处理,只将交易数据发布到主网
+  使用"ArbOS"虚拟机来执行智能合约
+  引入"Sequencer"角色来排序交易并提高性能
+
+ZK Rollups (如zkSync, StarkNet):
+  ZK Rollups使用零知识证明技术:
+  生成加密证明来验证交易的有效性,而不暴露具体交易内容
+技术实现:
+  使用zk-SNARK或zk-STARK等零知识证明系统
+  在链下执行计算,生成证明
+  将压缩的交易数据和证明提交到主网
+  主网上的智能合约验证证明的有效性
+
+Optimism (Optimistic Rollup):
+  与Arbitrum类似,Optimism也使用Optimistic Rollup:
+  假设交易有效,允许快速处理
+  使用欺诈证明机制来处理无效交易
+技术实现:
+  使用OVM (Optimistic Virtual Machine) 来执行智能合约
+  引入"Sequencer"来排序和执行交易
+  使用压缩技术减少提交到主网的数据量
+
+从个人的角度，感觉zk 确实是一个比较不错的方案
+optimism 的方案，还是会担心作恶风险，同时 7-30 天的时间太长了，不太能接受
+我作为普通用户对 L2 的预期
+1，互联，可以从一个L2转移资产到另一个L2或者主网，转账时间和 L1 类似，1s-1min都可以接受
+2，流动性互通，我尝试在base上去看一些defi项目，比如 pendle之类的，流动性太差了，而且很多浏览器也不支持，导致我质押获得的 token还以为是一个山寨的token。swap 等服务也有类似的问题，滑点太高了，很多币对都没有
+
 
 <!-- Content_END -->
