@@ -12,6 +12,11 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.05
+
+了解 debank ，https://debank.com/
+使用 debank ，查看自己的资产情况   
+
 ### 2024.09.04
 
 学习： DeFi 残酷共学分享会：借贷的探索
