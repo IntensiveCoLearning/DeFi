@@ -283,8 +283,8 @@ Alpaca Finance:
 治理令牌: ALPACA令牌持有者可以参与协议的治理决策。
 
 ### 2024.9.6
-学习时间：30 分钟
-学习内容：
+学习时间：30 分钟  
+学习内容：  
 DeFi 残酷共学分享会：[借贷的探索](https://www.youtube.com/watch?v=gTs3KjF3zVQ)
 
 <!-- Content_END -->
