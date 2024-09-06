@@ -18,6 +18,41 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.05
+Curve https://crypto.nateliason.com/p/curve-wars?s=w
+
+#### **背景介绍**
+    - **Crypto的激励设计游戏**：Crypto领域中，激励设计至关重要，涉及数十亿美元的利益。设计良好的激励机制能使项目获得巨大权力和财富，否则项目代币可能归零。
+    - **DeFi的激励重点**：DeFi中大多数激励设计主要解决两个问题，一是阻止人们出售代币，二是鼓励人们提高代币的流动性。
+    - **流动性市场的出现**：出现了流动性市场，领先的协议可以聚合各种机会，让投资者通过提供流动性来赚取收益，同时协议可以支付投资者来帮助增加其代币的流动性。
+#### **Curve介绍**
+    - **特点**：Curve是一个类似于Uniswap或Sushiswap的去中心化交易所，但它有自己独特的交换数学，使其在稳定币兑换方面比其他DEX更高效。
+    - **优势**：Uniswap的“Constant Product Formula”在交易使用大量流动性时会有价格影响，而Curve的“StableSwap Invariant”能大幅减少稳定币对之间大交易的价格滑点。
+    - **激励结构**：为Curve上的交易池提供流动性，能获得交易费分成，还能获得CRV代币奖励。此外，veCRV模型鼓励用户锁定CRV代币，可获得更多奖励，包括被动收入和在不同CRV池中的“奖励提升”，同时还能对Curve分配CRV奖励的池子进行投票。
+#### **Convex Finance介绍**
+    - **功能**：Convex是Curve收益的聚合器，解决了普通投资者为获得最大收益需要大量CRV代币锁定veCRV的问题。
+    - **创新**：推出了锁定Curve代币的流动版本cvxCRV，用户存入CRV代币后，Convex会给予cvxCRV并将CRV锁定为veCRV（veCRV归Convex所有），用户可质押cvxCRV获得veCRV奖励份额，且可随时将cvxCRV出售为CRV或其他代币，无需担心4年的锁定。
+    - **影响**：Convex吸收了大量流通的Curve供应，拥有比其他任何协议更多的veCRV投票权，从而控制CRV奖励的分配，为使用Convex平台的用户提供显著的收益提升。
+#### **CVX贿赂经济**
+    - **贿赂机制**：协议会根据CVX持有者的投票向其支付贿赂，因为相比于购买更多CVX，支付贿赂在长期来看更便宜。贿赂金额每半周根据其他协议的竞争情况而变化，过去几个月范围在每CVX投票0.37 - 0.87美元。
+    - **对CVX持有者的影响**：CVX持有者可以通过锁定CVX并将其委托给Votium或通过Llama Airforce Union来赚取高达47%的APR贿赂，同时还能从Convex平台费用中获得适度的APR（目前为3.81%）。
+#### **REDACTED：Convex Wars的领先竞争者**
+    - **目标**：REDACTED Cartel旨在通过控制veCVX来赢得Convex Wars，其将自己视为一个积极管理的对冲基金，为投资者赢得流动性战争，同时为BTRFLY持有者积累更多权力。
+    - **策略**：通过bonding其他资产，尤其是CRV和CVX，来赚取BTRFLY代币。他们部署优化的贿赂策略，购买和质押CRV和CVX以获得更多的CRV和CVX，从而控制更多投票并赢得战争。
+#### **流动性战争的未来**
+    - **Tokemak的作用**：Tokemak允许代币持有者在无需将其部署到各种池并进行质押以获取奖励的情况下赚取LP费用，TOKE持有者可以对不同协议获得的流动性及其去向进行投票。
+    - **REDACTED的计划**：REDACTED收购了Votemak，并正在获取更多TOKE，以运行优化的CVX和TOKE贿赂策略，从而在未来的流动性中积累大量权力。
+    - **Convex的扩展**：Convex旨在拥有任何具有投票托管代币的现金流协议的重要份额，以赚取更多协议的CVX贿赂，已宣布支持Frax，未来可能支持更多协议。
+#### **对投资者的建议**
+    - **选项一**：购买CVX，锁定并委托给Llama Airforce Union，让一切自动复利。
+    - **选项二**：购买BTRFLY并质押，让其解决整个流动性战争的问题。
+    - **作者的选择**：作者同时进行了以上两种操作，并持有Tokemak的头寸，因为认为它将为Convex的主导地位提供有趣的竞争。
+
+总的来说，随着DeFi的发展，流动性之战将变得更加激烈，这些协议的竞争和发展将对DeFi的未来产生重要影响。
+### 2024.09.04
+
+学习 LXDAO 公开课 [(3) DeFi 残酷共学分享会：借贷的探索](https://www.youtube.com/watch?v=gTs3KjF3zVQ)
+
 ### 2024.09.03
 Move 语言
 #### **简介**：
