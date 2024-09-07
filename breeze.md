@@ -223,4 +223,24 @@ Attempting to connect to the testnet using Aave, obtain test tokens, and go thro
 
 - Oracle Price Contract: https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419#code
 
+### 2024.09.04
+turned on the testnet switch in the top right corner of the Aave system, and tried using the supply and borrow functions. Details can be found at https://sepolia.etherscan.io/address/0x54e5e5D90eB14e642d4c880c74ffd42D3762b1bb
+
+aave flash loan: https://docs.aave.com/developers/guides/flash-loans
+
+### 2024.09.07
+reading https://banklessdao.substack.com/p/the-amm-edition-part-i-defi-download】
+
+AMM: Automated Market Maker
+
+price mechanism: A * B = k 
+
+- The mechanism would be a smart contract that holds A tokens of type T1, and B tokens of type T2, and maintains the invariant that A * B = k for some constant k (in the version where people can invest, k can change, but only during investment/withdrawal transactions, NOT trades).
+
+project
+- uniswap
+- balancer
+- curve
+
 <!-- Content_END -->    
+

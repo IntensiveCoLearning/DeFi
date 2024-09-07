@@ -18,6 +18,171 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.07
+
+Solana 开发环境搭建
+
+#### 安装 solana 命令行
+
+```jsx
+brew install solana
+```
+
+#### 检查当前网络
+
+```jsx
+solana config get
+
+```
+
+#### 变更网络
+
+```jsx
+# set to localhost
+solana config set --url localhost
+
+# set to devnet
+solana config set --url devnet
+```
+
+#### 当前钱包地址
+
+```jsx
+solana address
+```
+
+#### 启动 Validator
+
+```jsx
+solana-test-validator
+```
+
+但是启动失败，报错
+
+```jsx
+Error: failed to start validator: Failed to create ledger at test-ledger: blockstore error
+```
+
+根据搜索，要用 gnu-tar 代替 mac 自带的 tar
+
+```jsx
+brew install gnu-tar
+# Put this in ~/.zshrc 
+export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
+```
+
+再次启动成功运行
+
+#### 获取账户详细信息
+
+```jsx
+solana account <address>
+```
+
+#### 空投代币
+
+```jsx
+solana airdrop 100
+```
+
+#### 查看余额
+
+```jsx
+solana balance
+
+# or
+
+solana balance <address>
+```
+
+#### 安装 anchor
+
+```jsx
+cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
+avm install latest
+avm use latest
+```
+
+中间报错
+
+```jsx
+./time-0.3.29/src/format_description/parse/mod.rs:83:9
+   |
+83 |     let items = format_items
+   |         ^^^^^
+...
+86 |     Ok(items.into())
+   |              ---- type must be known at this point
+   
+   
+error: could not compile `time` (lib) due to 1 previous error
+Error: Failed to install 0.30.1, is it a valid version?
+```
+
+修改 ./time-0.3.29/src/format_description/parse/mod.rs 第 83 行
+
+```jsx
+
+change
+
+let items = format_items
+
+to
+
+let items: Box<[format_item::Item]> = format_items
+```
+
+然后重新运行 avm 命令解决
+
+### 2024.09.06
+Intent Asset https://mp.weixin.qq.com/s/-8_h6h2abCTfZJsjGmz80Q
+
+
+#### **文章要点**
+
+1. **闲置资产的革命**
+    - 以阿里余额宝类比，引出 Web3 版余额宝的机遇。
+    - Web3 版余额宝利用区块链技术和链上闲置资产，具有去中心化、透明度高、流动性强、收益来源多样化和用户覆盖广泛等优势。
+
+2. **传统 TVL 模式陷入僵局**
+    - 本周期 TVL 叙事存在问题，发币和上线交易所后 TVL 迅速下滑。
+    - TVL 僵化，由少数大户或合作方通过“挖提卖”方式实现短期数据冲高，普通用户参与机会成本高，被大户主导。
+    - 当前 TVL 项目资产退出方式维护成本高、用户体验不佳。
+
+3. **dappOS 意图资产（Intent Assets）**
+    - 能让用户在享有较高资产收益率的同时保证资产随时在链上可用。
+    - 背后的意图执行网络通过众多去中心化服务提供商完成用户需求，实现流动性维护成本与实际需求的动态平衡，降低成本并优化用户体验。
+
+4. **Intent Asset 的介绍**
+    - 新型资产，根据不同场景自动适应并在闲置时产生利息。
+    - 具有即时赎回、高收益率和使用便捷等优势。
+    - 在不同客户群和场景中有广泛应用，如 DeFi 玩家、新入局玩家、机构投资者等。
+
+5. **Intent Asset 的原理**
+    - 利用 dappOS 执行网络将用户资产的结算任务外包给服务提供商，实现用户预期结果。
+    - dappOS 的 OMS 机制确保任务以最快速度和最低成本执行，同时保持资产安全。
+    - Intent 执行网络确保任务在不同区块链和去中心化应用中兼容。
+
+6. **可能面临的未来挑战**
+    - 监管压力、市场竞争加剧、收益率下降、流动性管理、用户多样化需求、技术和安全风险以及用户接受度和教育等方面。
+
+#### **笔记**
+
+开篇以阿里余额宝为例，让我们看到了闲置资产在传统金融领域的成功应用，进而引出了 Web3 版余额宝的巨大潜力。在 Web3 世界中，利用区块链技术可以实现更高的去中心化程度、透明度和流动性，同时为用户带来更多样化的收益来源和更广泛的用户覆盖。
+
+然而，传统的 TVL（Total Value Locked）模式在当前的发展中陷入了僵局。许多项目在发币和上线交易所后，TVL 迅速下滑，这主要是由于 TVL 僵化，被少数大户或合作方通过“挖提卖”的方式主导，普通用户参与机会成本高。此外，资产退出方式也存在维护成本高和用户体验不佳的问题。
+
+dappOS 推出的 Intent Asset 为解决这些问题提供了新的思路。这种新型资产能够在用户享有较高资产收益率的同时，保证资产随时在链上可用。其背后的意图执行网络通过众多去中心化服务提供商来完成用户需求，实现了流动性维护成本与实际需求的动态平衡，从而降低了成本并优化了用户体验。
+
+Intent Asset 具有诸多优势，如根据不同场景自动适应并在闲置时产生利息，还具有即时赎回、高收益率和使用便捷等特点。在不同的客户群和场景中都有广泛的应用，无论是 DeFi 玩家、新入局玩家还是机构投资者，都能从中受益。
+
+从原理上看，Intent Asset 利用 dappOS 执行网络将用户资产的结算任务外包给服务提供商，实现用户的预期结果。dappOS 的 OMS 机制确保任务以最快速度和最低成本执行，同时保证资产的安全。Intent 执行网络则确保任务在不同的区块链和去中心化应用中兼容。
+
+尽管 Intent Asset 具有很大的潜力，但它也面临着一些未来的挑战。监管压力、市场竞争加剧、收益率下降、流动性管理、用户多样化需求、技术和安全风险以及用户接受度和教育等方面都需要进一步解决。
+
+总之，Intent Asset 为 Web3 资产的大规模应用提供了一个有前景的入口，但要实现其真正的潜力，还需要克服一系列的挑战。在未来的发展中，我们可以期待看到更多创新的解决方案，以推动 Web3 资产的发展和应用。
+
+
 ### 2024.09.05
 Curve https://crypto.nateliason.com/p/curve-wars?s=w
 

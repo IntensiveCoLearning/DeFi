@@ -59,6 +59,32 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.07
+IProtocolDataProvider 
+摘要
+IProtocolDataProvider 是一个用于与 Aave 协议交互的智能合约接口，它定义了一系列函数以获取有关资产的信息，包括所有储备的代币列表、资产的配置数据、流动性数据和用户的储备数据。这些功能对于开发者了解每个资产的借贷情况及其操作状态至关重要。
+
+重点
+TokenData 数据结构: 该接口包含了一种名为 TokenData 的数据结构，表示代币的基本信息。
+地址提供者: 函数 ADDRESSES_PROVIDER() 返回 LendPoolAddressesProvider 的地址提供者。
+储备资产列表: getAllReservesTokens() 函数用于获取所有储备资产的代币列表。
+A 代币列表: getAllATokens() 函数提供所有 A 代币的列表。
+资产配置数据: getReserveConfigurationData(address asset) 函数可以获取特定资产的配置数据，涵盖多种参数。
+流动性和债务信息: getReserveData(address asset) 函数返回资产的流动性和债务相关信息。
+用户储备数据: getUserReserveData(address asset, address user) 函数用于获取特定用户与特定资产的储备数据。
+### 2024.09.06
+ILendingPoolAddressesProviderRegistry
+摘要
+ILendingPoolAddressesProviderRegistry 是 Aave 协议的一部分，主要用于多个市场的 LendingPoolAddressesProvider 的索引。该合约允许注册和注销地址提供者，并提供查找注册的地址提供者列表和相应市场 ID 的功能。
+
+关键点
+主要合约: ILendingPoolAddressesProviderRegistry 是 Aave 协议的核心合约之一，专门用于管理多个市场的地址提供者。
+事件跟踪: 合约中定义了事件，用于注册和注销地址提供者，便于开发者和用户跟踪地址的变更。
+地址检索: 用户可以方便地检索到已注册的地址提供者列表，从而进行有效的市场管理。
+唯一标识: 每个地址提供者通过唯一的 ID 与其相应市场关联，确保了市场的唯一性和可识别性。
+技术标准: 合约设计采用 Solidity 0.6.12，符合开源合约的标准，确保了代码的安全性和可维护性。
+市场协调: 此合约有助于协调不同市场之间的通讯和操作，提升了协议的互操作性。
+更新记录: 此合约的最后更新发生在三年前，显示出该文档维护的时间信息，提醒用户关注合约的更新动态。
 ### 2024.09.05
 AAVE 在区块链领域是一个开源和非托管的加密货币借贷协议。其目标是创建一个开放、透明并且不需要信任的金融生态系统，使用户能够通过区块链技术在全球范围内进行借贷活动。
 

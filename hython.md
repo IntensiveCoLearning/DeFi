@@ -282,4 +282,9 @@ Alpaca Finance:
 收益农场: 提供多种收益农场和流动性挖矿机会，用户可以通过质押资产来获得额外的奖励。
 治理令牌: ALPACA令牌持有者可以参与协议的治理决策。
 
+### 2024.9.6
+学习时间：30 分钟  
+学习内容：  
+DeFi 残酷共学分享会：[借贷的探索](https://www.youtube.com/watch?v=gTs3KjF3zVQ)
+
 <!-- Content_END -->
