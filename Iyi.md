@@ -119,4 +119,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 1. 去中心化交易所
 
+### 2024.09.05
+
+1. 开始学习视频 https://www.youtube.com/watch?v=gTs3KjF3zVQ 【借贷的探索】
+
+### 2024.09.06
+
+1. 完成学习视频 https://www.youtube.com/watch?v=gTs3KjF3zVQ 【借贷的探索】
+
 <!-- Content_END -->
