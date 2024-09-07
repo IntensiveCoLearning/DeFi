@@ -12,6 +12,13 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.09.07
+
+- 学习 去中心化资产融资协议 Centrifuge，
+- Centrifuge 是一个去中心化 RWA 资产融资协议，旨在将现实世界资产带到到链上，允许借款人在没有银行或不必要中介的情况下进行融资，通过资产抵押的形式在 Centrifuge 创建链上借贷池，帮助借款人获得加密世界的即时流动性。
+- Security Token Offering 发行证券代币
+- 加密资本去捕获现实世界的商业活动机会；对于现实世界来讲，RWA 能够帮助资产去捕获加密世界的即时流动性
+
 ### 2024.09.05
 
 了解 debank ，https://debank.com/
