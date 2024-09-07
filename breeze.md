@@ -228,5 +228,19 @@ turned on the testnet switch in the top right corner of the Aave system, and tri
 
 aave flash loan: https://docs.aave.com/developers/guides/flash-loans
 
+### 2024.09.07
+reading https://banklessdao.substack.com/p/the-amm-edition-part-i-defi-download】
+
+AMM: Automated Market Maker
+
+price mechanism: A * B = k 
+
+- The mechanism would be a smart contract that holds A tokens of type T1, and B tokens of type T2, and maintains the invariant that A * B = k for some constant k (in the version where people can invest, k can change, but only during investment/withdrawal transactions, NOT trades).
+
+project
+- uniswap
+- balancer
+- curve
+
 <!-- Content_END -->    
 
