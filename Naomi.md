@@ -1380,4 +1380,7 @@ Rook 建立在现有的 AMM 协议（如 Uniswap 和 Sushiswap）以及 DEX 聚�
 3. *当发现机会时，就会举行拍卖会，决定谁来执行交易。看管人用ROOK竞标*
 4. 获胜者执行订单
 5. 利润分发给*交易执行者、DAO 的金库以及质押 ROOK 的用户，部分利润会被销毁*
+
+### 2024.09.08
+TO be continued in Monday
 <!-- Content_END -->
