@@ -261,7 +261,7 @@ timezone: Asia/Shanghai
   - 以太坊主网之外每个受支持的 V3 部署都需要在其链上有一个桥接接收器和一个本地执行器合约（Arbitrum 和 Optimism要求另外的 L2BridgeExecutor 合约以确保 L2 兼容性) 。例如，在 Polygon 上，Aave V3 有一个 Polygon Bridge Executor，用于监听从 Polygon Bridge 传递的消息，这些消息来自以太坊主网上成功的治理投票 。然后，Polygon Bridge Executor 会将消息转发给 Polygon的本地执行器合约（Bridge Executor Base)，在宽限期内，如果 Polygon 上的任何人发起更改，该合约都可以执行更改。
   - 与以太坊主网类似，跨链提案也表现出相同的延迟和宽限期行为；如果指定了监护人地址，提案也可以被监护人地址否决。**多链治理的一个问题是，利用桥接器会带来安全隐患，例如信任桥接器验证者以抗审查的方式将交易从以太坊主网转发到其他链。此外，还存在桥接器宕机、跨链提议无法转发到其他链的风险。**
 
-### 2024.09.07
+### 2024.09.08
 
 - 学习主题：Defi 知识回顾
 - 学习内容总结：
