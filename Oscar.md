@@ -263,17 +263,20 @@ timezone: Asia/Shanghai
 
 ### 2024.09.07
 
-- 学习主题：
+- 学习主题：Defi 知识回顾
 - 学习内容总结：
+  - Defi 定义、背景及历史、与传统金融对比
+  - Defi 三件套、对应测试网实践：稳定币（USDT、SUSDC、DAI）、借贷（Aave、Compound）、Dex 基本熟悉（ Uniswap）
+  - Defi 协议学习：比如 Aave 借贷协议，协议代币的两面
+  - 一些关键词：TVL、RWA、AMM、APY
+  - 其它扩展学习：TODO
+    - 收益农场与流动性挖矿：实践 Yield Farming 和 Liquidity Mining 策略。
+    - 跨链技术：研究 Stargate、Anyswap 等跨链桥和协议
+    - 预言机：学习 Chainlink 等预言机在 DeFi 中的应用。
+    - 去中心化衍生品：分析 GMX、SNX 等衍生品平台。
+    - DeFi 安全：讨论循环贷、闪电贷、治理攻击、Vetoken 等安全议题。
 
 
 <!-- Content_END -->
-
-
-
-
-
-
-
 
 
