@@ -11,6 +11,15 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.08
+
+了解starknet 链上的 defi 生态 
+- Nostra Finance 目前是 Starknet 上 TVL 最大的 DeFi 協議，平臺目前支援基本的借貸和 Swap 功能（整合的 AVNU）。此外，Nostra 也計劃推出 Starknet 首個與美元錨定的原生穩定幣 UNO。
+- zkLend  
+- AVNU
+- SithSwap 是 Starknet 上的稳定币兑换协议
+- 10KSwap、JediSwap 以及 mySwap 在內的 3 款 Swap
+- Starknet 生態域名專案，目前 Mint 新域名的價格是 0.085 ETH / 年
 
 ### 2024.09.07
 
