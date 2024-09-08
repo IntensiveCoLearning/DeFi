@@ -746,4 +746,114 @@ routing:
   创建一个竞争市场来发现最佳交易路径
   它允许多个“填充者”（Fillers）竞争，以找到最佳价格和路径，从而为用户提供更多的交易选择和更好的价格
 
+
+### 2024.09.07
+尝试开始用solidity写一个简单的【夫妻共同财产】合约
+1，两个钱包成立一个【公司】
+2，每个钱包每月都需要往公共账户存钱大于 500 元
+3，100 元以下的金额，两个钱包都可以随意支取
+4，100 元以上的金额，需要双方同意
+5，单方面退出协议，只能获取 20% 的共同金额
+6，协商好共同退出则平分 50%
+
+```Javascript
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Company {
+    address public wallet1;
+    address public wallet2;
+    uint256 public lastDepositTime1;
+    uint256 public lastDepositTime2;
+    uint256 public constant MIN_MONTHLY_DEPOSIT = 500 ether;
+    uint256 public constant MIN_WITHDRAWAL_APPROVAL = 100 ether;
+
+    mapping(address => bool) public isWallet;
+    mapping(address => uint256) public approvals;
+    uint256 public balance;
+
+    event Deposit(address indexed from, uint256 amount);
+    event Withdraw(address indexed to, uint256 amount);
+    event Exit(address indexed from, uint256 amount);
+    event AgreementExit(address indexed from1, address indexed from2, uint256 amount);
+
+    constructor(address _wallet1, address _wallet2) {
+        wallet1 = _wallet1;
+        wallet2 = _wallet2;
+        isWallet[_wallet1] = true;
+        isWallet[_wallet2] = true;
+    }
+
+    modifier onlyWallet() {
+        require(isWallet[msg.sender], "Not authorized");
+        _;
+    }
+
+    modifier monthlyDepositCheck() {
+        if (msg.sender == wallet1) {
+            require(block.timestamp - lastDepositTime1 <= 30 days, "Monthly deposit required for wallet1");
+        } else if (msg.sender == wallet2) {
+            require(block.timestamp - lastDepositTime2 <= 30 days, "Monthly deposit required for wallet2");
+        }
+        _;
+    }
+
+    function deposit() external payable onlyWallet {
+        require(msg.value >= MIN_MONTHLY_DEPOSIT, "Minimum deposit is 500 ether");
+
+        if (msg.sender == wallet1) {
+            lastDepositTime1 = block.timestamp;
+        } else if (msg.sender == wallet2) {
+            lastDepositTime2 = block.timestamp;
+        }
+
+        balance += msg.value;
+        emit Deposit(msg.sender, msg.value);
+    }
+
+    function withdraw(uint256 amount) external onlyWallet {
+        require(amount <= balance, "Insufficient balance");
+
+        if (amount <= MIN_WITHDRAWAL_APPROVAL) {
+            payable(msg.sender).transfer(amount);
+            balance -= amount;
+            emit Withdraw(msg.sender, amount);
+        } else {
+            approvals[msg.sender] = amount;
+            if (approvals[wallet1] == amount && approvals[wallet2] == amount) {
+                payable(wallet1).transfer(amount / 2);
+                payable(wallet2).transfer(amount / 2);
+                balance -= amount;
+                approvals[wallet1] = 0;
+                approvals[wallet2] = 0;
+                emit Withdraw(wallet1, amount / 2);
+                emit Withdraw(wallet2, amount / 2);
+            }
+        }
+    }
+
+    function exit() external onlyWallet {
+        uint256 exitAmount = (balance * 20) / 100;
+        payable(msg.sender).transfer(exitAmount);
+        balance -= exitAmount;
+        emit Exit(msg.sender, exitAmount);
+    }
+
+    function agreeExit() external onlyWallet {
+        require(approvals[wallet1] == balance && approvals[wallet2] == balance, "Both wallets must agree to exit");
+
+        uint256 splitAmount = balance / 2;
+        payable(wallet1).transfer(splitAmount);
+        payable(wallet2).transfer(splitAmount);
+        balance = 0;
+        approvals[wallet1] = 0;
+        approvals[wallet2] = 0;
+        emit AgreementExit(wallet1, wallet2, splitAmount);
+    }
+}
+```
+
+还不是很完善，但我觉得已经是所谓的【链上结婚证】的雏形了
+毕竟法律规定的更多也是夫妻双方的经济上的责任和义务
+
 <!-- Content_END -->

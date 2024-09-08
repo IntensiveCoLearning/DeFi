@@ -18,6 +18,122 @@ timezone: Asia/Shanghai
 ## Notes
 
 <!-- Content_START -->
+### 2024.09.07
+
+Solana 开发环境搭建
+
+#### 安装 solana 命令行
+
+```jsx
+brew install solana
+```
+
+#### 检查当前网络
+
+```jsx
+solana config get
+
+```
+
+#### 变更网络
+
+```jsx
+# set to localhost
+solana config set --url localhost
+
+# set to devnet
+solana config set --url devnet
+```
+
+#### 当前钱包地址
+
+```jsx
+solana address
+```
+
+#### 启动 Validator
+
+```jsx
+solana-test-validator
+```
+
+但是启动失败，报错
+
+```jsx
+Error: failed to start validator: Failed to create ledger at test-ledger: blockstore error
+```
+
+根据搜索，要用 gnu-tar 代替 mac 自带的 tar
+
+```jsx
+brew install gnu-tar
+# Put this in ~/.zshrc 
+export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
+```
+
+再次启动成功运行
+
+#### 获取账户详细信息
+
+```jsx
+solana account <address>
+```
+
+#### 空投代币
+
+```jsx
+solana airdrop 100
+```
+
+#### 查看余额
+
+```jsx
+solana balance
+
+# or
+
+solana balance <address>
+```
+
+#### 安装 anchor
+
+```jsx
+cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
+avm install latest
+avm use latest
+```
+
+中间报错
+
+```jsx
+./time-0.3.29/src/format_description/parse/mod.rs:83:9
+   |
+83 |     let items = format_items
+   |         ^^^^^
+...
+86 |     Ok(items.into())
+   |              ---- type must be known at this point
+   
+   
+error: could not compile `time` (lib) due to 1 previous error
+Error: Failed to install 0.30.1, is it a valid version?
+```
+
+修改 ./time-0.3.29/src/format_description/parse/mod.rs 第 83 行
+
+```jsx
+
+change
+
+let items = format_items
+
+to
+
+let items: Box<[format_item::Item]> = format_items
+```
+
+然后重新运行 avm 命令解决
+
 ### 2024.09.06
 Intent Asset https://mp.weixin.qq.com/s/-8_h6h2abCTfZJsjGmz80Q
 
