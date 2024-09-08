@@ -856,4 +856,9 @@ contract Company {
 还不是很完善，但我觉得已经是所谓的【链上结婚证】的雏形了
 毕竟法律规定的更多也是夫妻双方的经济上的责任和义务
 
+### 2024.09.08
+今天轻松一些，学习了一下《DeFi 残酷共学分享会：借贷的探索》
+https://www.youtube.com/watch?v=gTs3KjF3zVQ
+
+
 <!-- Content_END -->
