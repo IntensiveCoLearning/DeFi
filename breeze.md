@@ -242,5 +242,22 @@ project
 - balancer
 - curve
 
+### 2024.09.08
+reading 
+    - https://banklessdao.substack.com/p/the-amm-edition-part-ii-defi-download
+    - https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-7-zhang-de-xue-jie-de-jie-dai
+    - https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b/di-4-zhang-dex-ju-he-qi
+    
+DEX Aggregators
+ - In the future, there won't be a single aggregated website, but rather DEX aggregation functionality will be built into wallets or products directly.
+ - MEV
+    - Arbitrage
+    - Liquidations
+    - Front and Back Running    
+    - Sandwich Trading
+ - 1inch
+
+TODO:
+    - use uniswap and 1inch to swap token
 <!-- Content_END -->    
 
