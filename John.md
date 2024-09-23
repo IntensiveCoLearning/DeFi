@@ -6,6 +6,7 @@ timezone: timezone: Asia/Shanghai
 
 1. 长期从事于web开发工作，希望更深入理解defi领域知识的人。
 2. 我会坚持下来并完成此次共学任务。
+3. 联系方式：joancaster@outlook.com
 
 ## Notes
 
