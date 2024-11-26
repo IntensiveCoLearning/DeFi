@@ -176,7 +176,7 @@ https://app.uniswap.org/swap
     ```
     - 日期格式为 `### 2024.07.11`，请不要随意更改
 
-## DeFi 残酷共学打卡记录表
+## 残酷共学打卡记录表
 
 ✅ = Done ⭕️ = Missed ❌ = Failed
 
