@@ -245,6 +245,7 @@ https://app.uniswap.org/swap
 
 - 总参与人数: 51
 - 完成人数: 18
+- 完成用户: Zemmer, wayhome, gills, Nova_Notes, Ric-Li-C, haomiao, Derick, qiaopengjun, hython, Stella, John, Neal, Q, Naomi, breeze, hansen, wzl, Oscar
 - 全勤用户: haomiao, qiaopengjun, Neal, wzl
 - 淘汰人数: 33
 - 淘汰率: 64.71%
