@@ -239,6 +239,7 @@ https://app.uniswap.org/swap
 
 
 
+
 <!-- STATISTICALDATA_START -->
 
 
@@ -250,5 +251,5 @@ https://app.uniswap.org/swap
 - 全勤用户: mmssddss, wzl521, qiaopengjun5162, snaildarter
 - 淘汰人数: 33
 - 淘汰率: 64.71%
-- Fork人数: 73
+- Fork人数: 72
 <!-- STATISTICALDATA_END -->
