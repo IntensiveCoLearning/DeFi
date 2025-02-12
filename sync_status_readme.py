@@ -8,9 +8,9 @@ import logging
 
 # Constants
 START_DATE = datetime.fromisoformat(os.environ.get(
-    'START_DATE', '2024-06-24T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
+    'START_DATE', '2025-01-06T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
 END_DATE = datetime.fromisoformat(os.environ.get(
-    'END_DATE', '2024-07-14T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
+    'END_DATE', '2025-01-26T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
 DEFAULT_TIMEZONE = 'Asia/Shanghai'
 FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '.md')
 README_FILE = 'README.md'
@@ -70,13 +70,27 @@ def get_date_range():
 
 
 def get_user_timezone(file_content):
+    """
+    Extracts the timezone from the file content, supporting IANA timezone names
+    (e.g., 'Asia/Shanghai') and UTC offsets (e.g., 'UTC+8').
+    If no valid timezone is found, defaults to DEFAULT_TIMEZONE.
+    """
     yaml_match = re.search(r'---\s*\ntimezone:\s*(\S+)\s*\n---', file_content)
     if yaml_match:
+        timezone_str = yaml_match.group(1)
         try:
-            return pytz.timezone(yaml_match.group(1))
+            # Attempt to interpret as a named timezone (e.g., "Asia/Shanghai")
+            return pytz.timezone(timezone_str)
         except pytz.exceptions.UnknownTimeZoneError:
-            logging.warning(
-                f"Unknown timezone: {yaml_match.group(1)}. Using default {DEFAULT_TIMEZONE}.")
+            # If named timezone fails, attempt to interpret as a UTC offset
+            try:
+                # Convert UTC offset string to a fixed offset timezone
+                offset = int(timezone_str[3:])  # Extract the offset value
+                return pytz.FixedOffset(offset * 60)  # Offset in minutes
+            except ValueError:
+                logging.warning(
+                    f"Invalid timezone format: {timezone_str}. Using default {DEFAULT_TIMEZONE}.")
+                return pytz.timezone(DEFAULT_TIMEZONE)
     return pytz.timezone(DEFAULT_TIMEZONE)
 
 
@@ -91,13 +105,25 @@ def extract_content_between_markers(file_content):
 
 def find_date_in_content(content, local_date):
     date_patterns = [
+        r'#\s*' + local_date.strftime("%Y.%m.%d"),
+        r'##\s*' + local_date.strftime("%Y.%m.%d"),
         r'###\s*' + local_date.strftime("%Y.%m.%d"),
+        r'#\s*' + local_date.strftime("%Y.%m.%d").replace('.0', '.'),
+        r'##\s*' + local_date.strftime("%Y.%m.%d").replace('.0', '.'),
         r'###\s*' + local_date.strftime("%Y.%m.%d").replace('.0', '.'),
+        r'#\s*' + local_date.strftime("%m.%d").lstrip('0').replace('.0', '.'),
+        r'##\s*' + local_date.strftime("%m.%d").lstrip('0').replace('.0', '.'),
         r'###\s*' +
         local_date.strftime("%m.%d").lstrip('0').replace('.0', '.'),
+        r'#\s*' + local_date.strftime("%Y/%m/%d"),
+        r'##\s*' + local_date.strftime("%Y/%m/%d"),
         r'###\s*' + local_date.strftime("%Y/%m/%d"),
+        r'#\s*' + local_date.strftime("%m/%d").lstrip('0').replace('/0', '/'),
+        r'##\s*' + local_date.strftime("%m/%d").lstrip('0').replace('/0', '/'),
         r'###\s*' +
         local_date.strftime("%m/%d").lstrip('0').replace('/0', '/'),
+        r'#\s*' + local_date.strftime("%m.%d").zfill(5),
+        r'##\s*' + local_date.strftime("%m.%d").zfill(5),
         r'###\s*' + local_date.strftime("%m.%d").zfill(5)
     ]
     combined_pattern = '|'.join(date_patterns)
@@ -200,8 +226,23 @@ def check_weekly_status(user_status, date, user_tz):
 def get_all_user_files():
     exclude_prefixes = ('template', 'readme')
     return [f[:-len(FILE_SUFFIX)] for f in os.listdir('.')
-            if f.lower().endswith(FILE_SUFFIX.lower()) 
+            if f.lower().endswith(FILE_SUFFIX.lower())
             and not f.lower().startswith(exclude_prefixes)]
+
+
+def extract_name_from_row(row):
+    """
+    Extracts the username from a table row, handling Markdown links.
+    """
+    match = re.match(r'\|\s*\[([^\]]+)\]\([^)]+\)\s*\|', row)
+    if match:
+        return match.group(1).strip()  # Extract the name from the link
+    else:
+        # If not a Markdown link, return the content before the first "|"
+        parts = row.split('|')
+        if len(parts) > 1:
+            return parts[1].strip()
+        return None
 
 
 def update_readme(content):
@@ -227,21 +268,16 @@ def update_readme(content):
                              len(TABLE_START_MARKER):end_index].strip().split('\n')[2:]
 
         for row in table_rows:
-            match = re.match(r'\|\s*([^|]+)\s*\|', row)
-            if match:
-                display_name = match.group(1).strip()
-                if display_name:  # 检查 display_name 是否为非空
-                    existing_users.add(display_name)
-                    new_table.append(generate_user_row(display_name))
-                else:
-                    logging.warning(
-                        f"Skipping empty display name in row: {row}")
+            user_name = extract_name_from_row(row)
+            if user_name:
+                existing_users.add(user_name)
+                new_table.append(generate_user_row(user_name))
             else:
                 logging.warning(f"Skipping invalid row: {row}")
 
         new_users = set(get_all_user_files()) - existing_users
         for user in new_users:
-            if user.strip():  # 确保用户名不是空的或只包含空格
+            if user.strip():
                 new_table.append(generate_user_row(user))
                 logging.info(f"Added new user: {user}")
             else:
@@ -255,13 +291,24 @@ def update_readme(content):
 
 def generate_user_row(user):
     user_status = get_user_study_status(user)
-    with open(f"{user}{FILE_SUFFIX}", 'r', encoding='utf-8') as file:
-        file_content = file.read()
-    user_tz = get_user_timezone(file_content)
-    new_row = f"| {user} |"
+    # 修改这里，将用户名替换为markdown链接
+    user_link = f"[{user}]({user}{FILE_SUFFIX})"
+    new_row = f"| {user_link} |"
     is_eliminated = False
     absent_count = 0
     current_week = None
+
+    file_name_to_open = f"{user}{FILE_SUFFIX}"
+
+    try:
+        with open(file_name_to_open, 'r', encoding='utf-8') as file:
+            file_content = file.read()
+    except FileNotFoundError as e:
+        logging.error(f"Error: Could not find file {file_name_to_open}")
+        # 返回一个包含 "⭕️" 的默认行或者采取其他错误处理措施
+        return "| " + user_link + " | " + " ⭕️ |" * len(get_date_range()) + "\n"
+
+    user_tz = get_user_timezone(file_content)
 
     user_current_day = datetime.now(user_tz).replace(
         hour=0, minute=0, second=0, microsecond=0)
@@ -354,7 +401,8 @@ def calculate_statistics(content):
     completed_users = []
 
     for row in rows:
-        user_name = row.split('|')[1].strip()
+        # user_name = row.split('|')[1].strip()
+        user_name = extract_name_from_row(row)
         # Exclude first and last empty elements
         statuses = [status.strip() for status in row.split('|')[2:-1]]
 
