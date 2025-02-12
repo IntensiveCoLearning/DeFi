@@ -208,7 +208,7 @@ https://app.uniswap.org/swap
 | [boombb12138](boombb12138.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Joan1caster](Joan1caster.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ |
 | [YuKirasawa](YuKirasawa.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [alex lee](alex lee.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [alex lee](alex lee.md) |  ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ⭕️ |
 | [Glances](Glances.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Iyi](Iyi.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
 | [snaildarter](snaildarter.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -234,7 +234,9 @@ https://app.uniswap.org/swap
 | [nocb](nocb.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |
 | [404ll](404ll.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [Ellenp2p](Ellenp2p.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [alex-lee](alex-lee.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
@@ -245,11 +247,11 @@ https://app.uniswap.org/swap
 
 ## 统计数据
 
-- 总参与人数: 51
-- 完成人数: 18
-- 完成用户: joyc, mon1y, Huowuge, gillsgills, DerickIT, luffythink, boombb12138, Joan1caster, snaildarter, linghuccc, wzl521, LunaWang5209, weifengHuang, qiaopengjun5162, wayhome, novac42code, mmssddss, nocb
+- 总参与人数: 52
+- 完成人数: 19
+- 完成用户: joyc, mon1y, Huowuge, gillsgills, DerickIT, luffythink, boombb12138, Joan1caster, alex lee, snaildarter, linghuccc, wzl521, LunaWang5209, weifengHuang, qiaopengjun5162, wayhome, novac42code, mmssddss, nocb
 - 全勤用户: snaildarter, wzl521, qiaopengjun5162, mmssddss
 - 淘汰人数: 33
-- 淘汰率: 64.71%
+- 淘汰率: 63.46%
 - Fork人数: 80
 <!-- STATISTICALDATA_END -->
