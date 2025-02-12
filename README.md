@@ -183,8 +183,59 @@ https://app.uniswap.org/swap
 <!-- START_COMMIT_TABLE -->
 | Name | 8.19 | 8.20 | 8.21 | 8.22 | 8.23 | 8.24 | 8.25 | 8.26 | 8.27 | 8.28 | 8.29 | 8.30 | 8.31 | 9.01 | 9.02 | 9.03 | 9.04 | 9.05 | 9.06 | 9.07 | 9.08 |
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-
+| [dethan3](dethan3.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [joyc](joyc.md) | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ |
+| [Harriswww](Harriswww.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
+| [TheHeBoy](TheHeBoy.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
+| [btou666](btou666.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
+| [mon1y](mon1y.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [Huowuge](Huowuge.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ |
+| [leokkk88](leokkk88.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [gillsgills](gillsgills.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ |
+| [DerickIT](DerickIT.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [Coooder-Crypto](Coooder-Crypto.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
+| [WENDY1233211991](WENDY1233211991.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | |
+| [Defi残酷共学-Mark](Defi残酷共学-Mark.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [Chen-XueLing](Chen-XueLing.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [zedz](zedz.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
+| [Sifotd](Sifotd.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | |
+| [wureny](wureny.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
+| [luffythink](luffythink.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [L1rul1n](L1rul1n.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
+| [Young-Jeff](Young-Jeff.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [HeliosLz](HeliosLz.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | |
+| [yuxing11](yuxing11.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [boombb12138](boombb12138.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [Joan1caster](Joan1caster.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ |
+| [YuKirasawa](YuKirasawa.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
+| [alex lee](alex lee.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [Glances](Glances.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
+| [Iyi](Iyi.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
+| [snaildarter](snaildarter.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [LRlulu](LRlulu.md) | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | |
+| [punkcanyang](punkcanyang.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
+| [linghuccc](linghuccc.md) | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ |
+| [rayjun](rayjun.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | |
+| [notthere-2023](notthere-2023.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [muxin-web3](muxin-web3.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | |
+| [wzl521](wzl521.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [xiaodongQ](xiaodongQ.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [markerup](markerup.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [charlottyge](charlottyge.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [LunaWang5209](LunaWang5209.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [imaffe](imaffe.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
+| [weifengHuang](weifengHuang.md) | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
+| [qiaopengjun5162](qiaopengjun5162.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [wayhome](wayhome.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
+| [Tunnelai](Tunnelai.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
+| [wodeche](wodeche.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [novac42code](novac42code.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ |
+| [mmssddss](mmssddss.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [nocb](nocb.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |
+| [404ll](404ll.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
+| [Ellenp2p](Ellenp2p.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
@@ -196,8 +247,8 @@ https://app.uniswap.org/swap
 
 - 总参与人数: 51
 - 完成人数: 18
-- 完成用户: Joan1caster, nocb, joyc, mmssddss, wayhome, wzl521, weifengHuang, LunaWang5209, mon1y, boombb12138, qiaopengjun5162, luffythink, Huowuge, linghuccc, DerickIT, snaildarter, gillsgills, novac42code
-- 全勤用户: mmssddss, wzl521, qiaopengjun5162, snaildarter
+- 完成用户: joyc, mon1y, Huowuge, gillsgills, DerickIT, luffythink, boombb12138, Joan1caster, snaildarter, linghuccc, wzl521, LunaWang5209, weifengHuang, qiaopengjun5162, wayhome, novac42code, mmssddss, nocb
+- 全勤用户: snaildarter, wzl521, qiaopengjun5162, mmssddss
 - 淘汰人数: 33
 - 淘汰率: 64.71%
 - Fork人数: 80
