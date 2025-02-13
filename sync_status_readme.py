@@ -12,15 +12,17 @@ START_DATE = datetime.fromisoformat(os.environ.get(
 END_DATE = datetime.fromisoformat(os.environ.get(
     'END_DATE', '2025-01-26T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
 DEFAULT_TIMEZONE = 'Asia/Shanghai'
-FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '.md')
+FILE_SUFFIX = '.md'
 README_FILE = 'README.md'
-FIELD_NAME = os.environ.get('FIELD_NAME', 'Name')
+FIELD_NAME = 'Name'
 Content_START_MARKER = "<!-- Content_START -->"
 Content_END_MARKER = "<!-- Content_END -->"
 TABLE_START_MARKER = "<!-- START_COMMIT_TABLE -->"
 TABLE_END_MARKER = "<!-- END_COMMIT_TABLE -->"
 GITHUB_REPOSITORY_OWNER = os.environ.get('GITHUB_REPOSITORY_OWNER')
 GITHUB_REPOSITORY = os.environ.get('GITHUB_REPOSITORY')
+STATS_START_MARKER = "<!-- STATISTICALDATA_START -->"
+STATS_END_MARKER = "<!-- STATISTICALDATA_END -->"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO,
@@ -291,8 +293,14 @@ def update_readme(content):
 
 def generate_user_row(user):
     user_status = get_user_study_status(user)
+    owner, repo = get_repo_info()
+    if owner and repo:
+        repo_url = f"https://github.com/{owner}/{repo}/blob/main/{user}{FILE_SUFFIX}"
+    else:
+        # Fallback to local if repo info is unavailable
+        repo_url = f"{user}{FILE_SUFFIX}"
     # 修改这里，将用户名替换为markdown链接
-    user_link = f"[{user}]({user}{FILE_SUFFIX})"
+    user_link = f"[{user}]({repo_url})"
     new_row = f"| {user_link} |"
     is_eliminated = False
     absent_count = 0
@@ -384,114 +392,98 @@ def get_fork_count():
 
 
 def calculate_statistics(content):
-    start_index = content.find(TABLE_START_MARKER)
-    end_index = content.find(TABLE_END_MARKER)
+    start_index = content.find(STATS_START_MARKER)
+    end_index = content.find(STATS_END_MARKER)
+
     if start_index == -1 or end_index == -1:
-        logging.error("Error: Couldn't find the table markers in README.md")
+        logging.error("Error: Couldn't find the stats markers in README.md")
         return None
 
-    table_content = content[start_index +
-                            len(TABLE_START_MARKER):end_index].strip()
-    rows = table_content.split('\n')[2:]  # Skip header and separator rows
+    stats_content = content[start_index +
+                            len(STATS_START_MARKER):end_index].strip()
 
-    total_participants = len(rows)
-    eliminated_participants = 0
-    completed_participants = 0
-    perfect_attendance_users = []
-    completed_users = []
-
-    for row in rows:
-        # user_name = row.split('|')[1].strip()
-        user_name = extract_name_from_row(row)
-        # Exclude first and last empty elements
-        statuses = [status.strip() for status in row.split('|')[2:-1]]
-
-        if '❌' in statuses:
-            eliminated_participants += 1
-        elif all(status == '✅' for status in statuses):
-            completed_participants += 1
-            completed_users.append(user_name)
-            perfect_attendance_users.append(user_name)
-        elif all(status in ['✅', '⭕️', ' '] for status in statuses):
-            completed_participants += 1
-            completed_users.append(user_name)
-
-    elimination_rate = (eliminated_participants /
-                        total_participants) * 100 if total_participants > 0 else 0
-    fork_count = get_fork_count()
-
-    return {
-        'total_participants': total_participants,
-        'completed_participants': completed_participants,
-        'eliminated_participants': eliminated_participants,
-        'elimination_rate': elimination_rate,
-        'fork_count': fork_count,
-        'perfect_attendance_users': perfect_attendance_users,
-        'completed_users': completed_users
+    # Initialize variables to store statistics
+    stats = {
+        "total_participants": 0,
+        "eliminated_participants": 0,
+        "completed_participants": 0,
+        "perfect_attendance_users": [],
+        "completed_users": [],
+        "fork_count": 0
     }
+
+    # Use regular expressions to extract the data.  Handle missing data gracefully.
+    total_match = re.search(r"- 总参与人数:\s*(\d+)", stats_content)
+    if total_match:
+        stats["total_participants"] = int(total_match.group(1))
+
+    completed_match = re.search(r"- 完成人数:\s*(\d+)", stats_content)
+    if completed_match:
+        stats["completed_participants"] = int(completed_match.group(1))
+
+    completed_users_match = re.search(r"- 完成用户:\s*([\w\s,]+)", stats_content)
+    if completed_users_match:
+        stats["completed_users"] = [x.strip()
+                                    for x in completed_users_match.group(1).split(',') if x.strip()]
+
+    perfect_attendance_users_match = re.search(
+        r"- 全勤用户:\s*([\w\s,]+)", stats_content)
+    if perfect_attendance_users_match:
+        stats["perfect_attendance_users"] = [
+            x.strip() for x in perfect_attendance_users_match.group(1).split(',') if x.strip()]
+
+    eliminated_match = re.search(r"- 淘汰人数:\s*(\d+)", stats_content)
+    if eliminated_match:
+        stats["eliminated_participants"] = int(eliminated_match.group(1))
+
+    fork_count_match = re.search(r"- Fork人数:\s*(\d+)", stats_content)
+    if fork_count_match:
+        stats["fork_count"] = int(fork_count_match.group(1))
+
+    return stats
+
+
+def update_statistics(content, stats):
+    start_index = content.find(STATS_START_MARKER)
+    end_index = content.find(STATS_END_MARKER)
+
+    if start_index == -1 or end_index == -1:
+        logging.error("Error: Couldn't find the stats markers in README.md")
+        return content
+
+    stats_text = f"""{STATS_START_MARKER}
+## 统计数据
+
+- 总参与人数: {stats["total_participants"]}
+- 完成人数: {stats["completed_participants"]}
+- 完成用户: {', '.join(stats['completed_users'])}
+- 全勤用户: {', '.join(stats['perfect_attendance_users'])}
+- 淘汰人数: {stats["eliminated_participants"]}
+- 淘汰率: {stats["total_participants"] and stats["eliminated_participants"] / stats["total_participants"]:.2%}
+- Fork人数: {stats["fork_count"]}
+{STATS_END_MARKER}"""
+
+    return content[:start_index] + stats_text + content[end_index + len(STATS_END_MARKER):]
 
 
 def main():
     try:
-        print_variables(
-            'START_DATE', 'END_DATE', 'DEFAULT_TIMEZONE',
-            GITHUB_REPOSITORY_OWNER=GITHUB_REPOSITORY,
-            GITHUB_REPOSITORY=GITHUB_REPOSITORY,
-            FILE_SUFFIX=FILE_SUFFIX,
-            README_FILE=README_FILE,
-            FIELD_NAME=FIELD_NAME,
-            Content_START_MARKER=Content_START_MARKER,
-            Content_END_MARKER=Content_END_MARKER,
-            TABLE_START_MARKER=TABLE_START_MARKER,
-            TABLE_END_MARKER=TABLE_END_MARKER
-        )
         with open(README_FILE, 'r', encoding='utf-8') as file:
             content = file.read()
-        new_content = update_readme(content)
-        current_date = datetime.now(pytz.UTC)
-        if current_date > END_DATE:
-            stats = calculate_statistics(new_content)
-            if stats:
-                stats_content = f"\n\n## 统计数据\n\n"
-                stats_content += f"- 总参与人数: {stats['total_participants']}\n"
-                stats_content += f"- 完成人数: {stats['completed_participants']}\n"
-                stats_content += f"- 完成用户: {', '.join(stats['completed_users'])}\n"
-                stats_content += f"- 全勤用户: {', '.join(stats['perfect_attendance_users'])}\n"
-                stats_content += f"- 淘汰人数: {stats['eliminated_participants']}\n"
-                stats_content += f"- 淘汰率: {stats['elimination_rate']:.2f}%\n"
-                stats_content += f"- Fork人数: {stats['fork_count']}\n"
-            # 将统计数据添加到文件末尾
-            # 在<!-- END_COMMIT_TABLE -->标记后插入统计数据
-                stats_start = new_content.find(
-                    "<!-- STATISTICALDATA_START -->")
-                stats_end = new_content.find("<!-- STATISTICALDATA_END -->")
+    except FileNotFoundError:
+        logging.error(f"Error: Could not find file {README_FILE}")
+        return
 
-                if stats_start != -1 and stats_end != -1:
-                    # Replace existing statistical data
-                    new_content = new_content[:stats_start] + "<!-- STATISTICALDATA_START -->\n" + stats_content + \
-                        "<!-- STATISTICALDATA_END -->" + \
-                        new_content[stats_end +
-                                    len("<!-- STATISTICALDATA_END -->"):]
-                else:
-                    # Add new statistical data after <!-- END_COMMIT_TABLE -->
-                    end_table_marker = "<!-- END_COMMIT_TABLE -->"
-                    end_table_index = new_content.find(end_table_marker)
-                    if end_table_index != -1:
-                        insert_position = end_table_index + \
-                            len(end_table_marker)
-                        new_content = new_content[:insert_position] + "\n\n<!-- STATISTICALDATA_START -->\n" + \
-                            stats_content + "<!-- STATISTICALDATA_END -->" + \
-                            new_content[insert_position:]
-                    else:
-                        logging.warning(
-                            "<!-- END_COMMIT_TABLE --> marker not found. Appending stats to the end.")
-                        new_content += "\n\n<!-- STATISTICALDATA_START -->\n" + \
-                            stats_content + "<!-- STATISTICALDATA_END -->"
-        with open(README_FILE, 'w', encoding='utf-8') as file:
-            file.write(new_content)
-        logging.info("README.md has been successfully updated.")
-    except Exception as e:
-        logging.error(f"An error occurred in main function: {str(e)}")
+    content = update_readme(content)
+    stats = calculate_statistics(content)
+
+    if stats:
+        content = update_statistics(content, stats)
+
+    with open(README_FILE, 'w', encoding='utf-8') as file:
+        file.write(content)
+
+    logging.info(f"Successfully updated {README_FILE}")
 
 
 if __name__ == "__main__":
