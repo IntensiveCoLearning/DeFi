@@ -185,7 +185,7 @@ https://app.uniswap.org/swap
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | [notthere-2023](https://github.com/IntensiveCoLearning/DeFi/blob/main/notthere-2023.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [xiaodongQ](https://github.com/IntensiveCoLearning/DeFi/blob/main/xiaodongQ.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
-| [nocb](https://github.com/IntensiveCoLearning/DeFi/blob/main/nocb.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   | ✅ | ✅ |
+| [nocb](https://github.com/IntensiveCoLearning/DeFi/blob/main/nocb.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |
 | [joyc](https://github.com/IntensiveCoLearning/DeFi/blob/main/joyc.md) | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ |
 | [Sifotd](https://github.com/IntensiveCoLearning/DeFi/blob/main/Sifotd.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | |
 | [Iyi](https://github.com/IntensiveCoLearning/DeFi/blob/main/Iyi.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
@@ -200,7 +200,7 @@ https://app.uniswap.org/swap
 | [zedz](https://github.com/IntensiveCoLearning/DeFi/blob/main/zedz.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [LRlulu](https://github.com/IntensiveCoLearning/DeFi/blob/main/LRlulu.md) | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | |
 | [mon1y](https://github.com/IntensiveCoLearning/DeFi/blob/main/mon1y.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [Huowuge](https://github.com/IntensiveCoLearning/DeFi/blob/main/Huowuge.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ |
+| [Huowuge](https://github.com/IntensiveCoLearning/DeFi/blob/main/Huowuge.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | ✅ |
 | [Chen-XueLing](https://github.com/IntensiveCoLearning/DeFi/blob/main/Chen-XueLing.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [Defi残酷共学-Mark](https://github.com/IntensiveCoLearning/DeFi/blob/main/Defi残酷共学-Mark.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [WENDY1233211991](https://github.com/IntensiveCoLearning/DeFi/blob/main/WENDY1233211991.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | |
@@ -208,7 +208,7 @@ https://app.uniswap.org/swap
 | [yuxing11](https://github.com/IntensiveCoLearning/DeFi/blob/main/yuxing11.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [LunaWang5209](https://github.com/IntensiveCoLearning/DeFi/blob/main/LunaWang5209.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [HeliosLz](https://github.com/IntensiveCoLearning/DeFi/blob/main/HeliosLz.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | |
-| [gillsgills](https://github.com/IntensiveCoLearning/DeFi/blob/main/gillsgills.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   | ✅ | ⭕️ |
+| [gillsgills](https://github.com/IntensiveCoLearning/DeFi/blob/main/gillsgills.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ |
 | [DerickIT](https://github.com/IntensiveCoLearning/DeFi/blob/main/DerickIT.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [muxin-web3](https://github.com/IntensiveCoLearning/DeFi/blob/main/muxin-web3.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | |
 | [dethan3](https://github.com/IntensiveCoLearning/DeFi/blob/main/dethan3.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
@@ -216,9 +216,9 @@ https://app.uniswap.org/swap
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/DeFi/blob/main/Coooder-Crypto.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [Harriswww](https://github.com/IntensiveCoLearning/DeFi/blob/main/Harriswww.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [qiaopengjun5162](https://github.com/IntensiveCoLearning/DeFi/blob/main/qiaopengjun5162.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [novac42code](https://github.com/IntensiveCoLearning/DeFi/blob/main/novac42code.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ |   | ✅ | ✅ |
+| [novac42code](https://github.com/IntensiveCoLearning/DeFi/blob/main/novac42code.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ |
 | [charlottyge](https://github.com/IntensiveCoLearning/DeFi/blob/main/charlottyge.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
-| [rayjun](https://github.com/IntensiveCoLearning/DeFi/blob/main/rayjun.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ⭕️ |   | ❌ | |
+| [rayjun](https://github.com/IntensiveCoLearning/DeFi/blob/main/rayjun.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | |
 | [Ellenp2p](https://github.com/IntensiveCoLearning/DeFi/blob/main/Ellenp2p.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [luffythink](https://github.com/IntensiveCoLearning/DeFi/blob/main/luffythink.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [wzl521](https://github.com/IntensiveCoLearning/DeFi/blob/main/wzl521.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -230,11 +230,12 @@ https://app.uniswap.org/swap
 | [punkcanyang](https://github.com/IntensiveCoLearning/DeFi/blob/main/punkcanyang.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
 | [alex-lee](https://github.com/IntensiveCoLearning/DeFi/blob/main/alex-lee.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [imaffe](https://github.com/IntensiveCoLearning/DeFi/blob/main/imaffe.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
-| [weifengHuang](https://github.com/IntensiveCoLearning/DeFi/blob/main/weifengHuang.md) | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ✅ | ✅ |
+| [weifengHuang](https://github.com/IntensiveCoLearning/DeFi/blob/main/weifengHuang.md) | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
 | [L1rul1n](https://github.com/IntensiveCoLearning/DeFi/blob/main/L1rul1n.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
 | [wodeche](https://github.com/IntensiveCoLearning/DeFi/blob/main/wodeche.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [snaildarter](https://github.com/IntensiveCoLearning/DeFi/blob/main/snaildarter.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
